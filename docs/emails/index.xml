@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emails on CIBIL signup</title>
-    <link>https://ajency.github.io/cibil/emails/</link>
+    <link>https://ajency.github.io/cibil2/emails/</link>
     <description>Recent content in Emails on CIBIL signup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2019 13:13:26 +0530</lastBuildDate>
     
-	<atom:link href="https://ajency.github.io/cibil/emails/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/cibil2/emails/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Doc Upload Dropoff</title>
-      <link>https://ajency.github.io/cibil/emails/doc-upload-dropoff/</link>
+      <link>https://ajency.github.io/cibil2/emails/doc-upload-dropoff/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/doc-upload-dropoff/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/doc-upload-dropoff/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Doc Upload Reminder</title>
-      <link>https://ajency.github.io/cibil/emails/doc-upload-reminder/</link>
+      <link>https://ajency.github.io/cibil2/emails/doc-upload-reminder/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/doc-upload-reminder/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/doc-upload-reminder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Order Confirmed</title>
-      <link>https://ajency.github.io/cibil/emails/order-confirmed/</link>
+      <link>https://ajency.github.io/cibil2/emails/order-confirmed/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/order-confirmed/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/order-confirmed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Order Delivered</title>
-      <link>https://ajency.github.io/cibil/emails/order-delivered/</link>
+      <link>https://ajency.github.io/cibil2/emails/order-delivered/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/order-delivered/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/order-delivered/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Order Shipped</title>
-      <link>https://ajency.github.io/cibil/emails/order-shipped/</link>
+      <link>https://ajency.github.io/cibil2/emails/order-shipped/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/order-shipped/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/order-shipped/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sharing Invite</title>
-      <link>https://ajency.github.io/cibil/emails/sharing-invite/</link>
+      <link>https://ajency.github.io/cibil2/emails/sharing-invite/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/sharing-invite/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/sharing-invite/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sharing Invite Viewed</title>
-      <link>https://ajency.github.io/cibil/emails/sharing-invite-viewed/</link>
+      <link>https://ajency.github.io/cibil2/emails/sharing-invite-viewed/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/emails/sharing-invite-viewed/</guid>
+      <guid>https://ajency.github.io/cibil2/emails/sharing-invite-viewed/</guid>
       <description></description>
     </item>
     

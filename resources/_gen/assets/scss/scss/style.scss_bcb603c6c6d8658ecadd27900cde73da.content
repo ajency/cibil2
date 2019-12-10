@@ -7782,9 +7782,6 @@ body {
     color: #fff;
     text-decoration: none; }
 
-.ignore {
-  display: block; }
-
 h1 {
   color: #000000;
   font-family: Intro;

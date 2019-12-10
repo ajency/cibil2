@@ -2,156 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Signups on CIBIL signup</title>
-    <link>https://ajency.github.io/cibil/signup/</link>
+    <link>https://ajency.github.io/cibil2/signup/</link>
     <description>Recent content in Signups on CIBIL signup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2019 13:13:26 +0530</lastBuildDate>
     
-	<atom:link href="https://ajency.github.io/cibil/signup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/cibil2/signup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Company Details</title>
-      <link>https://ajency.github.io/cibil/company-details-partial/</link>
+      <link>https://ajency.github.io/cibil2/company-details-partial/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/company-details-partial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Company Details</title>
-      <link>https://ajency.github.io/cibil/company-details-partnership/</link>
-      <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/cibil/company-details-partnership/</guid>
+      <guid>https://ajency.github.io/cibil2/company-details-partial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Company Details</title>
-      <link>https://ajency.github.io/cibil/company-details-shared/</link>
+      <link>https://ajency.github.io/cibil2/company-details-partnership/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/company-details-shared/</guid>
+      <guid>https://ajency.github.io/cibil2/company-details-partnership/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Company Details</title>
-      <link>https://ajency.github.io/cibil/company-details/</link>
+      <link>https://ajency.github.io/cibil2/company-details-shared/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/company-details/</guid>
+      <guid>https://ajency.github.io/cibil2/company-details-shared/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Company Details</title>
+      <link>https://ajency.github.io/cibil2/company-details/</link>
+      <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/cibil2/company-details/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/e-kyc-failed/</link>
+      <link>https://ajency.github.io/cibil2/e-kyc-failed/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/e-kyc-failed/</guid>
+      <guid>https://ajency.github.io/cibil2/e-kyc-failed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/e-kyc/</link>
+      <link>https://ajency.github.io/cibil2/e-kyc/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/e-kyc/</guid>
+      <guid>https://ajency.github.io/cibil2/e-kyc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/kyc-failed/</link>
+      <link>https://ajency.github.io/cibil2/kyc-failed/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/kyc-failed/</guid>
+      <guid>https://ajency.github.io/cibil2/kyc-failed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/kyc-uploaded/</link>
+      <link>https://ajency.github.io/cibil2/kyc-uploaded/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/kyc-uploaded/</guid>
+      <guid>https://ajency.github.io/cibil2/kyc-uploaded/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/kyc-verified/</link>
+      <link>https://ajency.github.io/cibil2/kyc-verified/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/kyc-verified/</guid>
+      <guid>https://ajency.github.io/cibil2/kyc-verified/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KYC</title>
-      <link>https://ajency.github.io/cibil/kyc/</link>
+      <link>https://ajency.github.io/cibil2/kyc/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/kyc/</guid>
+      <guid>https://ajency.github.io/cibil2/kyc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My Reports</title>
-      <link>https://ajency.github.io/cibil/my-report/</link>
+      <link>https://ajency.github.io/cibil2/my-report/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/my-report/</guid>
+      <guid>https://ajency.github.io/cibil2/my-report/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Payment</title>
-      <link>https://ajency.github.io/cibil/payment/</link>
+      <link>https://ajency.github.io/cibil2/payment/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/payment/</guid>
+      <guid>https://ajency.github.io/cibil2/payment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Report</title>
-      <link>https://ajency.github.io/cibil/report-digital/</link>
+      <link>https://ajency.github.io/cibil2/report-digital/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/report-digital/</guid>
+      <guid>https://ajency.github.io/cibil2/report-digital/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Report</title>
-      <link>https://ajency.github.io/cibil/report/</link>
+      <link>https://ajency.github.io/cibil2/report/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/report/</guid>
+      <guid>https://ajency.github.io/cibil2/report/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Signup</title>
-      <link>https://ajency.github.io/cibil/signup/</link>
+      <link>https://ajency.github.io/cibil2/signup/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/signup/</guid>
+      <guid>https://ajency.github.io/cibil2/signup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Signup</title>
-      <link>https://ajency.github.io/cibil/signup-pwd/</link>
+      <link>https://ajency.github.io/cibil2/signup-pwd/</link>
       <pubDate>Mon, 12 Aug 2019 13:13:26 +0530</pubDate>
       
-      <guid>https://ajency.github.io/cibil/signup-pwd/</guid>
+      <guid>https://ajency.github.io/cibil2/signup-pwd/</guid>
       <description></description>
     </item>
     
