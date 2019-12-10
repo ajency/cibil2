@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="container p-0 mb-6 temp-img-container" id="btn-kyc-submit">
+    <img src="{{"img/email/email-verify.png" | relURL}}" class="img-fluid mx-auto d-block">
+</div>
+
+<style>
+	footer {
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-kyc-submit")
+	button.addEventListener('click', function(e) {		
+		window.location.href="/cibil/credit-report/create-account/";
+	});
+</script>
+
+{{ end }}

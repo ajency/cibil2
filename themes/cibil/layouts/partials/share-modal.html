@@ -1,0 +1,71 @@
+<div class="modal fade {{ if in .Permalink "share-modal" }} bd-example-modal-lg {{ end }}" id="share-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+            <div class="share-educate">
+                <h1 class="modal-title text-blue text-center text-md-left">Share report with others</h1>
+                <h4 class="text-grey modal-sub-title">You can share this report with your known associates. On sharing this report, your associates will be able to view and download it. You can also remove report access to existing associates.</h4>
+            </div>
+            <div class="educate-action text-right">
+                <button class="btn btn-fill btn-fill-orange btn-xl btn-educate">SHARE REPORT</button>
+            </div>
+            <div class="modal-share-container mt-4">
+                <div class="user-access-section mb-5">
+                    <h5 class="text-blue text-underline text-underline-blue text-uppercase mb-2">Who has access</h5>
+                    <ul class="report-access-list">
+                        <li data-index="1">
+                            <label class="email-id">Arnab@tarcargroup.com <span class="text-grey font-light stick-right font-14">OWNER</span></label>         
+                        </li>
+                        <li data-index="2">
+                            <input type="checkbox" name="access_list" id="email_2">
+                            <label for="email_2">
+                                vishwas.h@gmail.com 
+                                <span class="btn p-0 stick-right btn-remove"><i class="chevron-close"></i></span>
+                                <span class="btn btn-text-orange p-0 stick-right btn-add">ADD BACK</span>
+                            </label>
+                        </li>
+                        <li data-index="3">
+                            <input type="checkbox" name="access_list" id="email_3">
+                            <label for="email_3">
+                                vishwas.h@gmail.com 
+                                <span class="btn p-0 stick-right btn-remove"><i class="chevron-close"></i></span>
+                                <span class="btn btn-text-orange p-0 stick-right btn-add">ADD BACK</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shared-with-section">
+                    <h5 class="text-blue text-underline text-underline-blue text-uppercase mb-2">Share With</h5>
+                    <div class="sharebox-cont">
+                        <div class="share-with-box">
+                            <div class="all-emails">                                
+                                <input type="text" id="email-share" placeholder="Enter email addresses">
+                            </div>                               
+                        </div>
+                        <label class="input-error">Please Enter Email ID</label>
+                    </div>
+                </div>
+                <div class="row m-0 mt-2 mt-md-5 edit-list-action">
+                    <div class="col-12 p-0">
+                        <div class="message message-warning d-block mb-3">
+                            <h4 class="message-text">You have made changes that you need to save</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2 mt-md-0 p-0 text-right">
+                        <button class="btn btn-fill btn-fill-lightgrey btn-lg btn-cancel mr-md-1">CANCEL</button>
+                        <button class="btn btn-fill btn-fill-orange btn-lg btn-save">SAVE CHANGES</button>
+                    </div>
+                </div>
+                <div class="row m-0 mt-2 mt-md-5 share-submit justify-content-end">                        
+                    <div class="col-12 col-md-4 mt-2 mt-md-0 p-0 text-right mr-1">
+                        <button class="btn btn-fill btn-fill-lightgrey btn-lg btn-cancel mr-md-1 w-100" data-dismiss="modal">CANCEL</button>
+                    </div>
+                    <div class="col-12 col-md-4 mt-2 mt-md-0 p-0 text-right">
+                        <button class="btn btn-fill btn-fill-orange btn-xl w-100 btn-share-request">SEND REPORT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

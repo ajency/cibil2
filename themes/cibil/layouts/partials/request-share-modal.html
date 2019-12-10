@@ -1,0 +1,62 @@
+<div class="modal fade" id="request-share-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+            <div class="share-educate">
+                <h1 class="modal-title text-blue text-center text-md-left">Request an associate to procure this report</h1>
+                <h4 class="text-grey modal-sub-title font-light">You can request an Assistant/Accountant to get this CCR report on your behalf</h4>
+            </div>
+            <div class="modal-share-container request-share-with show">
+                <!-- <h4 class="text-grey modal-sub-title mb-2">Request an associates to procure the CCR report on your behalf</h4> -->
+                <!-- <h5 class="text-blue text-underline text-underline-blue text-uppercase mb-2">Request With</h5> -->
+                <!-- <div class="sharebox-cont">
+                    <div class="share-with-box">
+                        <div class="all-emails"> -->
+                            <!-- <span class="email-ids"><i class="fas fa-user-alt text-blue user-icon"></i> test@test.com <span class="close"></span></span> -->
+                            <!-- <input type="text" id="email-share" placeholder="Enter email addresses">
+                        </div>                               
+                    </div>
+                    <label class="input-error">Please Enter Email ID</label>
+                </div> -->
+
+                <div class="floating-fields mt-1">
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="share-emailid" id="share-email">                            
+                        <label for="share-companyname" class="form-label pointer-events-none">
+                            <span class="form-label-content">Email ID of Assistant/Accountant*</span>
+                        </label>
+                        <label class="input-error">Please Enter Email ID</label>
+                    </div>
+                    <div class="form-field">
+                        <input class="form-input" type="text" name="share-companyname" id="share-companyname">                            
+                        <label for="share-companyname" class="form-label pointer-events-none">
+                            <span class="form-label-content">Company Name for which you want the CCR Report (Optional)</span>
+                        </label>
+                        <label class="input-error">Please Enter Company Name</label>
+                    </div>
+                </div>
+                <div class="row m-0 mt-2 mt-md-5">
+                    <div class="col-12 col-md-7 p-0">                            
+                        <label class="font-14 text-grey">Note: The above associates will not get access to the report.</label>                            
+                    </div>
+                    <div class="col-12 col-md-4 offset-md-1 mt-2 mt-md-0 p-0 text-right">
+                        <button class="btn btn-fill btn-fill-orange btn-xl w-100 btn-share-request">SEND REQUEST</button>
+                    </div>
+                </div>
+            </div>
+            <div class="request-share-again">
+                <div class="mb-2">
+                    <h4 class="text-grey modal-sub-title mb-3">You have already requested <span class="text-black">ravi@tarcarltd.com</span> to procure this report.</h4>
+                    <h4 class="text-grey modal-sub-title mb-0">Do you want to let another associate procure this report?</h4>
+                    <label class="font-14 text-grey">Note: ravi@tarcarltd.com session will be terminated</label>      
+                </div>
+                <div class="edit-list-action d-flex flex-wrap">
+                    <div class="col-12 mt-2 mt-md-0 p-0 text-right">
+                        <button class="btn btn-fill btn-fill-lightgrey btn-lg btn-cancel mr-md-1" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-fill btn-fill-orange btn-lg btn-save btn-request-another">YES, REQUEST ANOTHER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

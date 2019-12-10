@@ -1,0 +1,68 @@
+h1 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    line-height: 42px;
+    font-family: $font-bold;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 37px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 18px;
+    letter-spacing: 0.34px;
+    line-height: 24px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 16px;
+    letter-spacing: 0.34px;
+    line-height: 19px;
+    color: #000000;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #000000;
+    letter-spacing: 0.3px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #000000;
+    letter-spacing: 0.3px;
+}
+
+p{
+    font-size: 14px;
+    font-family: Intro-light;
+    font-weight: 300;
+    line-height: 18px;
+    color: #777;
+}
+
+label{
+    font-size: 14px;
+    color: #777;
+}
+
+.text-highlight{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+    font-family: $font-regular;
+}
+
+.small{
+    font-size: 75%;
+}

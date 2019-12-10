@@ -1,0 +1,227 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<div class="container">
+	<div class="px-2 py-4">
+
+		<div class="row">
+			<div class="col-md-9 border-right">
+				<h4 class="mb-2">Verification of some details is required</h4>
+				<h5 class="mb-2">Please ensure you upload the KYC Compliant Address Proof (In the Company Name)</h5>
+
+				<ul class="notifications">
+				    <li>
+				    	{{ if or ($.Params.uploaded) ($.Params.verified) }}
+				      		<i class="fa fa-check"></i>
+				      	{{ else }}
+				      		<i class="fa fa-file"></i>
+				      	{{ end }}
+				      <div class="kyc-title">Documents</div>
+				      <div class="kyc-documents card">
+				      	{{ if or ($.Params.uploaded) ($.Params.verified) }}
+				      		<div class="card-body uploaded">
+				      			Your documents were successfully uploaded
+				      		</div>
+				      	{{ else }}
+				      		<div class="card-body">
+					      		Below are some accepted documents as Address Proof. Please select any 1.
+
+					      		<form name="myForm">
+					      			<fieldset class="mt-2">
+					      		    	<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="bank" name="radiogroup" value="bank" checked="" />
+					      					<span>Bank Statement</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="electric" name="radiogroup" value="electric" />
+					      					<span>Electricity Bill</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="telephone" name="radiogroup" value="telephone" />
+					      					<span>Telephone Bill</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="certificate" name="radiogroup" value="certificate" />
+					      					<span>Certificate of Incorporation</span>
+					      				</label>
+					      		    </fieldset>
+					      		</form>				      		
+
+					      	    <div class="my-3 infobox" id="bankbox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Bank Statement</h5>
+					      		    <p class="card-text">Only first page of bank statement where company address is mentioned is required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample bank statement</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="electricbox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Electricity Bill</h5>
+					      		    <p class="card-text">Latest 3 electricity bills where company address is mentioned are required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample electricity bill</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="telephonebox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Telephone Bill</h5>
+					      		    <p class="card-text">Latest 3 telephone bills where company address is mentioned are required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample telephone bill</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="certificatebox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Certificate of Incorporation</h5>
+					      		    <p class="card-text">Upload your company's Certificate of Incorporation.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample Certificate of Incorporation</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      		<a href="/cibil/kyc-uploaded/" class="btn btn-primary btn-lg" id="submitKYC">Submit</a>
+					      	</div>
+				      	{{ end }}
+				      </div>
+				    </li>
+				    <li>
+			    		{{ if $.Params.verified }}
+			    	  		<i class="fa fa-check"></i>
+			    	  	{{ else if $.Params.failed }}
+			    	  		<i class="fa fa-times"></i>
+			    	  	{{ else }}
+			    	  		<i class="fa fa-search"></i>
+			    	  	{{ end }}
+				      <div class="kyc-title">Verification</div>
+				      {{ if $.Params.uploaded }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification in process.</p>
+					      		Once your documents have been manually verified, your report will be generated.
+					      	</div>
+					      </div>
+				      {{ else if $.Params.verified }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification Successful!</p>
+					      		<a href="/cibil/report/" class="btn btn-primary">Get Report</a>
+					      	</div>
+					      </div>
+				      {{ else if $.Params.failed }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification Failed!</p>
+					      		There were some discrepencies with your details. Please re-upload your documents.
+					      	</div>
+					      </div>
+				      {{ end }}
+				    </li>
+				</ul>
+
+			</div>
+			<div class="col-md-3">
+				<div class="">
+					<div class=" text-left">
+						<h6 class="font-weight-bold">When uploading documents, please note the following:</h6>
+						<ul>
+							<li>Please ensure the documents are not password protected.</li>
+							<li>Please upload latest address proof wherein transactions are not older than 3 months.</li>
+							<li>Document extensions should be either .png, .jpg, .jpeg or .pdf</li>
+							<li>Maximum 3 documents can be uploaded</li>
+						</ul>
+					</div>
+					<div class="mt-4 text-left">
+						<h6 class="font-weight-bold">Alternatively you can dispatch physical copies of your KYC documents to:</h6>
+						<p>Consumer Services
+							TransUnion CIBIL Limited, <br>
+							One Indiabulls Center, Tower 2A, 19th floor,<br>
+							Lower Parel, Mumbai - 400 013
+						</p>
+						<p>Please mention the transaction ID which was emailed to you after making the payment.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	var rad = document.myForm.radiogroup;
+    var prev = null;
+    for(var i = 0; i < rad.length; i++) {
+        rad[i].onclick = function () {
+        	var elems = document.querySelectorAll(".infobox");
+
+            if (document.getElementById('bank').checked) {
+            	[].forEach.call(elems, function(el) {
+	        	    el.classList.add("d-none");
+	        	});
+            	document.getElementById("bankbox").classList.remove('d-none');
+            	document.getElementById("submitKYC").classList.remove('d-none');
+            } else if(document.getElementById('electric').checked) {
+            	[].forEach.call(elems, function(el) {
+	        	    el.classList.add("d-none");
+	        	});
+            	document.getElementById("submitKYC").classList.remove('d-none');
+            	document.getElementById("electricbox").classList.remove('d-none');
+            } else if(document.getElementById('telephone').checked) {
+            	[].forEach.call(elems, function(el) {
+	        	    el.classList.add("d-none");
+	        	});
+            	document.getElementById("submitKYC").classList.remove('d-none');
+            	document.getElementById("telephonebox").classList.remove('d-none');
+            } else if(document.getElementById('certificate').checked) {
+            	[].forEach.call(elems, function(el) {
+	        	    el.classList.add("d-none");
+	        	});
+            	document.getElementById("submitKYC").classList.remove('d-none');
+            	document.getElementById("certificatebox").classList.remove('d-none');
+            }
+        };
+    }
+	
+</script>
+
+{{ end }}

@@ -1,0 +1,230 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+
+<div class="section-credit-report mt-4 mb-6 floating-fields">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 col-left pr-lg-5">
+                <div>
+                    <h1 class="section-title text-grey mb-1">Hi, there!</h1> 
+                    <h5 class="text-grey font-light mb-2"><span class="text-black font-regular">Arnab</span> has requested you to procure the CIBIL Rank & Company Credit Report for <span class="text-highlight font-regular">TARCAR REAL ESTATE PRIVATE LIMITED</span> on his behalf</h5>
+                    <h5 class="text-grey font-light mb-0">Please enter the requested information in the form below. This information will be used to identify the company for which you want to generate the CIBIL Rank & Company Credit Report.</h5>
+                </div>
+
+                <form class="mt-3 mt-md-6 mb-0 mb-md-4 form-credit-report company-info-form" method="post">
+                    <div class="form-section section-applicant-details mb-3">
+                            <h5 class="form-section-title text-blue text-underline text-underline-blue mt-1">Applicant Name</h5>
+                            <div class="fields-wrapper">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-field required valid">
+                                            <input class="form-input" type="text" name="applicant_name" id="applicant_name" value="Arnab Tarcar">                            
+                                            <!-- <label for="applicant_name" class="form-label">
+                                                <span class="form-label-content">Applicant Name</span>
+                                            </label> -->
+                                            <label class="input-error">Please Enter Applicant name</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Company Details -->
+                    <div class="form-section section-company-details">
+                        <h5 class="form-section-title text-blue text-underline text-underline-blue mt-1">Company Details</h5>
+                        <div class="fields-wrapper">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <div class="form-field required">
+                                        <input class="form-input" type="text" name="companyname" id="companyname">                            
+                                        <label for="companyname" class="form-label">
+                                            <span class="form-label-content">Company Name*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Company Name</label>
+                                    </div>
+                                </div>           
+                                
+                                <div class="col-12">
+                                    <div class="form-field required placeholder-wrap">
+                                        <input class="form-input phone-number" type="text" name="contact_number" id="contact_number" maxlength="10">                            
+                                        <label for="contact_number" class="form-label">
+                                            <span class="form-label-content">Company Mobile Number*</span>
+                                        </label>
+                                        <span class="phone-placeholder">+91 </span>
+                                        <label class="autofill-hint text-orange2 autofill-phone" data-autofill="7254666989">Use 7254666989</label>
+                                        <label class="input-error">Please Enter Company Mobile Number</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 cols-md-6 cfv-field">
+                                    <div class="form-field select-wrapper fvalid">
+                                        <select class="select-default select2-normal" id="company_id">
+                                            <option value="">Select</option>
+                                            <option value="c_pan">Company PAN</option>
+                                            <option value="ci_number">Corporate Registration Number (CIN)</option> 
+                                            <option value="cr_number">Company Registration Number (CRN)</option>
+                                            <option value="ti_number">Tax Identification Number (TIN)</option>
+                                        </select>                      
+                                        <label for="company_id" class="form-label">
+                                            <span class="form-label-content">Company ID*</span>
+                                        </label>
+                                        <label class="input-error">Please Choose Company ID</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 cf-fields">
+                                    <div class="form-field cf-field c_pan required show">
+                                        <input class="form-input" type="text" name="company_pan_number" maxlength="10" id="company_pan_number" oninput="this.value = this.value.toUpperCase()">                            
+                                        <label for="company_pan_number" class="form-label">
+                                            <span class="form-label-content">Company PAN*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Company PAN</label>
+                                        <label class="autofill-hint text-orange2 btn-comp-id" data-autofill="7254666989">Don't have a PAN?</label>
+                                    </div>
+                                    <div class="form-field cf-field ci_number">
+                                        <input class="form-input" type="text" name="ci_number" maxlength="21" id="ci_number" oninput="this.value = this.value.toUpperCase()">                            
+                                        <label for="ci_number" class="form-label">
+                                            <span class="form-label-content">Corporate Identification Number (CIN)*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Corporate Identification Number (CIN)</label>
+                                    </div>
+                                    <div class="form-field cf-field cr_number">
+                                        <input class="form-input" type="text" name="cr_number" maxlength="21" id="cr_number" oninput="this.value = this.value.toUpperCase()">                            
+                                        <label for="cr_number" class="form-label">
+                                            <span class="form-label-content">Company Registration Number (CRN)*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Company Registration Number (CRN)</label>
+                                    </div>
+                                    <div class="form-field cf-field ti_number">
+                                        <input class="form-input" type="text" maxlength="11" name="tax_identification_number" id="tax_identification_number" oninput="this.value = this.value.toUpperCase()">                            
+                                        <label for="tax_identification_number" class="form-label">
+                                            <span class="form-label-content">Tax Identification Number (TIN)*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Tax Identification Number (TIN)</label>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="col-12">
+                                    <div class="form-field">
+                                        <input class="form-input" maxlength="15" type="text" name="company_gst_number" id="company_gst_number" oninput="this.value = this.value.toUpperCase()">                            
+                                        <label for="company_gst_number" class="form-label">
+                                            <span class="form-label-content">Company GST Number (Optional)</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Company GST Number</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Company Details -->
+
+                    <!-- Company Address -->
+                    <div class="form-section section-company-address">
+                        <h5 class="form-section-title text-blue text-underline text-underline-blue">Company Address</h5>
+                        <div class="fields-wrapper">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <div class="form-field required">
+                                        <input class="form-input" type="text" name="register_company_address" id="register_company_address">                            
+                                        <label for="register_company_address" class="form-label">
+                                            <span class="form-label-content">Registered Company Address*</span>
+                                        </label>
+                                        <label class="input-error">Please Enter Registered Company Address</label>
+                                    </div>
+                                </div>                                
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="form-field required">
+                                        <input class="form-input" type="text" maxlength="6" name="pincode" id="pincode">                            
+                                        <label for="pincode" class="form-label">
+                                            <span class="form-label-content">PIN Code *</span>
+                                        </label>
+                                        <label class="input-error">PIN Code is required</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-field required required select-wrapper valid">
+                                        <!-- <input class="form-input" type="text" name="state" id="state">        -->
+                                        <select class="select-default select2-serachbox" name="state" id="state"></select>                    
+                                        <label for="state" class="form-label">
+                                            <span class="form-label-content">State *</span>
+                                        </label>
+                                        <label class="input-error">Please Enter State</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-field required">
+                                        <input class="form-input" type="text" name="city" id="city">                            
+                                        <label for="city" class="form-label">
+                                            <span class="form-label-content">City *</span>
+                                        </label>
+                                        <label class="input-error">Please Enter City</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-action mt-2 text-md-right">
+                        <button class="btn btn-fill btn-fill-orange btn-submit animate-shift-right" id="btn-proceed" data-share="true">CONTINUE <i class="icon-next icon-next-white"></i></button>
+                    </div>
+                    <!-- End of Company Address -->                    
+                </form>                
+            </div>        
+            <div class="col-md-4 col-lg-3 col-right sticky-sidebar">
+                <div>
+                    <div class="info-box-wrapper mini-slider mt-3 mt-md-0">
+                        <div class="owl-carousel">
+                            <div class="info-box text-center">
+                                <div class="info-box-icon"><img src="{{"img/company-info/info.png" | absURL}}"></div>
+                                <span class="seprator-xs seprator-xs-yellow"></span>
+                                <h4 class="info-box-sub-title text-grey text-center">Where can I get my company information?</h4>
+                                <h5 class="info-box-title text-grey font-light text-center mb-0">You can find your company information on the MCA (Ministry of Corporate Affairs) website.</h5>
+                                <!-- <a href="http://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do" target="_blank" class="text-link text-link-blue font-11">Click here to go to MCA website</a> -->
+                            </div>
+                            <div class="info-box text-center">
+                                <div class="info-box-icon"><img src="{{"img/company-info/report.png" | absURL}}"></div>
+                                <span class="seprator-xs seprator-xs-yellow"></span>
+                                <h4 class="info-box-sub-title text-grey text-center">What is Company Credit Report?</h4>
+                                <h5 class="info-box-title text-grey font-light text-center mb-0">CCR is a factual record of your credit payment history compiled from information received from different credit institutions.</h5>
+                                <!-- <a href="{{"img/sample-ccr-report.png" | absURL}}" class="text-link text-link-blue font-11" target="_blank" >View sample CCR report</a> -->
+                            </div>
+                            <div class="info-box text-center">
+                                <div class="info-box-icon"><img src="{{"img/company-info/rank.png" | absURL}}"></div>
+                                <span class="seprator-xs seprator-xs-yellow"></span>
+                                <h4 class="info-box-sub-title text-grey text-center">What is CIBIL Rank?</h4>
+                                <h5 class="info-box-title text-grey font-light text-center mb-0">The CIBIL RANK, summarizes your CCR in the form of one number. The rank is provided from a scale of 1 to 10, where 1 is the best rank that can be achieved.</h5>                        
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="select-custom entity-type-select dropdown-menu-anim">
+    <ul>
+        <li class="active"><a href="#">Private Limited</a></li>
+        <li><a href="#">Public Limited</a></li>
+        <li><a href="#">Business Entities created by statute</a></li>
+        <li><a href="/cibil/credit-report/company-info-proprietorship/">Proprietorship</a></li>
+        <li><a href="#">Partnership</a></li>
+        <li><a href="#">Trust</a></li>
+        <li><a href="#">Hindu Undivided Family </a></li>
+        <li><a href="#">Co-operative society</a></li>
+        <li><a href="#">Association of person</a></li>
+        <li><a href="#">Government</a></li>
+        <li><a href="#">Self Help Group</a></li>
+        <li><a href="#">Non Classified</a></li>
+    </ul>
+</div>
+
+{{- partial "request-share-modal.html" . -}}
+
+{{ end }}

@@ -1,0 +1,32 @@
+.question {
+    position: relative;
+    padding-left: 36px;
+    &-bullet {
+        position: absolute;
+        left: 0;
+    }
+    &-answer {
+        &-list {
+            margin: 38px 0 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
+.message {
+    &-wizard {
+        border-radius: 2px;
+        padding: 30px 20px;
+        border: 1px solid $lightblue2;
+        background: #ffffff;
+        //background: rgba($lightblue2, 0.25);
+
+        @include media-max(md){
+            padding: 30px;
+        }
+    }
+}

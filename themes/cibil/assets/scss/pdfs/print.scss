@@ -1,0 +1,27 @@
+
+@import 'variables';
+
+@import 'rank_scale';
+@import 'typography';
+@import 'helpers';
+@import 'spacing';
+
+@import 'cover_letter';
+@import 'company_profile';
+@import 'table';
+@import 'rank-details';
+
+
+// Webpage size of print view ====>  height:297mm; width:210mm;
+// 76dpi => 0.334211mm
+
+.container {
+    width: 100%;
+}
+
+body,html {
+    height:297mm;
+    width:210mm;
+    margin-left: auto;
+    margin-right: auto;    
+}

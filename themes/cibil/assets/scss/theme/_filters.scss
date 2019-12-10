@@ -1,0 +1,511 @@
+.filters {
+    .filter {
+        &-box {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }            
+        }
+        &-search-box {
+            flex: 1 0 auto;   
+            margin-right: 40px;     
+        }
+        &-select2-dropdown {
+            max-width: 165px;
+            width: 100%;
+        }
+    }
+    .col-left {
+        width: 40%;
+        padding-right: 30px;
+    }
+    .col-right {
+        width: 60%;
+        display: flex;
+    }
+    .col-left,
+    .col-right {
+        flex: 1 0 auto;
+    }
+
+    @include media-max(xxl){  
+        .filter-search-box {              
+            margin-right: 10px; 
+            max-width: 220px;
+        }               
+    }
+    
+    @include media-min(lg){
+        .filter-action {
+            display: flex;
+        }
+    }
+    @include media-max(lg){
+        flex-wrap: wrap;
+        .filter-search-box {
+            flex: 1 0 100%;
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .filter-select2-dropdown {
+            max-width: calc(46% - 42px);
+            flex: 1 0 calc(46% - 42px);
+            margin-right: 10px !important;
+            min-width: inherit;
+        }
+        .filter {
+            &-box {
+                margin-right: 0;
+            }
+        }
+        .filter-action {
+            // flex: 1 0 100%;
+            // max-width: 100%;
+            margin-top: 10px;
+            .btn-apply {
+                width: calc(100% - 45px);
+            }
+        }
+    }
+}
+
+.filter {    
+    &-select2-dropdown {
+        min-width: 165px;
+
+        .select2 {
+            .select2-selection--single {
+                border-radius: 2px !important;
+                border-bottom: 1px solid $lightblue2 !important;            
+            }
+            &.select2-container--open {
+                .select2-selection--single {
+                    border-bottom: 1px solid $blue !important;
+                }
+            }
+            &-container--default .select2-selection--single .select2-selection__rendered {
+                color: $grey;
+                font-size: 14px;
+                font-weight: 300;
+                font-family: $font-regular;
+                line-height: 18px;
+                padding-left: 0 !important;
+                padding-right: 20px !important;
+                .select2-selection__placeholder {
+                    color: $grey;
+                    font-family: $font-light;
+                }
+            }
+            .select2-selection__arrow {
+                &:after {
+                    border-left-color: $orange;
+                    border-bottom-color: $orange;
+                    right: 8px;
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }   
+    &-datepicker {
+        min-width: 63px;
+        max-width: 63px;        
+
+        .btn-datepicker {
+            border: 0;
+            border-bottom: 1px solid $lightblue2;
+            position: relative;
+            padding: 0 8px;
+            height: 35px;
+            width: 100%;
+            text-align: left;
+            outline: 0;
+            background: #fff;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 8px;
+                border: 2px solid $orange;
+                display: block;
+                border-right: 0;
+                border-top: 0;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 10px;
+                right: 8px;
+            }
+        }
+    }
+}
+
+.search-icon {
+    background-image: url('../img/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    background-size: 20px;
+    padding-left: 33px;
+}
+
+.filter-box {
+    .form-field {
+        .form-label {
+            top: calc(100% - 25px);
+        }
+    }
+    input:focus + .form-label, select:focus + .form-label,
+    .valid .form-label {
+        top: 0;
+    }
+}
+
+.tab {
+    &-menu {
+        border: 1px solid $lightblue2;        
+        &-header {
+            border-bottom: 1px solid $lightblue2;
+            padding: 9px 20px;
+            width: 100%;        
+            .heading {
+                color: #000;
+                letter-spacing: 0.6px;
+                line-height: 19px;            
+            }
+        }
+        &-list {
+            width: 35%;
+            border-right: 1px solid $lightblue2;
+            transition: all 0.4s;
+
+            .badge {
+                position: absolute;
+                right: 12px;
+                left: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                min-width: 20px;
+                min-height: 20px;
+                padding: 2px 0 0;
+                text-align: center;
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+                margin-bottom: 0;
+                li {
+                    text-transform: uppercase;
+                    padding: 12px 46px 12px 20px;
+                    font-size: 14px;
+                    letter-spacing: 0.53px;
+                    line-height: 18px;
+                    color: $grey;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover,
+                    &:focus {
+                        background: $lightblue;
+                        color: $blue;
+                    }
+
+                    &.active {
+                        @include media-min(md){
+                            color: $blue;
+                            background: $lightblue;
+                        }
+                    }
+                }
+            }
+        }
+        &-content {
+            width: 65%;
+            transition: all 0.4s;
+
+            .menu-content {
+                ul {
+                    padding: 12px 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        input[type=checkbox] {
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            width: auto;
+                        }
+                        label {
+                            margin-bottom: 0;
+                            padding: 12px 20px; 
+                            padding-left: 52px;
+                            position: relative;   
+                            cursor: pointer;                         
+
+                            &:before {
+                                content: "";
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 56%;
+                                background: transparent;
+                                border: 2px solid $lightblue2;
+                                display: block;
+                                position: absolute;
+                                left: 20px;
+                                top: 10px;    
+                                transition: all 0.4s ease;                          
+                            }
+                            &:after {
+                                content: "";
+                                width: 6px;
+                                height: 12px;
+                                border: 2px solid #fff;
+                                display: none;
+                                position: absolute;
+                                left: 24px;
+                                top: 21px;
+                                border-bottom: 0;
+                                border-left: 0;
+                                transform-origin: left top;
+                                animation-duration: 800ms;
+                                animation-timing-function: ease;
+                                animation-name: anim_tick;
+                                transform: scaleX(-1) rotate(135deg);
+                            }
+                        }
+                        input[type=checkbox]:checked {
+                            & ~ label {
+                                &:before {
+                                    background: $danger;
+                                    border-color: $danger;
+                                }
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu-content {
+            display: none;
+            max-height: 500px;
+            overflow: auto;
+        }    
+        .back-to-tab {
+            display: none;
+            padding: 10px 20px;
+            background: $grey;
+            color: #fff;
+            cursor: pointer;
+
+            i {
+                position: relative;
+                margin-right: 6px;
+                top: -1px;
+            }
+        }
+    }    
+    &-panel-wrap {
+        display: flex;
+        @include media-min(md){
+            flex-wrap: wrap;
+        }
+        @include media-max(md){
+            overflow: hidden;            
+            flex: 1;
+            transition: all 0.4s;
+            position: relative;
+
+            .back-to-tab {
+                display: block;
+            }
+
+            .tab-menu-list,
+            .tab-menu-content {
+                width: 100%;
+                min-width: 100%;
+                white-space: nowrap;
+                transform: translateX(0);
+
+                ul {
+                    white-space: normal;
+                }
+            }
+            .tab-menu-content,
+            .tab-menu-list {
+                &.slide-left {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}
+
+@include media-max(md){
+    .filter-bank,
+    .filter-status,
+    .filter-datepicker,
+    .filter-action,
+    .filter-type {
+        display: none;
+    }
+}
+
+.mobile-filter-wrap {
+    margin: 0 0 10px;
+    padding: 8px 0 10px;
+    border-bottom: 1px solid $lightblue2;
+}
+
+.date-filter {
+    input {
+        font-size: 14px;
+        padding: 0 10px;
+        font-family: $font-light;
+        height: 40px;
+    }
+}
+
+.mobile-filters-wrapper {
+    display: flex;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    left: 200%;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.4s ease;
+    padding-bottom: 50px;
+    overflow: hidden;
+
+    .mf-header {
+        background: $grey;
+        padding: 19px 10px;
+    }
+    .mf-footer {
+        position: fixed;
+        bottom: 0;
+        left: 200%;
+        right: 0;
+        box-shadow: -1px 0 22px #777;
+        transition: all 0.4s ease;
+
+        button {
+            border-radius: 0;
+        }
+    }
+
+    .mf-reset-filters {
+        background: transparent;
+        border: 0;
+        font-size: 13px;
+        color: #fff;
+        font-family: $font-light;
+        outline: 0;
+    }
+
+    &.opened {
+        left: 0;
+        .mf-footer {
+            left: 0;
+        }
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+    .nav-items {
+        width: 35%;
+        border-right: 1px solid $lightblue2;
+        li {
+            padding: 12px 5px 12px 10px;
+            background: #ffffff;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 14px;
+            font-family: $font-light;
+            color: $grey;
+            cursor: pointer;
+
+            &.active {
+                background: $lightblue;
+                font-family: $font-regular;
+                color: $blue;                
+            }
+        }
+    }
+    .nav-filter-tab {
+        width: 65%;        
+        li {
+            height: 100vh;
+            overflow: auto;
+            padding-bottom: 20px;
+
+            input[type=checkbox]{
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+            }
+            label {
+                font-family: $font-light;
+                position: relative;
+                display: inline-block;
+                padding: 12px 20px;
+                padding-left: 52px;
+                position: relative;
+                cursor: pointer;
+                margin-bottom: 0;
+                
+                &:before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 56%;
+                    background: transparent;
+                    border: 2px solid #CFE0E7;
+                    display: block;
+                    position: absolute;
+                    left: 20px;
+                    top: 10px;
+                    transition: all 0.4s ease;
+                }
+                &:after {
+                    content: "";
+                    width: 6px;
+                    height: 12px;
+                    border: 2px solid #fff;
+                    display: none;
+                    position: absolute;
+                    left: 24px;
+                    top: 21px;
+                    border-bottom: 0;
+                    border-left: 0;
+                    transform-origin: left top;
+                    animation-duration: 800ms;
+                    animation-timing-function: ease;
+                    animation-name: anim_tick;
+                    transform: scaleX(-1) rotate(135deg);
+                }
+            }
+            input[type=checkbox]:checked {
+                &~ label:before {
+                    background: $success;
+                    border-color: $success;
+                }
+                &~ label:after {
+                    display: block;
+                    animation-name: none;
+                }
+            }
+        }
+    }
+    @include media-min(md){
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="enquiries-section mt-md-3 mt-md-6">
+    <div class="container cs-container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="d-none d-md-block mb-5">                                 
+                    {{- partial "accounts/navigation-desktop.html" . -}}
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <div class="drilldown-outer-wrapper">
+                    <div class="drilldown-wrapper">                      
+                        <div class="drilldown-menu">               
+                            {{- partial "accounts/navigation-mobile.html" . -}}
+                        </div>
+                        <div class="drilldown-content enquiries">
+                            <div class="drilldown-header d-md-none">
+                                <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                            </div>  
+                            <div class="col-12 mb-6 pl-md-0 pr-m-0">
+                                {{- partial "accounts/enquiries.html" . -}}                                 
+                            </div>
+
+                        </div>            
+                    </div>            
+                </div>  
+
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+
+{{ end }}

@@ -1,0 +1,30 @@
+.owl {
+    &-dots {
+        text-align: center;
+    }
+    &-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 56%;
+        border: 1px solid $grey !important;
+        margin-right: 4px;
+        margin-left: 4px;
+        outline: 0;
+        
+        &.active {
+            border-color: $grey !important;
+            background-color: $grey !important;
+        }
+    }
+    &-carousel {
+        opacity: 0;
+        &.owl-loaded {
+            opacity: 1;
+        }
+        .owl-item img {
+            width: auto;
+            max-width: 100%;
+            height: auto;            
+        }
+    }
+}

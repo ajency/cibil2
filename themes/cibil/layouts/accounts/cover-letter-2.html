@@ -1,0 +1,186 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="cover-letter-section mt-6 mb-6">
+    <div class="container cs-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="section-title text-grey mb-3">Cover Letter</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-lg-9 pr-lg-5">
+                <div class="custom-accordian-heading" data-toggle="collapse" data-target="#company-info" aria-expanded="true">
+                    <h5 class="form-section-title text-blue text-underline text-underline-blue mt-0 mb-0 mb-md-3">Company Info</h5>
+                </div>
+                <div class="custom-accordian-panel collapse show" id="company-info">
+                    <div class="row">
+                        <div class="col-md-6 mt-1 mt-md-0">    
+                            <div class="mb-2">
+                                <h5 class="font-light text-grey mb-05">Name</h5>
+                                <p class=" font-regular text-black mb-0">Dimension Engineers</p>
+                            </div>
+                        </div>                        
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <h5 class="font-light text-grey mb-05">PAN</h5>
+                                <p class=" font-regular text-black mb-0">AAKR1111P</p>                            
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-2">
+                                <h5 class="font-light text-grey mb-05">Address</h5>
+                                <p class=" font-regular text-black mb-0">10th Floor, ABC Tower, Veer Savarkar Road, Mumbai, 400001</p>                            
+                            </div>                            
+                        </div>                      
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-1">
+                                <h5 class="font-light text-grey mb-05">Order Date</h5>
+                                <p class=" font-regular text-black mb-0">06 Aug 2019</p>
+                            </div>                            
+                        </div>                      
+                    </div>
+                    <div class="d-md-none">
+                        <hr class="hr-seprator">
+                        <p class="font-14 text-center">For assistance with understanding your CIBIL report visit <br><a class="text-link text-link-blue font-14" href="//cibil.com/cibil-rank" target="_blank" >www.cibil.com/cibil-rank</a></p>
+                    </div>
+                </div>
+                <hr class="hr-seprator d-none d-md-block mt-3 mb-3">
+                <div class="d-none d-md-block">                    
+                    <h5 class="form-section-title text-blue text-underline text-underline-blue mt-0 mb-0 mb-md-3">Report Info</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-2 mt-1 mt-md-0">
+                                <h5 class="font-light text-grey mb-05">Report Order Number</h5>
+                                <p class=" font-regular text-black mb-0">W-39912831</p>                            
+                            </div>                            
+                        </div>                        
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <h5 class="font-light text-grey mb-05">Report ID</h5>
+                                <p class=" font-regular text-black mb-0">N100P670031</p>                            
+                            </div>                            
+                        </div>                        
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <h5 class="font-light text-grey mb-05">Report Date</h5>
+                                <p class=" font-regular text-black mb-0">08 Aug 2019</p>                            
+                            </div>                            
+                        </div>                        
+                        <div class="col-md-6">
+                            <div class="mb-1">
+                                <h5 class="font-light text-grey mb-05">Serial Number</h5>
+                                <p class="font-regular text-black mb-0">999000999000</p>                            
+                            </div>                            
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block mt-3">
+                    <p class="font-14 text-left">For assistance with understanding your CIBIL report visit <a class="text-link d-block text-link-blue font-14 mt-05" href="//cibil.com/cibil-rank" target="_blank" >www.cibil.com/cibil-rank</a></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 sticky-sidebar">
+
+                <div class="card border-m-none">
+                    <div class="card-body p-0 p-md-2">
+                        <div class="custom-accordian-heading" data-toggle="collapse" data-target="#invoice-nummber" aria-expanded="false">
+                            <h5 class="text-uppercase mb-0 mb-md-2">Invoice Details</h5>
+                        </div>
+
+                        <div class="custom-accordian-panel collapse" id="invoice-nummber">
+                            <p class="mb-0 text-grey mt-1 mt-md-0">Invoice Number</p>
+                            <div class="d-flex justify-content-md-between align-items-center mb-2">
+                                <p class="text-black font-regular mb-0">DTCC/19-20-00000000560</p>
+                                <a href="#" target="_self" class="font-14 text-orange ml-1 ml-md-0"><i class="fas fa-download"></i></a>
+                            </div>
+
+                            <p class="mb-05 text-grey">Price Breakup</p>
+                            <hr class="mb-2 mt-0">
+
+                            <div class="d-flex justify-content-between">
+                                <p>CCR</p>
+                                <p>₹2503.40</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Delivery Charges</p>
+                                <p>₹38.98</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="">
+                                    Taxes 
+                                    <a href="#" class="view-tax text-blue">More +</a>
+                                    <a href="#" class="hide-tax text-blue d-none">Less -</a>
+                                </p>
+                                <p class="">₹457.62</p>
+                            </div>
+                            <div class="tax-details d-none">
+                                <div class="d-flex justify-content-between">
+                                    <p class="">CGST</p>
+                                    <p class="">₹250.62</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="">SGST</p>
+                                    <p class="">207.00</p>
+                                </div>  
+                            </div>
+                            
+                            <hr class="mb-2 mt-0">
+                            <div class="d-flex justify-content-between">
+                                <h4>Total</h4>
+                                <h4>₹3000</h4>
+                            </div>
+                            <hr class="mb-2 mt-1">
+
+                            <p class=" mb-0">*Includes CIBIL Rank at no additional cost.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-md-none">
+                    <div class="custom-accordian-heading" data-toggle="collapse" data-target="#report-info" aria-expanded="false">
+                        <h5 class="form-section-title text-blue text-underline text-underline-blue mt-0 mb-0 mb-md-3">Report Info</h5>
+                    </div>
+                    <div class="custom-accordian-panel collapse" id="report-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2 mt-1 mt-md-0">
+                                    <h5 class="font-light text-grey mb-05">Report Order Number</h5>
+                                    <p class=" font-regular text-black mb-0">W-39912831</p>                            
+                                </div>                            
+                            </div>                        
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <h5 class="font-light text-grey mb-05">Report ID</h5>
+                                    <p class=" font-regular text-black mb-0">N100P670031</p>                            
+                                </div>                            
+                            </div>                        
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <h5 class="font-light text-grey mb-05">Report Date</h5>
+                                    <p class=" font-regular text-black mb-0">08 Aug 2019</p>                            
+                                </div>                            
+                            </div>                        
+                            <div class="col-md-6">
+                                <div class="mb-1">
+                                    <h5 class="font-light text-grey mb-05">Serial Number</h5>
+                                    <p class="font-regular text-black mb-0">999000999000</p>                            
+                                </div>                            
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{{ end }}

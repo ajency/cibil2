@@ -1,0 +1,326 @@
+{{ define "main" }}
+
+<div class="container mt-2">
+
+		<h1 class="pt-5">Style Guide</h1>
+
+		<hr class="my-5">
+
+		<div class="row">
+			<div class="col-3">
+				<h4 class="mb-4">Typography</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Title</label>
+			</div>
+			<div class="col-9">
+				<h1 class="text-grey mt-0">Welcome Text</h1>
+				<p><code>h1</code> tag with classes <code>.text-grey</code></p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Section Title</label>
+			</div>
+			<div class="col-9">
+				<h5 class="form-section-title text-blue text-underline text-underline-blue mt-0">Company Credit Report Information</h5>
+				<p><code>h5</code> tag with classes <code>.form-section-title</code>, <code>.text-blue</code>, <code>.text-underline</code>, <code>.text-underline-blue</code></p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Label</label>
+			</div>
+			<div class="col-9">
+				<label class="">Company Name</label>
+				<p>Default <code>label</code> tag</p>
+				<hr>
+			</div>
+		</div>
+
+      	<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Body Text</label>
+			</div>
+			<div class="col-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p>Default <code>p</code> tag</p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Small Text</label>
+			</div>
+			<div class="col-9">
+				<p class="small">Small text here</p>
+				<p class="mt-1"><code>p</code> tag with class <code>.small</code> </p>
+				<hr>
+			</div>
+		</div>
+
+      	<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Highlighted Text</label>
+			</div>
+			<div class="col-9">
+				<p>Some text is <span class="text-highlight">Highlighted</span> in this sentence.</p>
+				<p><code>span</code> tag with class <code>.text-highlight</code></p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Link</label>
+			</div>
+			<div class="col-9">
+				<a href="#" class="font-14 text-link">Click Here</a>
+				<p class="mt-1"><code>a</code> tag with classes <code>.text-link</code>, <code>.font-14</code> </p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label class="">Headings</label>
+			</div>
+			<div class="col-9">
+				<h1>Heading 1</h1>
+				<p class="mt-1">Default <code>h1</code> tag </p>
+				<h2>Heading 2</h2>
+				<p class="mt-1">Default <code>h2</code> tag </p>
+				<h3>Heading 3</h3>
+				<p class="mt-1">Default <code>h3</code> tag </p>
+				<h4>Heading 4</h4>
+				<p class="mt-1">Default <code>h4</code> tag </p>
+				<h5>Heading 5</h5>
+				<p class="mt-1">Default <code>h5</code> tag </p>
+				<h6>Heading 6</h6>
+				<p class="mt-1">Default <code>h6</code> tag </p>
+				
+			</div>
+		</div>
+
+		
+
+		<hr class="my-5">
+
+		<div class="row">
+			<div class="col-3">
+				<h4 class="mb-4">Form Elements</h4>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Input Styles</label>
+			</div>
+			<div class="col-9">
+			   <div class="form-field">
+			       <input class="form-input" type="text" name="companyname" id="companyname">                            
+			       <label for="companyname" class="form-label">
+			           <span class="form-label-content">Input Label</span>
+			       </label>
+			       <label class="input-error">Please Enter a value</label>
+			   </div>
+				<p>
+					Container div should have class <code>.form-field</code>. Label should have class <code>.form-label</code>
+				</p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Radio Selection</label>
+			</div>
+			<div class="col-9">
+				<div class="custom-control custom-radio cibil-radio">
+				  <input type="radio" id="radio1" name="radioselect" class="custom-control-input" checked>
+				  <label class="custom-control-label" for="radio1">Radio 1</label>
+				</div>
+				<div class="custom-control custom-radio cibil-radio">
+				  <input type="radio" id="radio2" name="radioselect" class="custom-control-input">
+				  <label class="custom-control-label" for="radio2">Radio 2</label>
+				</div>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Select / Dropdown</label>
+			</div>
+			<div class="col-9">
+				<div class="form-field select-wrapper valid">
+					<select class="select-default select2-serachbox" name="state">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						<option>Option 4</option>
+					</select>                    
+					<label for="state" class="form-label">
+						<span class="form-label-content">Dropdown with Search</span>
+					</label>					
+				</div>
+				<p>
+					Container div should have class <code>.form-field select-wrapper valid</code>. Select should have class <code>.select-default .select2-serachbox</code> Label should have class <code>.form-label</code>
+				</p>
+				<hr>
+				<div class="form-field select-wrapper valid">
+					<select class="select-default select2-normal" name="state">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						<option>Option 4</option>
+					</select>                    
+					<label for="state" class="form-label">
+						<span class="form-label-content">Dropdown</span>
+					</label>					
+				</div>
+				<p>
+					Container div should have class <code>.form-field select-wrapper valid</code>. Select should have class <code>.select-default .select2-normal</code> Label should have class <code>.form-label</code>
+				</p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Check Box</label>
+			</div>
+			<div class="col-9">
+				<div class="custom-control custom-checkbox cibil-checkbox">
+				  <input type="checkbox" class="custom-control-input" id="acceptTerms" checked="">
+				  <label class="custom-control-label font-light" for="acceptTerms">Checkbox label</label>
+				</div>
+				<hr>
+			</div>
+		</div>
+
+		<hr class="my-5">
+
+		<div class="row">
+			<div class="col-3">					
+				<h4 class="mb-4">Alerts</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Examples</label>
+			</div>
+			<div class="col-9">
+				<div class="message message-success d-block">
+					<h4 class="message-text">Successful</h4>
+					<p class="message-info font-12">Thank you for your payment. An automated receipt will be sent to your registered email</p>
+				</div>
+				<p class="mt-2">Container div should have class <code>.message message-success</code>. Title should have class <code>.message-text</code> Description should have class <code>.message-info font-12</code></p>
+				<hr>
+				<div class="message message-error d-block">
+					<h4 class="message-text">Error</h4>
+					<p class="message-info font-12">Unfortunately the transaction could not be processed. Please retry payment.</p>
+				</div>
+				<p class="mt-2">Container div should have class <code>.message message-error</code>. Title should have class <code>.message-text</code> Description should have class <code>.message-info font-12</code></p>
+				<hr>
+				<div class="message message-warning d-block">
+					<h4 class="message-text">Warning</h4>
+					<p class="message-info font-12">Kindly upload the below required documents for physical KYC verification.</p>
+				</div>
+				<p class="mt-2">Container div should have class <code>.message message-warning</code>. Title should have class <code>.message-text</code> Description should have class <code>.message-info font-12</code></p>
+			</div>
+		</div>
+
+		<hr class="my-5">		
+
+		<div class="row">
+			<div class="col-3">					
+				<h4 class="mb-4">Buttons</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Default/Hover</label>
+			</div>
+			<div class="col-9">
+				<button class="btn btn-outline btn-outline-orange btn-lg mr-1">Read More</button>
+				<p class="mt-2">Button div should have class <code>.btn .btn-outline .btn-outline-orange</code>.</p>
+				<hr>
+				<button class="btn btn-fill btn-fill-orange btn-lg">Read More</button>
+				<p class="mt-2">Button div should have class <code>.btn .btn-fill .btn-fill-orange</code>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3 text-right">
+				<label>Animated Buttons</label>
+			</div>
+			<div class="col-9">
+				<button class="btn btn-outline btn-outline-orange btn-lg mr-1 animate-shift-right">View More <i class="icon-next icon-next-orange"></i></button>
+				<p class="mt-2">Button div should have class <code>.btn .btn-outline .btn-outline-orange .animate-shift-right</code>. use <code>i</code> tag to add icons inside button tag</p>
+				<hr>
+			</div>
+		</div>
+
+		<hr class="my-5">
+
+		<div class="row">
+			<div class="col-3">					
+				<h4 class="mb-4">Tables</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 text-right">
+				<label></label>
+			</div>
+			<div class="col-9">
+				<!-- <div class="tabular">
+					<div class="tabular__header row align-items-center">
+						<div class="tabular__cell cell-2">Year</div>
+						<div class="tabular__cell cell-2">Jan</div>
+						<div class="tabular__cell cell-2">Feb</div>
+						<div class="tabular__cell cell-2">Mar</div>
+						<div class="tabular__cell cell-2">Apr</div>
+						<div class="tabular__cell cell-2">May</div>
+						<div class="tabular__cell cell-2">Jun</div>
+						<div class="tabular__cell cell-2">Jul</div>
+						<div class="tabular__cell cell-2">Aug</div>
+						<div class="tabular__cell cell-2">Sep</div>
+						<div class="tabular__cell cell-2">Oct</div>
+						<div class="tabular__cell cell-2">Nov</div>
+						<div class="tabular__cell cell-2">Dec</div>
+					</div>
+					<div class="tabular__row row">
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+						<div class="tabular__cell cell-2"><span class="payment-amount"><i class="circle-success"></i> 1,50,000</span></div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<hr class="my-5">
+
+	</div>
+
+{{ end }}

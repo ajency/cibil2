@@ -1,0 +1,167 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="container cs-container mt-md-6 mb-md-4">
+    <div class="row">
+        <div class="col-md-4 col-lg-3">
+            <div class="d-none d-md-block">                                 
+                {{- partial "accounts/navigation-desktop.html" . -}}
+            </div>
+        </div>
+        <div class="col-md-8 col-lg-9">
+            <div class="drilldown-outer-wrapper">
+                <div class="drilldown-wrapper">                      
+                    <div class="drilldown-menu">               
+                        {{- partial "accounts/navigation-mobile.html" . -}}
+                    </div>
+
+                    <!-- Cover Letter -->
+                    <div class="drilldown-content cover-letter d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div> 
+                        <div class="col-12 mb-4">
+                            {{- partial "accounts/cover-letter.html" . -}}
+                        </div>
+                    </div>  
+                    <!-- End of Cover Letter -->
+
+                    <!-- Rank Details -->
+                    <div class="drilldown-content rank-details d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            {{- partial "accounts/rank-details.html" . -}}
+                        </div> 
+                    </div> 
+                    <!-- End of Rank Details -->
+
+                    <!-- Certificate -->
+                    <div class="drilldown-content certificate d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            {{- partial "accounts/certificate.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Certificate -->
+
+                    <!-- Company Profile -->
+                    <div class="drilldown-content company-profile d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>                                                
+                        <div class="col-12 mb-6">
+                            {{- partial "accounts/company-profile.html" . -}} 
+                        </div>
+                    </div>
+                    <!-- End of Company Profile -->
+
+                    <!-- Adverse Information -->
+                    <div class="drilldown-content adverse-information d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            {{- partial "accounts/adverse-information.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Adverse Information -->
+
+                    <!-- Credit Rating Summary -->
+                    <div class="drilldown-content credit-summary d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            {{- partial "accounts/credit-rating-summary.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Credit Rating Summary -->
+
+                    <!-- Open Credit Facilities -->
+                    <div class="drilldown-content open-credit-facilities">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="drilldown-content-wrap">
+                            {{- partial "accounts/open-credit-facilities.html" . -}}
+                        </div>
+                    </div>
+                    <!-- End of Open Credit Facilities -->
+
+                    <!-- Closed Credit Facilities -->
+                    <div class="drilldown-content closed-credit-facilities d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="drilldown-content-wrap">
+                            {{- partial "accounts/closed-credit-facilities.html" . -}}
+                        </div>
+                    </div>
+                    <!-- End of Closed Credit Facilities -->
+
+                    <!-- Open Credit Facilities Guarantor -->
+                    <div class="drilldown-content open-credit-facilities-guarantor d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-12 p-md-0 mb-3">
+                            {{- partial "accounts/open-credit-facilities-guarantor.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Open Credit Facilities Guarantor -->
+
+                    <!-- Closed Credit Facilities Guarantor -->
+                    <div class="drilldown-content closed-credit-facilities-guarantor d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-12 p-md-0 mb-3">
+                            {{- partial "accounts/closed-credit-facilities-guarantor.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Closed Credit Facilities Guarantor -->
+
+                    <!-- Report Summary -->
+                    <div class="drilldown-content report-summary d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-12 p-md-0 mb-3">
+                            {{- partial "accounts/report-summary.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Report Summary -->
+
+                    <!-- Enquiries -->
+                    <div class="drilldown-content enquiries d-md-none">
+                        <div class="drilldown-header d-md-none">
+                            <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            {{- partial "accounts/enquiries.html" . -}}
+                        </div> 
+                    </div>
+                    <!-- End of Enquiries -->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    // const button = document.getElementById("btn-next")
+    // button.addEventListener('click', function(e) {		
+    //     window.location.href="/cibil/accounts/credit-facilities-details";
+    // });
+</script>
+
+{{ end }}

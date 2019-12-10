@@ -1,0 +1,888 @@
+<h1 class="text-grey">Closed Credit Facilities</h1>
+<div>
+        <p class="text-grey font-light">This lists all the closed credit facilities availed by your company as reported by various lenders. The credit facilities highlighted in Red have some adverse information while those highlighted in Green do not.</p>
+</div>
+
+<div class="tab-navigation">
+    <ul class="nav nav-tabs mb-0 scrollable-tabs" id="ccf-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="ccf-regular-tab" data-toggle="tab" href="#ccf-regular" role="tab" aria-controls="ccf-regular-tab" aria-selected="true">Regular</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="ccf-delinquent-tab" data-toggle="tab" href="#ccf-delinquent" role="tab" aria-controls="ccf-delinquent-tab" aria-selected="false">Delinquent</a>
+        </li>
+    </ul>
+</div>
+
+<div class="tab-content mt-2" id="ccf-tabs-content">
+    <div class="tab-pane fade show active" id="ccf-regular" role="tabpanel" aria-labelledby="ccf-regular-tab">
+
+        <div class="filter-table-wrap">
+            <div class="filters d-flex mt-5 align-items-end floating-fields">                
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Bank</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-bank">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="hdfc">HDFC</option>
+                            <option value="citibank">Citibank</option>
+                            <option value="sbi">SBI</option>
+                            <option value="icici">ICICI</option>
+                            <option value="pnb">PNB</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Bank</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-status">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                            <option value></option>
+                            <option value="settled & closed">Settled & Closed</option>
+                            <option value="written off">Written Off</option>
+                            <option value="closed by payment">Closed By Payment</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Status</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-datepicker">
+                    <button class="btn-datepicker" id="datepicker"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                </div>
+                <div class="filter-box filter-action">
+                    <!-- <button class="btn btn-small btn-outline btn-outline-orange btn-apply">APPLY</button> -->
+                    <button class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div>
+            <div class="table-list mt-2 filter-table">                            
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="cl-bank-name">Bank</th>
+                             <th class="cl-loan-details sort-column" onclick="sortTable(1,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                            <th class="cl-status">Status</th>
+                            <th class="cl-payment-history">Payment Issues</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ccf1-btn">
+                        <tr>
+                            <td class="cl-bank-name" data-bank="hdfc">
+                                <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="6/3/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 6 Mar, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>           
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>           
+                        <tr>
+                            <td class="cl-bank-name" data-bank="sbi">
+                                <div class="bank-name font-regular text-black">SBI <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 10,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date"  data-status="closed by payment" ata-date="20/6/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 20 Jun, 2018</div>
+                                </div>
+                            </td>                                       
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="pnb">
+                                <div class="bank-name font-regular text-black">PNB <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 30,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="28/5/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>    
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 28 May, 2018</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="icici">
+                                <div class="bank-name font-regular text-black">ICICI <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 50,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="1/1/2019">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>  
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 1 Jan, 2019</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>                       
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="cl-bank-name" data-bank="hdfc">
+                                <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="6/3/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 6 Mar, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>           
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>           
+                        <tr>
+                            <td class="cl-bank-name" data-bank="sbi">
+                                <div class="bank-name font-regular text-black">SBI <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 10,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date"  data-status="closed by payment" ata-date="20/6/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 20 Jun, 2018</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="pnb">
+                                <div class="bank-name font-regular text-black">PNB <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 30,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="28/5/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 28 May, 2018</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>                 
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>                      
+                                </div>                      
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="closed by payment" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">No Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>                                 
+                    </tbody>
+                </table>
+                <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                <div class="table-pagination mb-2 mb-md-0">
+                    <ul class="number-pagination">
+                        <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="ellipsis"><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="table-row-count">
+                        <span>Show</span>
+                        <select class="select-entry-count">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="ccf-delinquent" role="tabpanel" aria-labelledby="ccf-delinquent-tab">
+        <div class="filter-table-wrap">
+            <div class="filters d-flex mt-5 align-items-end floating-fields">                
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Bank</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-bank">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="hdfc">HDFC</option>
+                            <option value="citibank">Citibank</option>
+                            <option value="sbi">SBI</option>
+                            <option value="icici">ICICI</option>
+                            <option value="pnb">PNB</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Bank</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-status">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                            <option value></option>
+                            <option value="settled & closed">Settled & Closed</option>
+                            <option value="written off">Written Off</option>
+                            <option value="closed by payment">Closed By Payment</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Status</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-datepicker">
+                    <button class="btn-datepicker" id="datepicker3"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                </div>
+                <div class="filter-box filter-action">
+                    <!-- <button class="btn btn-small btn-outline btn-outline-orange btn-apply">APPLY</button> -->
+                    <button class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div>
+
+            <div class="table-list mt-2 filter-table">                            
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="cl-bank-name">Bank</th>
+                             <th class="cl-loan-details sort-column" onclick="sortTable(1,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                            <th class="cl-status">Status</th>
+                            <th class="cl-payment-history">Payment Issues</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ccf2-btn">         
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">3 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="icici">
+                                <div class="bank-name font-regular text-black">ICICI <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 50,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="1/1/2019">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>  
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 1 Jan, 2019</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>                       
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">5 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="cl-bank-name" data-bank="hdfc">
+                                <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="settled & closed" data-date="6/3/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-settled font-regular">SETTLED & CLOSED</div>
+                                    <div class="report-date font-12">Last Reported 6 Mar, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">4 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>           
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">2 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>          
+                        <tr>
+                            <td class="cl-bank-name" data-bank="pnb">
+                                <div class="bank-name font-regular text-black">PNB <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 30,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="28/5/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 28 May, 2018</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>                 
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">4 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>                      
+                                </div>                      
+                            </td>
+                            
+                        </tr> 
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">2 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>         
+                        <tr>
+                            <td class="cl-bank-name" data-bank="icici">
+                                <div class="bank-name font-regular text-black">ICICI <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 50,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="1/1/2019">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 1 Jan, 2019</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">4 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>                                   
+                        <tr>
+                            <td class="cl-bank-name" data-bank="hdfc">
+                                <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="6/3/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 6 Mar, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">1 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>    
+                        <tr>
+                            <td class="cl-bank-name" data-bank="pnb">
+                                <div class="bank-name font-regular text-black">PNB <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 30,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="28/5/2018">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 28 May, 2018</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Payment Issues:</div>                 
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">4 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>                      
+                                </div>                      
+                            </td>
+                            
+                        </tr>        
+                        <tr>
+                            <td class="cl-bank-name" data-bank="citibank">
+                                <div class="bank-name font-regular text-black">Citibank <span class="text-grey d-lg-block">Pvt.</span></div>
+                            </td>
+                            <td class="cl-amount">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td class="cl-report-date" data-status="written off" data-date="8/4/2016">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status mb-05 status-written-off font-regular">WRITTEN OFF</div>
+                                    <div class="report-date font-12">Last Reported 8 Apr, 2016</div>
+                                </div>
+                            </td>                           
+                            <td class="cl-payment-history">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <div class="payment-status failed"></div>
+                                        </div>
+                                        <div>
+                                            <div class="mb-05 font-regular text-black">2 Issues</div>
+                                            <div class="font-12 font-light text-grey payment-date">(Jul 2019 - Jun 2018)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </tr>                                 
+                    </tbody>
+                </table>
+                <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                <div class="table-pagination mb-2 mb-md-0">
+                    <ul class="number-pagination">
+                        <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="ellipsis"><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="table-row-count">
+                        <span>Show</span>
+                        <select class="select-entry-count">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    const ccf_button1 = document.getElementById("ccf1-btn")
+    ccf_button1.addEventListener('click', function(e) {		
+        window.location.href="/cibil/accounts/credit-facilities-details";
+    });
+    const ccf_button2 = document.getElementById("ccf2-btn")
+    ccf_button2.addEventListener('click', function(e) {		
+        window.location.href="/cibil/accounts/credit-facilities-details";
+    });
+</script>

@@ -1,0 +1,143 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+
+<div class="section-credit-report mt-4 mb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 col-left pr-lg-5">
+                <div>
+                    <h1 class="section-title text-grey mb-1">We could not find your company</h1> 
+                    <p class="mb-0">We were unable to locate your company <span class="text-highlight">Tarcar Real Estate Private Limited</span> in our records. There could be two reasons why this could have happened.</p>
+                </div> 
+
+                <div class="card mt-4 border-error" id="btn-next">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-start align-items-start">
+                            <div class="circlebg circlebg--error mr-2">1</div>
+                            <h4 class="text-uppercase text-grey">No credit facilities</h4>
+                        </div>
+                        <ul class="mb-0 ml-2">
+                            <li>
+                                <p class="small">Your company <span class="text-highlight">Tarcar Real Estate Private Limited</span> has never availed any credit facilities in the past.</p>
+                            </li>
+                            <li>
+                                <p class="mb-0 small">Information pertaining to the credit facilities availed by <span class="text-highlight">Tarcar Real Estate Private Limited</span> has not been submitted to CIBIL by the Credit Institutions</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-4 border-error">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-start align-items-start">
+                            <div class="circlebg circlebg--error mr-2">2</div>
+                            <h4 class="text-uppercase text-grey">Incorrect Information entered in form</h4>
+                        </div>
+                        <ul class="mb-0 ml-2">
+                            <li>
+                                <p class="small">The information submitted by you for <span class="text-highlight">Tarcar Real Estate Private Limited</span> may be incorrect.</p>
+                            </li>
+                            <li>
+                                <p class="mb-0 small">The company details you submitted is shown below. We recommend you cross check this information with that present in the <a href="http://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do" target="_blank" class="text-link">MCA website</a>.</p>
+                            </li>
+                        </ul>
+
+                        <table class="table table-bordered table--colored table--small text-grey mt-2">
+                            <tr>
+                                <td class="font-light">Company Name</td>
+                                <td class="text-black">Tarcar Real Estate Private Limited</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Company PAN</td>
+                                <td class="text-black">ALUPM1234T</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Company GST No.</td>
+                                <td class="text-black">22AAAAA0000A1Z5</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Registered Address</td>
+                                <td class="text-black">H.No. 4/259/A, Near 4 Pillars Hotel, Panaji, North Goa</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Pincode</td>
+                                <td class="text-black">403001</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">State</td>
+                                <td class="text-black">Goa</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">City</td>
+                                <td class="text-black">Panaji</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Mobile Number</td>
+                                <td class="text-black">+91 9812345678</td>
+                            </tr>
+                        </table>
+
+                        <a href="/cibil/credit-report/share/company-info/" class="btn btn-fill btn-fill-orange text-uppercase mt-1">Edit Company Details</a>
+                    </div>
+                </div>
+
+            </div>        
+            <div class="col-md-4 col-lg-3 col-right sticky-sidebar">
+
+                <div class="info-box-wrapper mini-slider mt-3 mt-md-0">
+                    <div class="owl-carousel">
+                        <div class="info-box text-center">
+                            <div class="info-box-icon"><img src="{{"img/company-info/nocredit.png" | absURL}}"></div>
+                            <span class="seprator-xs seprator-xs-yellow"></span>
+                            <h4 class="info-box-sub-title text-grey text-center">No credit facilities</h4>
+                            <h5 class="info-box-title text-grey font-light text-center mb-0">Check to see if you have credit facilities</h5>
+                        </div>
+                        <div class="info-box text-center">
+                            <div class="info-box-icon"><img src="{{"img/company-info/incorrectinfo.png" | absURL}}"></div>
+                            <span class="seprator-xs seprator-xs-yellow"></span>
+                            <h4 class="info-box-sub-title text-grey text-center">Incorrect Information</h4>
+                            <h5 class="info-box-title text-grey font-light text-center mb-0">Please check and see if the information submitted is accurate</h5>
+                        </div>
+                        <div class="info-box text-center">
+                            <div class="info-box-icon"><img src="{{"img/company-info/call.png" | absURL}}"></div>
+                            <span class="seprator-xs seprator-xs-yellow"></span>
+                            <h4 class="info-box-sub-title text-grey text-center">Call Us</h4>
+                            <h5 class="info-box-title text-grey font-light text-center">You can call us incase you have any queries or issues.</h5>
+                            <h4 class="info-box-sub-title text-grey text-center mb-0">+91 - 226 384 600</h4> 
+                            <h5 class="info-box-sub-title text-grey text-center mb-0">(Mon - Fri) 10AM to 6PM</h5>                       
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="select-custom entity-type-select dropdown-menu-anim">
+    <ul>
+        <li class="active"><a href="#">Private Limited</a></li>
+        <li><a href="#">Public Limited</a></li>
+        <li><a href="#">Business Entities created by statute</a></li>
+        <li><a href="/cibil/credit-report/company-info-proprietorship/">Proprietorship</a></li>
+        <li><a href="#">Partnership</a></li>
+        <li><a href="#">Trust</a></li>
+        <li><a href="#">Hindu Undivided Family </a></li>
+        <li><a href="#">Co-operative society</a></li>
+        <li><a href="#">Association of person</a></li>
+        <li><a href="#">Government</a></li>
+        <li><a href="#">Self Help Group</a></li>
+        <li><a href="#">Non Classified</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-next")
+	button.addEventListener('click', function(e) {		
+		window.location.href="/cibil/credit-report/share/payment/";
+	});
+</script>
+
+{{ end }}

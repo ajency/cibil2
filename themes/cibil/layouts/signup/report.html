@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<div class="container">
+	<div class="px-2 py-4">
+
+		<div class="row">
+			<div class="col-md-6 ">
+				<h4 class="mb-2">Your report is ready!</h4>
+				<img src="{{"img/report.png" | absURL}}" width="" class="img-fluid" alt="" style="filter: grayscale(1) blur(2px);">
+			</div>
+			<div class="col-md-6 ">
+				{{ if not $.Params.digital }}
+					<h5 class="mt-4 font-weight-bold">Your report has been sent to your registered postal address:</h5>
+					<p>Lokus Design Pvt. Ltd.<br>
+						17-A, Gandharva Apartment,<br> 
+						Erandavane, Pune - 41104
+					</p>
+				{{ else }}
+				<h5 class="mb-2 mt-4 font-weight-bold">A copy of the report has been sent to your registered email address : hr@indiasteel.in</h5>
+				
+				<!-- <div id="mobileNoBox">
+					Enter your mobile number to get your report.
+					<div class="input-group my-1">
+					  <input type="text" class="form-control" placeholder="Mobile number">
+					  <div class="input-group-append">
+					    <button class="btn btn-secondary" type="button" id="getOTP" onclick="getOTP()">Get OTP</button>
+					  </div>
+					</div>
+				</div>
+
+				<div id="OTPBox" class="d-none">
+					OTP sent to 9075920582 <small><a href="#">Resend</a></small>
+					<div class="input-group my-1">
+					  <input type="text" class="form-control" placeholder="Enter OTP">
+					  <div class="input-group-append">
+					    <button class="btn btn-secondary" type="button" onclick="submitOTP()">Submit</button>
+					  </div>
+					</div>
+				</div>
+
+				<div id="downloadBox" class="d-none">
+					<button class="btn btn-secondary" type="button" >Download Report</button>
+
+					<p class="mt-2">A copy of the report has been sent to your registered email address.</p>
+				</div> -->
+				{{ end }}
+
+				<div class="card mt-4">
+					<div class="card-body">
+						<h5 class="card-title font-weight-bold">Create account</h5>
+						<div id="OTPBox" class="">
+							{{ if $.Params.digital }}
+							Create your account now by entering the verification code which has been sent to your registered email address
+							{{ else }}
+							You can create an account as ashok@lokusdesign.com and access your reports anytime. <br>
+							Enter a password below to create your account.
+							{{ end }}
+
+							<div class="form-group mt-2">
+								<input type="password" class="form-control" placeholder="Enter password" name="">
+							</div>
+							<a href="/cibil/my-report/" class="btn btn-primary">Sign Up</a>
+							<!-- <div class="input-group my-1">
+							  <input type="text" class="form-control" placeholder="Enter password">
+							  <div class="input-group-append">
+							    <button class="btn btn-primary" type="button" onclick="submitOTP()">Submit</button>
+							  </div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function getOTP(){
+		document.getElementById("mobileNoBox").classList.add('d-none');
+		document.getElementById("OTPBox").classList.remove('d-none');
+	}
+	function submitOTP(){
+		document.getElementById("OTPBox").classList.add('d-none');
+		document.getElementById("downloadBox").classList.remove('d-none');
+	}
+</script>
+
+{{ end }}

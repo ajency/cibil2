@@ -1,0 +1,15 @@
+---
+title: "KYC Doc Verifiy Progress"
+date: 2019-08-12T13:13:26+05:30
+type: "credit-report"
+layout: "kyc-verify-loggedin"
+
+currentinfo: 'completed'
+currentpayment: 'completed'
+currentkyc: 'incomplete waiting'
+currentreport: ''
+
+verifying: true
+loggedin: true
+progressBar: true
+---

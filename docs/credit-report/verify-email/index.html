@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Signup - CIBIL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/cibil/img/favicon.ico" rel="shortcut icon">
+	
+	
+		<link rel="stylesheet" href="/cibil/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/dropzone/dropzone.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/cibil/css/animate.css">
+		<link rel="stylesheet" href="/cibil/css/lightpick.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.bootstrap4.min.css">
+		
+		
+			
+			<link rel="stylesheet" href="/cibil/css/style.min.4d7581b803375a4a9866d20cb57e0636615fb3bbe0c3ccd0f5fde70a1facfe97.css">
+		
+	
+</head><body>
+        <div id="content"><div class="header ">
+	<div class="top-header">
+		<div class="container">
+			<nav class="navbar navbar-light flex-nowrap">
+				<a class="navbar-brand d-flex" href="#">
+					<div class="d-md-block">
+						<img src="https://ajency.github.io/cibil/img/cibil-logo.png" width="80" alt="">
+					</div>
+					<div class="logo-sub-text d-md-none">
+						<span class="text-black">CIBIL Rank & <span class="d-block">Company Credit Report</span></span>
+					</div>
+					<div class="partnership-width d-none d-md-block">
+						<img src="https://ajency.github.io/cibil/img/in_partnership.png" width="140" alt="">
+					</div>
+				</a>
+
+				<div class="header-center-col d-none d-md-block">
+					<span class="text-black bg-yellow">CIBIL Rank & Company Credit Report</span>
+				</div>
+
+				
+					<div class="header-contact-info d-none d-md-flex">
+						<div><img src="https://ajency.github.io/cibil/img/kyc/icon/call-us.png" width="30"></div>
+						<div class="font-12 text-center pl-1">(Mon - Fri): 10:00 am to 06:00 pm <br><a href="tel:+917276874408" target="_self" class="bg-yellow d-inline-block text-decoration-none text-black font-16">+91-727-687-4408</a></div>
+					</div>
+				
+			</nav>
+		</div>
+		
+	</div>
+
+	
+
+	
+
+</div>
+<div class="container p-0 mb-6 temp-img-container" id="btn-kyc-submit">
+    <img src="/cibil/img/email/email-verify.png" class="img-fluid mx-auto d-block">
+</div>
+
+<style>
+	footer {
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-kyc-submit")
+	button.addEventListener('click', function(e) {		
+		window.location.href="/cibil/credit-report/create-account/";
+	});
+</script>
+
+
+        </div>
+	<footer>
+		<div class="footer-wrapper pt-2 pb-2 bg-lightblue">
+			<div class="container">
+				<div class="row">
+					<div class="col-10 offset-1">
+						<div class="text-center mb-1 d-block d-md-none">
+							<img src="/cibil/img/cibil-logo.png" width="100">							
+						</div>
+						<div class="text-center mb-2 d-block d-md-none">
+							<img src="https://ajency.github.io/cibil/img/partnership-center.png" width="140" alt="">						
+						</div>
+						<p class="mb-0 font-grey font-light font-12 text-center">&copy; Copyright 2019 TransUnion CIBIL Limited (Formerly: Credit Information Bureau (India) Limited). All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+
+
+<div class="modal fade" id="edit-contact-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>            
+
+            <h1 class="modal-title text-blue text-center text-md-left">Edit Contact Information</h1>
+            
+            <div class="modal-share-container mt-3 floating-fields">
+                <form class="signup-form" action="/cibil/signup/" method="POST">
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="fullname" id="fullname" value="Arnab Tarcar">                            
+                        <label for="fullname" class="form-label">
+                            <span class="form-label-content">Full Name</span>
+                        </label>
+                        <label class="input-error">Please Enter Full Name</label>
+                    </div>
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="email_address" id="email_address" value="arnabtarcar@tarcarind.com" oninput="this.value = this.value.toLowerCase()">                            
+                        <label for="email_address" class="form-label">
+                            <span class="form-label-content">Email Address</span>
+                        </label>
+                        <label class="input-error">Please Enter Email Address</label>
+                    </div>
+                    <div class="form-field required placeholder-wrap entered">
+                        <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10" value="8975641298">										
+                        <label for="mobile_number" class="form-label">
+                            <span class="form-label-content">Mobile Number</span>
+                        </label>
+                        <span class="phone-placeholder">+91 </span>
+                        <label class="input-error">Mobile number cannot be blank</label>
+                    </div>
+                    <div class="form-action mt-3 text-right">                        
+                        <button type="button" class="btn btn-fill btn-fill-lightgrey btn-lg mb-1 mb-md-0 mr-md-1 btn-update-info" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-lg btn-fill btn-xl btn-fill-orange btn-proceed-signup btn-update-info font-14" data-dismiss="modal" id="btn-signup-submit">UPDATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	<div id="toast-container" class="toast-bottom-right" aria-live="polite" role="alert">
+		<div class="toast toast-success toast-wrap slideInRight animated toast-autosave">
+			<button type="button" class="toast-close-button" role="button" data-dismiss="toast" aria-label="Close">×</button>
+			<div class="toast-title">Auto Saved</div>
+			
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/5fe405e1fc.js"></script>
+<script src="/cibil/js/owl.carousel.min.js"></script>
+<script src="/cibil/vendor/dropzone/dropzone.min.js"></script>
+<script src="/cibil/vendor/select2/select2.full.js"></script>
+
+<script src="/cibil/js/jquery.throttle.min.js"></script>
+
+<script src="/cibil/js/jquery-scrolltofixed-min.js"></script>
+<script src="/cibil/js/countries.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="/cibil/js/dragscrollable.js"></script>
+<script src="/cibil/js/lightpick.js"></script>
+<script src="/cibil/js/filters.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js"></script>
+
+
+
+
+<script src="/cibil/js/app.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('.bd-example-modal-lg').modal('show');
+		$('.signup-modal-btn').click(function(){
+			$('.bd-example-modal-lg').modal('show');
+		});
+	})
+	
+</script></body>
+</html>

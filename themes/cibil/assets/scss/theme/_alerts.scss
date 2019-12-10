@@ -1,0 +1,195 @@
+.message {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding-left: 60px;
+
+    &-text {
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        line-height: 19px;
+    }
+    &-info {
+        letter-spacing: 0.24px;
+        font-weight: 300;
+        line-height: 13px;
+    }
+
+    &-text,
+    &-info {
+        margin-bottom: 0;
+        color: $grey;
+    }
+
+    &-success {
+        border: 1px solid $success;   
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 56%;
+            background: $success;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 21px;
+            transform: translateY(-50%);            
+        }   
+        &:after {
+            content: "";
+            width: 10px;
+            height: 6px;
+            display: block;
+            border: 2px solid #fff;
+            border-top: 0;
+            border-right: 0;
+            position: absolute;
+            top: 50%;
+            left: 26px;
+            margin-top: -1px;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+    &-error {
+        border: 1px solid $danger;   
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 56%;
+            background-image: url('../img/error-icon.png');      
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 50% 50%;  
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 21px;            
+            transform: translateY(-50%);
+        }
+    }
+    &-warning {
+        border: 1px solid $yellow;   
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 56%;
+            background-image: url('../img/warning-icon.png');      
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 50% 50%;  
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 21px;    
+            transform: translateY(-50%);        
+        }
+    }
+    &-primary {
+        border: 1px solid $success;   
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 56%;
+            background-image: url('../img/info-green.png');      
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 50% 50%;  
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 21px;    
+            transform: translateY(-50%);        
+        }
+    }
+}
+
+.alert {
+    width: auto;
+    display: inline-block;
+    padding: 10px 13px;
+    padding-left: 34px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    color: #000;
+    font-family: $font-light;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);    
+
+    &-primary {
+        background: $lightblue;
+    }
+    &-success {
+        background: $lightblue;
+    }
+    &-wrap {
+        position: absolute;
+        top: 188px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index:  99;
+
+        @include media-max(md){
+            position: fixed;
+            bottom: 20px;
+            z-index: 9;
+            top: auto;            
+        }
+    }
+}
+
+.shared-with {
+    padding-left: 40px;
+
+    &:before {
+        content: "";
+        display: block;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        left: 13px;
+        background-image: url('../img/shared_icon.png');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 24px 25px;
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.alert {
+    &-info-box {
+        padding: 10px 15px;
+        border-radius: 4px;
+
+        p {
+            color: $grey;
+            font-family: $font-regular;
+            font-weight: 400;
+            font-size: 14px;
+            margin: 0;            
+        }
+    }
+}
+
+.info-box {
+    &-info {        
+        background: $lightblue;
+        border: 1px solid $lightblue2;
+    }
+}

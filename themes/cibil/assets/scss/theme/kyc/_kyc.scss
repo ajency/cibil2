@@ -1,0 +1,213 @@
+.document-type {
+    &-content {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &-btns {
+        .radio {
+            &-label {
+                letter-spacing: 0.5px;
+                line-height: 20px;
+                min-height: 83px;
+                display: flex;
+                align-items: center;
+            }
+            &-group {
+                padding-right: 13px;
+            }
+        }
+    }
+}
+
+.form {
+    &-notes {
+        ul {
+            padding-left: 30px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.26px;
+            line-height: 18px;
+            color: $grey;
+            font-family: $font-light;
+        }
+        .note-title {
+            padding-left: 30px;
+        }
+    }
+}
+
+.document-upload {
+    position: relative;
+    &.border_right {
+        &:after {
+            content: "";
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -40px;
+            bottom: 0;
+            background: $lightgrey;
+        }
+    }
+}
+
+.page {
+    &-description {
+        p {
+            font-size: 16px;
+            font-family: $font-light;
+        }
+    }
+}
+
+.file-uploader-box {
+    min-height: 350px;
+    background: #f6f6f6;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    p {
+        margin: 0;
+        color: #909090;
+    }
+
+    input[type="file"]{
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .file-inner-wrap {
+        pointer-events: none;
+    }
+}
+
+.file-icon {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    svg {
+        width: 100px;
+        height: 80px;
+        fill: #909090;
+    }
+}
+
+.dropzone {
+    border: 0;
+    padding: 0;
+    min-height: inherit;
+    background: #fff;
+}
+
+.doc-type-radio {
+    .radio-group {
+        display: block;
+    }
+}
+
+// overwrite dropzone css here
+
+.verify-btn {
+    opacity: 0;
+    transition: all 0.4s ease;
+    &.show {
+        opacity: 1;
+    }
+}
+
+.custom-accordian {
+    @include media-max(md){
+        &-heading {
+            padding: 15px 12px;
+            padding-right: 32px;
+            cursor: pointer;
+            border: 1px solid $lightblue2;
+            margin-bottom: 8px;
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 12px;
+                height: 12px;
+                border: 2px solid #F16E00;
+                display: block;
+                border-right: 0;
+                border-top: 0;
+                transform: translateY(-50%) rotate(-45deg);
+                margin-top: -4px;
+                position: absolute;
+                right: 12px;
+                top: 25px;
+                transition: all 0.4s ease;
+            }
+
+            h4 {
+                margin-bottom: 0;
+            }
+            &[aria-expanded=true]{
+                margin-bottom: 0;
+                border-bottom: 0;
+
+                &:after {
+                    transform: translateY(-50%) rotate(135deg);
+                    margin-top: 3px;                    
+                }
+            }
+            .form-section-title {
+                padding-bottom: 0;
+                color: #000;
+                
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &-panel {
+            padding: 10px 12px;
+            border: 1px solid $lightblue2;
+            //border-top: 0;
+            background: #fff;
+            margin-bottom: 8px;
+        }
+    }
+    @include media-min(md){
+        &-heading {
+            pointer-events: none;
+        }
+        &-panel {
+            display: block !important;
+            &.collapsing {
+                height: auto !important;
+            }
+        }
+    }
+}
+
+.fileupload-success {
+    display: none;
+}
+
+.file-success {
+    @include media-max(md){
+        .fileupload-success {
+            display: block;
+        }
+    }
+}
+
+.btn {
+    &-send-on-phone {
+        background: #fff;
+        color: $orange;
+        padding: 9px 15px 8px;
+    }
+}

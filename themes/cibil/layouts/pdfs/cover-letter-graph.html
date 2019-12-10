@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ $.Params.title }} - CIBIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <link type="image/x-icon" href="{{ "img/favicon.ico" | relURL}}" rel="shortcut icon">
+    {{ if .Site.IsServer }}
+    {{ $style := resources.Get "scss/pdfs/print.scss" | resources.ExecuteAsTemplate "print.scss" . | toCSS (dict "targetPath" "css/print.css" "enableSourceMap" true) }}
+        <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+    {{ else }}
+        {{ $style := resources.Get "scss/pdfs/print.scss" | resources.ExecuteAsTemplate "print.scss" . | toCSS (dict "targetPath" "css/print.css" "enableSourceMap" false) }}
+        <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+    {{ end }}
+</head>
+<body>
+    <div class="cover-letter">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-xs-7 bg-white left-col pt-3 pl-0 pr-0">
+                    <div class="mb-3">
+                        <div class="top-logo pb-2 pt-2">
+                            <img src="{{"img/cibil-logo.png" | absURL}}" width="100">
+                        </div>
+                        <div class="company-info mb-2">
+                            <h1 class="company-name text-black font-14 font-regular mt-1 mb-1">Sample Company Pvt. Ltd.</h1>
+                            <h2 class="company-adress text-black font-14 font-light m-0">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</h2>
+                        </div>
+                        <div class="greeting-text mb-2">
+                            <h2 class="text-darkblue font-regular text mb-0">Congratulations</h2>
+                            <h4 class="text-darkblue font-light text m-0">on obtaining your <br>CIBIL rank and <br>Company Credit <br>report.</h4>
+                        </div>
+                        <div>        
+                            <p class="text-black font-light font-14">Hello,</p>
+                            <p class="text-black font-light font-14">Thank you for ordering your CIBIL Rank & Company Credit Report. The report is based on data provided by credit institutions that currently or previously have provided you with credit or those who you have approached for credit.</p>
+                            <p class="text-black font-light font-14">You can find your <span class="font-regular">CIBIL rank certificate</span> and the <span class="font-regular">Company Credit Report</span> enclosed with this letter. This report is provided to you based on the KYC documents submitted and data provided by you.</p>
+                            <p class="text-black font-light font-14">Access the online version of this report on our website using</p>
+                        </div>
+                        <div class="cover-letter-details">
+                            <div class="report-otp">
+                                <h3 class="text-black font-light">OTP: 45046</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4 font-light mt-0 mb-05">NAME</h6>
+                                <h3 class="text-black font-light m-0">Sample Company Pvt</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4 font-light mt-0 mb-05">PAN</h6>
+                                <h3 class="text-black font-light m-0">AAKFR1111P</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4 font-light mt-0 mb-05">ADDRESS</h6>
+                                <h3 class="text-black font-light m-0">10th Floor, ABC Tower, Veer Savarkar Road, Mumbai, 400001</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4 font-light mt-0 mb-05">ORDER DATE</h6>
+                                <h3 class="text-black font-light m-0">11 Sept 2019</h3>
+                            </div>
+                            <div class="mb-1">
+                                <p class="mb-0">For assistance with understanding your CIBIL report visit</p>
+                                <p class="m-0"><a href="http://cibil.com/cibil-rank" class="textlink text-decoration-none">www.cibil.com/cibil-rank</a></p>
+                            </div>
+
+                            <div class="mt-1">
+                                <p class="mb-0 text-black m-0">Best Regards,</p>
+                                <p class="mb-0 text-black m-0">CIBIL Customer Services Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-5 bg-lightblue pl-0 pr-0">
+                    <div class="overflow-hidden">
+                        <div class="watermark">
+                            <img src="{{"img/transunion.png" | relURL}}" class="img-watermark">
+                        </div>
+                    </div>
+                    <div class="cl-invoice">
+                        <div class="pt-3">
+                            <h3 class="text-blue font-regular m-0 mb-1">INVOICE</h3>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-light mt-0 mb-05 text-uppercase">Invoice no.</h6>
+                            <h4 class="text-darkblue font-regular m-0">DTCC/19-20/000000005</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-light mt-0 mb-05 text-uppercase">Commercial Credit  Report</h6>
+                            <h4 class="text-darkblue font-regular m-0">2542.38</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-light mt-0 mb-05 text-uppercase">Central GST</h6>
+                            <h4 class="text-darkblue font-regular m-0">228.81</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-light mt-0 mb-05 text-uppercase">State GST</h6>
+                            <h4 class="text-darkblue font-regular m-0">228.81</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-light mt-0 mb-05 text-uppercase">Total (incl.tax)</h6>
+                            <h3 class="text-darkblue font-regular m-0">3,000.00</h3>
+                        </div>
+
+                        <hr class="seprator-blue">
+
+                        <div class="mb-1">
+                            <h5 class="text-darkblue font-light mb-05 mt-0">Your payment is received towards</h5>
+                            <h5 class="text-darkblue font-regular mb-0 mt-0">Report Order Number : W-39912831</h5>
+                        </div>
+                        <div class="padding-wrap">
+                            <div class="row">
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-05 mt-0">Report ID</h5>
+                                    <h5 class="text-darkblue font-regular mb-0 mt-0">N100P67003</h5>
+                                </div>
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-05 mt-0">Report Date</h5>
+                                    <h5 class="text-darkblue font-regular mb-0 mt-0">08/08/20</h5>
+                                </div>
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-05 mt-0">Serial Number</h5>
+                                    <h5 class="text-darkblue font-regular mb-0 mt-0">999000</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-1">
+                            <h5 class="text-darkblue font-light mb-0 mt-0">Delivery charges included. CIBIL Rank has been provided to you at no additional cost.</h5>                            
+                        </div>
+
+                        <hr class="seprator-blue">
+
+                        <div class="canvas-wrap mb-2 mt-2">
+                            <canvas id="credit-type-graph" width="50" height="50"></canvas>
+                            <div class="canvas-center-text">
+                                <h2 class="text-black mb-0 text-center font-regular">40</h2>
+                                <label class="d-block text-grey text-uppercase font-12 text-center font-light">Active Credit Facilites</label>
+                            </div>                                
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script>
+    // Chart js graph
+    var config = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [9,7,8,38,38],
+                backgroundColor: [
+                    '#2CC2D9',
+                    '#FCB617',
+                    '#DFDFDF',
+                    '#1C11AB',
+                    '#157289',
+                ],
+                label: 'Dataset 1',
+            }],
+            labels: [
+                'Non Funded',
+                'Working Captial',
+                'Term Loan',
+                'Forex',
+                'Others',
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                display: false,
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }, 
+            cutoutPercentage: 85,       
+        }
+    };
+
+    var ctx1 = document.getElementById('credit-type-graph').getContext('2d');
+    window.myDoughnut2 = new Chart(ctx1, config);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<div class="mobile-filters-wrapper flex-wrap">
+    <div class="mf-header d-flex justify-content-between w-100 align-items-center">
+        <div class="font-16 text-white">Filters</div>
+        <div class=""><button class="mf-reset-filters font-14 font-regular">Clear All</button></div>
+    </div>
+    <div class="d-flex w-100">
+        <ul class="nav-items">
+            <li class="active" data-tab="tab-bank">Bank</li>
+            <li data-tab="tab-status">Status</li>
+            <li data-tab="tab-date">Date</li>
+        </ul>
+        <ul class="nav-filter-tab">
+            <li class="filter-tab tab-bank">
+                <div class="chbx-bank-filter">
+                    <div class="filter-item">
+                        <input type="checkbox" name="allbank" id="allbank">
+                        <label for="allbank">All</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="bankname" id="hdfc">
+                        <label for="hdfc">HDFC</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="bankname" id="icici">
+                        <label for="icici">ICICI</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="bankname" id="sbi">
+                        <label for="sbi">SBI</label>
+                    </div>
+                </div>
+            </li>
+            <li class="filter-tab tab-status">
+                <div class="chbx-status-filter">
+                    <div class="filter-item">
+                        <input type="checkbox" name="status" id="status-open">
+                        <label for="status-open">Open</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="status" id="status-closed-by-payment">
+                        <label for="status-closed-by-payment">Closed By Payment</label>
+                    </div>                    
+                    <div class="filter-item">
+                        <input type="checkbox" name="status" id="status-loss">
+                        <label for="status-loss">Loss</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="status" id="status-overdue">
+                        <label for="status-overdue">Overdue</label>
+                    </div>
+                    <div class="filter-item">
+                        <input type="checkbox" name="status" id="status-doubtful">
+                        <label for="status-doubtful">Doubtful</label>
+                    </div>
+                </div>
+            </li>
+            <li class="filter-tab tab-date">
+                <div class="date-filter">
+                    <input type="text" id="datepicker2" placeholder="Select Date">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="mf-footer w-100 d-flex">
+        <div class="w-50">
+            <button class="btn btn-fill btn-fill-lightgrey btn-lg mf-btn-cancel w-100">CANCEL</button>
+        </div>
+        <div class="w-50">
+            <button class="btn btn-fill btn-fill-orange btn-lg mf-btn-save w-100">SAVE CHANGES</button>
+        </div>
+    </div>
+</div>

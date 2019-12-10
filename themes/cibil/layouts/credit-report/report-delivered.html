@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="section-credit-report mt-4 mb-6 floating-fields">
+	<div class="container cs-container">
+		<div class="row">
+			<div class="col-md-8 col-lg-9 col-left order-md-1 pl-md-4">
+				<div>
+					<h1 class="section-title text-grey mb-1">Your Report has been delivered!</h1> 
+					<h5 class="text-grey font-light mb-2">Congratulations on receiving your report. You can now view your report online by adding it to your account.</h5>
+					<h5 class="text-grey font-light mb-2">Please verify you have receive id the report by entering the Verification OTP below.</h5>
+				</div>
+				<div class="cibil-report-otp mt-5">
+					<div class="row m-0 align-items-center report-rw">
+						<div class="col-lg-6 p-0 report-col-left d-none d-md-flex">
+							<img src="{{ "img/cover-letter-otp.png" | relURL }}" class="img-fluid overlay-right box-shade">
+						</div>
+						<div class="col-lg-6 p-0 report-col-right">
+							<div class="overlay-modal">
+								<div class="overlay-modal-content">
+									<div class="ov-step-page active"  data-step="otp-verify">
+										<h4 class="text-grey mb-1">View your Report</h4>
+										<p class="text-grey mb-2">To view your report online, please enter the Unique Report OTP.</p>
+										<p class="text-grey">You can find the OTP on the Authentication section of the CCR sent to the comany registered address via post.</p>
+										<form class="verify-otp-form mt-4" method="POST">
+											<div class="form-field required">
+												<input class="form-input" type="password" name="otp_password" id="otp_password">                            
+												<label for="pincode" class="form-label pointer-events-none">
+													<span class="form-label-content">Report OTP</span>
+												</label>
+												<label class="input-error">OTP is required</label>
+											</div>
+											<div class="form-action mt-3">
+												<button class="btn btn-fill btn-fill-orange btn-verify-otp w-100" id="btn-verify-otp">VERIFY OTP</button>
+											</div>
+										</form>
+										<div class="mt-3 d-block d-md-none">
+											<a href="#" class="text-link text-link-blue font-14 btn-vr-otp" data-page="otp-preview">Where to find the OTP on the CCR Report?</a>
+										</div>
+									</div>
+									<div class="ov-step-page d-block d-md-none" data-step="otp-preview">
+										<div class="text-center">											
+											<img src="{{ "img/cover-letter-otp.png" | relURL }}" class="img-fluid overlay-right mb-2">
+											<a href="#" class="text-link text-link-back btn-vr-otp font-14" data-page="otp-verify"><i class="fas fa-arrow-left"></i> Back</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="card card-info mt-3 d-none d-md-flex">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-2 mb-3 d-none d-md-flex">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-right order-md-0 sticky-sidebar">
+				<div class="card shipping-details mt-3 mt-md-0">
+					<div class="card-body">
+						<div class="shipping-status">
+							<h4 class="text-uppercase mb-2">Shipping Status</h4>
+							<h2 class="text-black bg-success text-left badge-line">DELIVERED</h2>
+						</div>
+						<div class="delivery-details mt-3">
+							<h5 class="text-grey mb-05 font-light">Delivery Date</h5>
+							<h4>Sep 27</h4>
+						</div>
+						<div class="shipping-address mt-3">
+							<h5 class="text-grey mb-05 font-light">Delivery Address</h5>
+							<h4>H.NO.4/259/A, Near 4 Pillar Hotel Panaji North Goa GA 403001 IN</h4>
+						</div>
+						<div class="carrier-name mt-3">
+							<h5 class="text-grey mb-05 font-light">Carrier</h5>
+							<h4>Bluedart Courier</h4>
+						</div>
+						<hr class="hr-lightblue2">
+						<a href="#" target="_self" data-toggle="modal" data-target="#contactus-modal" class="text-link text-link-blue font-14">Not received report? Contact us</a>
+					</div>
+				</div>		
+
+				<div class="card card-info mt-3 d-flex d-md-none">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-3 mb-3 d-flex d-md-none">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-2 ml-md-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+{{- partial "contact-us-modal.html" . -}}
+
+{{ end }}

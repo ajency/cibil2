@@ -1,0 +1,239 @@
+<div class="header {{ if $.Params.containernormal }}header-normal{{end}}">
+	<div class="top-header">
+		<div class="container">
+			<nav class="navbar navbar-light flex-nowrap">
+				<a class="navbar-brand d-flex" href="#">
+					<div class="d-md-block">
+						<img src="{{"img/cibil-logo.png" | absURL}}" width="80" alt="">
+					</div>
+					<div class="logo-sub-text d-md-none">
+						<span class="text-black">CIBIL Rank & <span class="d-block">Company Credit Report</span></span>
+					</div>
+					<div class="partnership-width d-none d-md-block">
+						<img src="{{"img/in_partnership.png" | absURL}}" width="140" alt="">
+					</div>
+				</a>
+
+				<div class="header-center-col d-none d-md-block">
+					<span class="text-black bg-yellow">CIBIL Rank & Company Credit Report</span>
+				</div>
+
+				{{ if $.Params.loggedin }}
+				<div class="profile-dropdown">	
+					<div class="user-profile">
+						<div class="profile-photo">
+							<i class="fas fa-user-alt text-lightblue2 user-icon"></i>
+						</div>
+						<!-- <div class="profile-name">
+							<label class="d-block text-grey font-9 mb-0">Welcome</label>
+							<label class="d-block profile-username mb-0 text-black font-12">Arnab</label>
+						</div> -->
+						<div class="dropdown-arrow">
+							<span class="arrow-icon"></span>
+						</div>
+					</div>
+					<div class="dropdown-container dropdown-menu-anim">
+						<div class="user-details">
+							{{ if $.Params.userlogin }}
+								<!-- verfied user -->
+									<div class="edit-profile">
+										<h6 class="text-blue d-flex justify-content-between align-items-center">ACCOUNT DETAILS <a href="#" class="text-link text-link-blue font-10" data-toggle="modal" data-target="#edit-contact-info" target="_self">Edit</a></h6>
+									</div>
+								<!--/ verfied user -->
+							{{ end }}
+							<div class="profile-info">
+								<label class="info-label font-light text-grey font-10 d-block mb-0">Name</label>
+								<label class="info-label font-regular text-black font-12 d-block">Arnab Tarcar</label>
+							</div>
+							<div class="profile-info mt-1">
+								<label class="info-label font-light text-grey font-10 d-block mb-0">Mobile Number</label>
+								<label class="info-label font-regular text-black font-12 d-block">+91 8975641298</label>
+							</div>
+							<div class="profile-info mt-1 mb-15">
+								<label class="info-label font-light text-grey font-10 d-block mb-0">Email id</label>
+								<label class="info-label font-regular text-black font-12 d-block">arnabtarcar@tarcarind.com</label>
+							</div>
+							<div class="profile-edit text-center {{ if $.Params.userlogin }}d-none{{end}}">
+								<a href="#" target="_self" class="text-link text-link-blue font-10 font-light" data-toggle="modal" data-target="#edit-contact-info">Edit contact details</a>
+							</div>
+
+							{{ if $.Params.userlogin }}
+							<!-- verfied user -->
+								<div class="profile-action text-right">								
+									<a href="#" target="_self" class="text-black font-12 text-decoration-none">Logout <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="18" height="18" fill="#F16E00"><path d="M312 372c-7.7 0-14 6.3-14 14 0 9.9-8.1 18-18 18H94c-9.9 0-18-8.1-18-18V126c0-9.9 8.1-18 18-18h186c9.9 0 18 8.1 18 18 0 7.7 6.3 14 14 14s14-6.3 14-14c0-25.4-20.6-46-46-46H94c-25.4 0-46 20.6-46 46v260c0 25.4 20.6 46 46 46h186c25.4 0 46-20.6 46-46 0-7.7-6.3-14-14-14z"/><path d="M372.9 158.1c-2.6-2.6-6.1-4.1-9.9-4.1-3.7 0-7.3 1.4-9.9 4.1-5.5 5.5-5.5 14.3 0 19.8l65.2 64.2H162c-7.7 0-14 6.3-14 14s6.3 14 14 14h256.6L355 334.2c-5.4 5.4-5.4 14.3 0 19.8l.1.1c2.7 2.5 6.2 3.9 9.8 3.9 3.8 0 7.3-1.4 9.9-4.1l82.6-82.4c4.3-4.3 6.5-9.3 6.5-14.7 0-5.3-2.3-10.3-6.5-14.5l-84.5-84.2z"/></svg></a>
+								</div>
+							<!--/ verfied user -->
+							{{ end }}
+						</div>
+					</div>
+				</div>	
+				{{ else }}
+					<div class="header-contact-info d-none d-md-flex">
+						<div><img src="{{"img/kyc/icon/call-us.png" | absURL}}" width="30"></div>
+						<div class="font-12 text-center pl-1">(Mon - Fri): 10:00 am to 06:00 pm <br><a href="tel:+917276874408" target="_self" class="bg-yellow d-inline-block text-decoration-none text-black font-16">+91-727-687-4408</a></div>
+					</div>
+				{{ end }}
+			</nav>
+		</div>
+		{{ if $.Params.breadcrumb }}
+			<!-- <div class="breadcrumb-wrap">
+				<div class="container">
+					<ul class="breadcrumb">
+						<li><a href="#">My Reports</a></li>
+						<li class="active"><a href="#">Dimension Engineers</a></li>
+					</ul>
+				</div>
+			</div> -->
+		{{end}}
+	</div>
+
+	{{ if $.Params.progressBar }}
+	<div class="step-progress-container bg-lightblue">
+		<div class="container">
+			<ul class="progress-steps">
+				<li class="{{ $.Params.currentinfo }}">
+					<div class="step-box">
+						<div class="step-number">1 <span class="total">1/4</span><div class="checkmark draw"></div></div>
+						<div class="step-info">
+							<label class="step-text mb-0">Step One</label>
+							{{ if $.Params.headerstep }}
+								<h5 class="mb-0 step-title">Enter business Details</h5>							
+							{{ else }}
+								<h5 class="mb-0 step-title">Enter Company Details</h5>
+							{{end}}
+						</div>						
+					</div>
+				</li>
+				<li class="{{ $.Params.currentpayment }}">
+					<div class="step-box">
+						<div class="step-number">2 <span class="total">2/4</span><div class="checkmark draw"></div></div>
+						<div class="step-info">
+							<label class="step-text mb-0">Step Two</label>
+							<h5 class="mb-0 step-title">Make Payment</h5>
+						</div>						
+					</div>
+				</li>
+				<li class="{{ $.Params.currentkyc }}">
+					<div class="step-box">
+						<div class="step-number">{{ if $.Params.verifying }} <img src="{{"img/hourglass_waiting.png" | absURL}}" alt class="wait-icon"> {{ else }} 3  <span class="total">3/4</span><div class="checkmark draw"></div>{{end}}</div>
+						<div class="step-info">							
+							<label class="step-text mb-0">Step Three</label>
+							{{ if $.Params.verifying }}
+								<h5 class="mb-0 step-title">Verifying</h5>
+							{{ else }}
+								<h5 class="mb-0 step-title">Verify Yourself</h5>
+							{{end}}							
+						</div>						
+					</div>
+				</li>
+				<li class="{{ $.Params.currentreport }}">
+					<div class="step-box">
+						<div class="step-number">4 <span class="total">4/4</span><div class="checkmark draw"></div></div>
+						<div class="step-info">
+							<label class="step-text mb-0">Step Four</label>
+							<h5 class="mb-0 step-title">Get Report</h5>
+						</div>						
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	{{end}}
+
+	{{ if $.Params.reportinfo }}
+
+	<div class="header-info-bar {{ if $.Params.reportnew }} container-small {{end}}">
+		<div class="container">
+			<div class="header-info-bar-wrap">
+
+				<div class="header-info-wrapper">
+
+					<div class="header-company-info">
+						<img src="{{ "img/building.png" | relURL }}" alt class="stick" width="24" height="24">
+						<label class="d-block font-14 font-light mb-0">{{ if $.Params.companyname }} {{ $.Params.companyname }} {{ else }} Dimension Engineers {{ end }}</label>
+					</div>
+					<div class="header-info-right flex-fill">
+						
+						<div class="header-info-col">
+							<div class="header-info-box">
+								<div class="w-100">
+									{{ if $.Params.reportnew }}
+										<label class="d-block text-grey font-12 mb-0">Report Date: <span class="d-block d-lg-inline-block text-black font-14 font-regular mb-0">{{ dateFormat "02 Jan 2006" now }} <span class="text-darkgreen3 font-regular">(Today)</span></span></label>									
+									{{else}}
+										<label class="d-block text-grey font-12 mb-0">Report Date: <span class="d-block d-lg-inline-block text-black font-14 font-regular mb-0">08 Sept 2019</span></label>
+									{{end}}
+								</div>
+								{{ if ne $.Params.reportnew true }}
+									<div class="w-100 mt-md-05">
+										<label class="d-block text-grey font-12 mb-0">Report Order No.: <span class="d-block d-lg-inline-block text-black font-14 font-regular mb-0">BLPUM55642TYOI</span></label>									
+									</div>
+								{{end}}
+							</div>
+						</div>
+						{{ if ne $.Params.reportlist false }}
+							<div class="header-info-col">
+								<div class="header-info-box">
+									<a href="#" class="text-link text-link-blue btn-old-report">OLD REPORTS</a>
+								</div>
+							</div>
+							{{ if ne $.Params.reportnew true }}
+								<div class="header-info-col justify-content-end">
+									<div class="header-info-box">
+										<a href="#" target="_self" class="btn-pdf-download"><img src="{{"img/pdf-download.png" | relURL}}"></a>
+										<a href="#" target="_self" class="ml-1 btn-share-modal" data-toggle="modal" data-target="#share-modal">Share <i class="fas fa-share"></i></a>										
+									</div>
+								</div>
+							{{ end }}
+							
+						{{ end }}					
+					</div>
+
+				</div>
+
+				<div class="older-reports-dropdown dropdown-menu-anim">
+					<div class="dropdown-header">
+						<h4 class="header text-grey mb-0">OLDER REPORTS</h4>
+						<button class="close-dropdown btn"><i class="icon-close"></i></button>
+					</div>
+					<div class="dropdown-content table-wrapper-scroll-y">
+						<table class="old-reports-table">
+							<thead>
+								<tr>
+									<td>Report Date</td>
+									<td>Report ID</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><label class="font-regular text-darkgreen3">Today</label></td>
+									<td><span class="text-blue font-regular">New Report Available!</span></td>
+									<td><a href="#" class="btn btn-outline btn-outline-blue border-width-2 view-reports">GENERATE</a></td>
+								</tr>
+								<tr>
+									<td>08 Sep. 2019</td>
+									<td>BLPUM55642TYOI</td>
+									<td><a href="#" class="btn btn-outline btn-outline-orange border-width-2 view-reports">VIEW</a></td>
+								</tr>
+								<tr>
+									<td>08 Sep. 2019</td>
+									<td>BLPUM55642TYOI</td>
+									<td><a href="#" class="btn btn-outline btn-outline-orange border-width-2 view-reports">VIEW</a></td>
+								</tr>
+								<tr>
+									<td>08 Sep. 2019</td>
+									<td>BLPUM55642TYOI</td>
+									<td><a href="#" class="btn btn-outline btn-outline-orange border-width-2 view-reports">VIEW</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	{{end}}
+
+</div>

@@ -1,0 +1,173 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="section-kyc mt-4 mb-6">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-12 col-lg-10 offset-lg-1">
+					<div class="mb-4 mb-md-6 message message-success slideInDown animated d-block">
+						<h4 class="message-text">DOCUMENTS SUCCESSFULLY SUBMITTED FOR KYC</h4>							
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-lg-7 offset-lg-1 pr-lg-5">
+					<div>
+						<h1 class="section-title text-grey mb-1">Almost there. Verifying your documents</h1>
+					</div>
+
+					<div class="message-wizard mt-3" id="btn-report">
+						<div class="message-wizard-content d-md-flex text-center">
+							<div class="col-12 col-md-2 p-0 text-center">
+								<img src="{{ "img/hourglass.png" | relURL }}">
+								<h4 class="text-grey mt-1">24 hours</h4>
+							</div>
+							<div class="col-12 col-md-10 p-0 pl-md-2">
+								<h4 class="mt-0 mb-0 font-light text-md-left">Your documents are currently being verified. Verification usually takes around 24 hours. Once verified, we will notify you on the below provided email and SMS</h4>
+								<p class="text-md-left mt-1 mb-1 font-16"><i class="fas fa-envelope text-black valign-middle mr-1"></i> <span class="text-blue font-regular">arnabtarcar@tarcarind.com</span></p>
+								<p class="text-md-left font-16"><i class="fas fa-phone-alt text-black valign-middle mr-1"></i> <span class="text-blue font-regular">+918975641298</span></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-4">                    
+						<h4 class="text-grey mb-2">Documents Uploaded for Verification</h4>						
+					</div>
+
+					<div class="custom-accordian">
+
+						<div class="custom-accordian-heading" data-toggle="collapse" data-target="#director-proof">
+							<h4 class="text-black mb-md-2">1. Director ID Proof</h4>
+						</div>
+						<div class="custom-accordian-panel collapse" id="director-proof">
+							<div class="form-wrapper">
+								<div class="fileupload-preview static-preview-box">
+									<div class="file-preview"><div class="file-preview-image-wrap"><img class="doc-image" src="{{"img/kyc/upload1.png" | absURL}}"></div></div>
+									<div class="file-thumbnails-wrapper horizontal-thumbs">
+										<div class="file-thumbnails fp-idproof">
+											<div class="dz-preview active dz-image-preview" data-parent=".fp-idproof">
+												<div class="dz-image">
+													<img alt="" src="{{"img/kyc/upload1.png" | absURL}}">
+												</div>
+											</div>
+											<div class="dz-preview dz-image-preview" data-parent=".fp-idproof">
+												<div class="dz-image">
+													<img alt="" src="{{"img/kyc/upload1.png" | absURL}}">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr class="hr-seprator mt-5 d-none d-md-block">
+
+						<div class="custom-accordian-heading mt-md-4"  data-toggle="collapse" data-target="#company-address-proof">						
+							<h4 class="text-black mb-md-2">2. Company Address Proof</h4>
+						</div>
+
+						<div class="custom-accordian-panel collapse" id="company-address-proof">
+
+							<div class="form-wrapper dz-2">
+								<div class="fileupload-preview static-preview-box">
+									<div class="file-preview"><div class="file-preview-image-wrap"><img class="doc-image" src="{{"img/kyc/upload2.png" | absURL}}"></div></div>
+									<div class="file-thumbnails-wrapper horizontal-thumbs">
+										<div class="file-thumbnails fp-idproof">
+											<div class="dz-preview active dz-image-preview" data-parent=".fp-idproof">
+												<div class="dz-image">
+													<img alt="" src="{{"img/kyc/upload2.png" | absURL}}">
+												</div>
+											</div>
+											<div class="dz-preview dz-image-preview" data-parent=".fp-idproof">
+												<div class="dz-image">
+													<img alt="" src="{{"img/kyc/upload2.png" | absURL}}">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>                   
+							</div>
+							
+						</div>
+
+					</div>	
+
+					<hr class="hr-seprator mt-6">
+					<div>
+						<h4 class="text-grey mb-1">What's Next?</h4>
+						<p class="font-14 text-grey font-light text-left mb-1">As mentioned, your documents are currently beign verified. you will be notified once the verification has been done.</p>
+						<p class="font-14 text-grey font-light text-left mb-1">Once your documents have successfully been verified, the report will be shipped to you.</p>
+					</div>
+					
+					<div class="card mt-3">
+						<div class="card-body d-md-flex">
+							<div class="info-box-icon mb-1 text-center">
+								<img src="{{"img/kyc/icon/delivery.png" | absURL}}">
+							</div>
+							<div class="pl-md-2">
+								<h4 class="info-box-sub-title text-grey text-center text-md-left">Quick Dispatch</h4>
+								<h5 class="info-box-title text-grey font-light text-center mb-0 text-md-left">The report will immediately be dispatched once your documents are verified</h5>
+							</div>
+						</div>
+					</div>				  
+	
+				</div>
+				<div class="col-md-4 col-lg-3 sticky-sidebar">
+
+					<div class="card mt-3 d-md-none">
+						<div class="card-body">
+							<h4 class="text-black mb-1 text-uppercase">Create Your CIBIL Account</h4>
+							<div> 
+								<h5 class="info-box-title text-grey font-light text-left mb-1">With your CIBIL account you will be able to view, share and download all your purchased reports</h5>
+								<h5 class="info-box-title text-grey font-light text-left mb-1">Set a password, to create your account.</h5>
+								<a href="#" target="_self" data-toggle="modal" data-target="#payment-setpassword" class="text-orange btn btn-outline btn-outline-orange btn-xs font-12 btn-share w-100">SET PASSWORD</a>
+							</div>
+						</div>
+					</div>
+					<div class="upload-instruction mini-slider mt-3 mt-md-0">
+						<div class="owl-carousel">							
+							<div class="info-box text-center">
+								<div class="info-box-icon mb-1"><img src="{{"img/kyc/icon/notify.png" | absURL}}"></div>
+								<span class="seprator-xs seprator-xs-yellow"></span>
+								<h4 class="info-box-sub-title text-grey text-center">Notifications</h4>
+								<h5 class="info-box-title text-grey font-light text-center mb-0">You will be notified via email and SMS when your documents are verified</h5>							
+							</div>
+							<div class="info-box text-center">
+								<div class="info-box-icon mb-1"><img src="{{"img/kyc/icon/call-us.png" | absURL}}"></div>
+								<span class="seprator-xs seprator-xs-yellow"></span>
+								<h4 class="info-box-sub-title text-grey text-center">Call Us</h4>
+								<h5 class="info-box-title text-grey font-light text-center mb-0">Call us in case you have any queries or issues at</h5>							
+								<h5 class="info-box-title text-grey font-light text-center mb-0"><span class="d-block font-regular">+91 - 2266384600</span>(Mon - Fri): 10:00 am to 06:00 pm</h5>							
+							</div>
+						</div>	
+					</div>
+					<div class="card mt-2 d-none d-md-flex">
+						<div class="card-body">
+							<h4 class="text-black mb-1 text-uppercase">Create Your CIBIL Account</h4>
+							<div> 
+								<h5 class="info-box-title text-grey font-light text-left mb-1">With your CIBIL account you will be able to view, share and download all your purchased reports</h5>
+								<h5 class="info-box-title text-grey font-light text-left mb-1">Set a password, to create your account.</h5>
+								<a href="#" target="_self" data-toggle="modal" data-target="#payment-setpassword" class="text-orange btn btn-outline btn-outline-orange btn-xs font-12 btn-share w-100">SET PASSWORD</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>        
+			  
+		</div>
+	</div>
+	
+	
+
+	<script type="text/javascript">
+		const button = document.getElementById("btn-report")
+		button.addEventListener('click', function(e) {		
+			window.location.href="/cibil/credit-report/proprietorship/report-guest";
+		});
+	</script>
+
+{{ end }}

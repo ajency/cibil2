@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ $.Params.title }} - CIBIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <link type="image/x-icon" href="{{ "img/favicon.ico" | relURL}}" rel="shortcut icon">
+    {{ if .Site.IsServer }}
+    {{ $style := resources.Get "scss/pdfs/print.scss" | resources.ExecuteAsTemplate "print.scss" . | toCSS (dict "targetPath" "css/print.css" "enableSourceMap" true) }}
+        <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+    {{ else }}
+        {{ $style := resources.Get "scss/pdfs/print.scss" | resources.ExecuteAsTemplate "print.scss" . | toCSS (dict "targetPath" "css/print.css" "enableSourceMap" false) }}
+        <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+    {{ end }}
+</head>
+<body>
+    <div class="print-page">
+        <div class="container-fluid p-0">
+            <div class="row m-0 d-flex">
+                <div class="col-xs-7 bg-white col-left">
+                    <div class="mb-0">
+                        <div class="top-logo">
+                            <img src="{{"img/cibil-logo.png" | absURL}}" width="100">
+                        </div>
+                        <div class="company-info cin-pt-100">
+                            <h1 class="company-name text-black f-50 font-cond-r mt-1 mb-1">Sample Company Pvt. Ltd.</h1>
+                            <h2 class="company-adress text-black f-50 font-cond-l m-0 pr-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</h2>
+                        </div>
+                        <div class="greeting-text mt-5 mb-2">
+                            <h2 class="text-darkblue font-bold text mb-0 f-100">Congratulations</h2>
+                            <h4 class="text-darkblue font-light text m-0 f-100">on obtaining your <br>CIBIL rank and <br>Company Credit <br>report.</h4>
+                        </div>
+                        <div>        
+                            <p class="text-black--8 font-cond-r f-35 mb-15">Hello,</p>
+                            <p class="text-black--8 font-cond-r f-35 mb-15">Thank you for ordering your CIBIL Rank & Company Credit Report. The report is based on data provided by credit institutions that currently or previously have provided you with credit or those who you have approached for credit.</p>
+                            <p class="text-black--8 font-cond-r f-35 mb-15">You can find your <span class="font-cond-s text-black op-10">CIBIL rank certificate</span> and the <span class="font-cond-s text-black op-10">Company Credit Report</span> enclosed with this letter. This report is provided to you based on the KYC documents submitted and data provided by you.</p>
+                            <p class="text-black--8 font-cond-r f-35 mb-0">Access the online version of this report on</p>
+                            <p class="text-black--8 font-cond-r f-35 mt-0 mb-0"><a href="http://cibil.com/cibil-rank" class="textlink text-decoration-none f-35 font-cond-r">www.cibil.com/company-credit-report</a> using</p>
+                        </div>
+                        <div class="cover-letter-details">
+                            <div class="report-otp">
+                                <h3 class="text-black--8 font-cond-l   f-50 mt-05 mb-2">OTP: 45046</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4--6 f-28 font-regular mt-0 mb-0">NAME</h6>
+                                <h3 class="text-black--8 f-50 font-cond-l m-0">Sample Company Pvt</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4--6 f-28 font-regular mt-0 mb-0">PAN</h6>
+                                <h3 class="text-black--8 f-50 font-cond-l m-0">AAKFR1111P</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4--6 f-28 font-regular mt-0 mb-0">ADDRESS</h6>
+                                <h3 class="text-black--8 f-50 font-cond-l m-0">10th Floor, ABC Tower, Veer Savarkar Road, Mumbai, 400001</h3>
+                            </div>
+                            <div class="mb-1">
+                                <h6 class="text-grey4--6 f-28 font-regular mt-0 mb-0">ORDER DATE</h6>
+                                <h3 class="text-black--8 f-50 font-cond-l m-0">11 Sept 2019</h3>
+                            </div>
+                            <div class="mb-1">
+                                <p class="mb-0 f-35 text-black--6 font-cond-r">For assistance with understanding your CIBIL report visit</p>
+                                <p class="m-0 f-35 font-cond-r"><a href="http://cibil.com/cibil-rank" class="textlink text-decoration-none f-35 font-cond-r">www.cibil.com/cibil-rank</a></p>
+                            </div>
+
+                            <div class="mt-1">
+                                <p class="mb-0 text-black--8 f-35 m-0 font-cond-r">Best Regards,</p>
+                                <p class="mb-0 text-black--8 f-35 m-0 font-cond-r">CIBIL Customer Services Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-5 bg-lightblue3 pl-0 pr-0 col-right">
+                    <div class="overflow-hidden">
+                        <div class="watermark">
+                            <img src="{{"img/transunion.png" | relURL}}" class="img-watermark">
+                        </div>
+                    </div>
+                    <div class="cl-invoice">
+                        <div class="pt-3">
+                            <h4 class="text-blue font-cond-sb mt-1 mb-15 f-50">INVOICE</h4>
+                        </div>
+                        <div class="mb-15">
+                            <h6 class="text-grey4 font-regular mt-0 mb-0 text-uppercase f-28">Invoice no.</h6>
+                            <h4 class="text-darkblue font-cond-s m-0 f-40">DTCC/19-20/000000005</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-regular mt-0 mb-0 text-uppercase f-28">Commercial Credit  Report</h6>
+                            <h4 class="text-darkblue font-cond-s m-0 f-40">2542.38</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-regular mt-0 mb-0 text-uppercase f-28">Central GST</h6>
+                            <h4 class="text-darkblue font-cond-s m-0 f-40">228.81</h4>
+                        </div>
+                        <div class="mb-1">
+                            <h6 class="text-grey4 font-regular mt-0 mb-0 text-uppercase f-28">State GST</h6>
+                            <h4 class="text-darkblue font-cond-s m-0 f-40">228.81</h4>
+                        </div>
+                        <div class="mb-15">
+                            <h6 class="text-grey4 font-regular mt-0 mb-0 text-uppercase f-28">Total (incl.tax)</h6>
+                            <h3 class="text-darkblue font-cond-s m-0 f-50">3,000.00</h3>
+                        </div>
+
+                        <hr class="seprator-blue seprator-85">
+
+                        <div class="mt-1 mb-1">
+                            <h5 class="text-darkblue font-light mb-0 mt-0 f-35">Your payment is received towards</h5>
+                            <h5 class="text-darkblue font-cond-sb mb-0 mt-0 f-35">Report Order Number : W-39912831</h5>
+                        </div>
+                        <div class="padding-wrap">
+                            <div class="row">
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-0 mt-0 f-35">Report ID</h5>
+                                    <h5 class="text-darkblue font-cond-s mb-0 mt-0 f-35">N100P67003</h5>
+                                </div>
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-0 mt-0 f-35">Report Date</h5>
+                                    <h5 class="text-darkblue font-cond-s mb-0 mt-0 f-35">08/08/20</h5>
+                                </div>
+                                <div class="col-xs-4 p-0">
+                                    <h5 class="text-darkblue font-light mb-0 mt-0 f-35">Serial Number</h5>
+                                    <h5 class="text-darkblue font-cond-s mb-0 mt-0 f-35">999000999000</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-1 mb-1">
+                            <h5 class="text-darkblue font-cond-l mb-0 mt-0 f-35">Delivery charges included. CIBIL Rank has been provided to you at no additional cost.</h5>                            
+                        </div>
+
+                        <hr class="seprator-blue seprator-85">
+
+                        <div class="terms-n-condition">
+                            <h6 class="text-black font-cond-r f-25 mt-1 mb-1">TERMS AND CONDITIONS</h6>
+                            <ol>
+                                <li>1. This facility is being offered on a best effort basis and the Consumer agrees and acknowledges that TransUnion CIBIL will not be responsible for any kind of damage arising directly or indirectly whatsoever incurred by the Consumer availing this facility.</li>
+                                <li>2. The Consumer if not addressee should not use this CCR Report or any information therein if erroneously received and should destroy the documents immediately.</li>                                
+                                <li>3. The Consumer agrees and acknowledges that CCR / any information therein will not be used for any commercial process / gain.</li>                                
+                                <li>4. The Consumer acknowledges that no guarantee or warranty is given as to completeness and accuracy of the content of the CCR.</li>                                
+                                <li>5. This Company Credit Report is being issued to the Consumer on payment of the requisite fees.</li>                                
+                                <li>6. Place of supply is the same as the customer address mentioned above on the invoice.</li>                                
+                                <li>7. No tax is payable on reverse charge basis.</li>                                
+                                <li>8. In the event that the applicable GST rate is increased either in terms of the GST Act and / or in case of any adjudication by the competent authority in this regard, then TransUnion CIBIL shall be entitled to apply the increased rate as required under applicable law                                                                                                            </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

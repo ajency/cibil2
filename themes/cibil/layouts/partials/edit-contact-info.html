@@ -1,0 +1,40 @@
+<div class="modal fade" id="edit-contact-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>            
+
+            <h1 class="modal-title text-blue text-center text-md-left">Edit Contact Information</h1>
+            <!-- <h2 class="text-grey modal-sub-title font-20">Update your contact details</h2> -->
+            <div class="modal-share-container mt-3 floating-fields">
+                <form class="signup-form" action="/cibil/signup/" method="POST">
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="fullname" id="fullname" value="Arnab Tarcar">                            
+                        <label for="fullname" class="form-label">
+                            <span class="form-label-content">Full Name</span>
+                        </label>
+                        <label class="input-error">Please Enter Full Name</label>
+                    </div>
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="email_address" id="email_address" value="arnabtarcar@tarcarind.com" oninput="this.value = this.value.toLowerCase()">                            
+                        <label for="email_address" class="form-label">
+                            <span class="form-label-content">Email Address</span>
+                        </label>
+                        <label class="input-error">Please Enter Email Address</label>
+                    </div>
+                    <div class="form-field required placeholder-wrap entered">
+                        <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10" value="8975641298">										
+                        <label for="mobile_number" class="form-label">
+                            <span class="form-label-content">Mobile Number</span>
+                        </label>
+                        <span class="phone-placeholder">+91 </span>
+                        <label class="input-error">Mobile number cannot be blank</label>
+                    </div>
+                    <div class="form-action mt-3 text-right">                        
+                        <button type="button" class="btn btn-fill btn-fill-lightgrey btn-lg mb-1 mb-md-0 mr-md-1 btn-update-info" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-lg btn-fill btn-xl btn-fill-orange btn-proceed-signup btn-update-info font-14" data-dismiss="modal" id="btn-signup-submit">UPDATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

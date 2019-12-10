@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<div>
+	<img src='{{"img/cibil-page.png" | absURL}}' class="img-fluid m-auto d-block signup-modal-btn">
+</div>
+
+<div class="modal fade bd-example-modal-lg signup-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+            <div class="container-fluid floating-fields">
+                <div class="row">
+                    <div class="col-md-8 col-lg-8 p-0 bg-white">
+                        <div class="get-report-form">
+                            <h1 class="modal-title text-blue text-center text-md-left">Create your account </h1>
+                            <h4 class="text-grey font-light">Please set a password to create your CIBIL account</h4>
+                            <div class="d-block d-md-none modal-slider-mobile ps-wrap mt-1">
+                                <h3 class="mb-1 text-grey font-20">Password must contain the following</h3>
+                                <ul class="password-strength-check text-grey">
+                                    <li class="uppercase">1 Uppercase letter</li>
+                                    <li class="specialchar">1 Special Character</li>
+                                    <li class="charlength">Must be longer than 6 characters</li>
+                                </ul>
+                            </div>
+
+                            <h5 class="text-blue text-underline text-underline-blue mt-2">ACCOUNT DETAILS</h5>
+                            <div class="account-details">
+                                <h5 class="text-black font-regular"><i class="fas fa-user-circle mr-1"></i>Arnab Tarcar</h5>
+                                <h5 class="text-black font-regular"><i class="fas fa-envelope mr-1"></i>arnabtarcar@tarcarind.com</h5>
+                                <h5 class="text-black font-regular"><i class="fas fa-phone-alt mr-1"></i>+91 8975641298</h5>
+                            </div>
+
+                            <form class="setpassword-form mt-2 mt-md-4" action="/cibil/credit-report/report" method="POST">
+                                <div class="form-error mb-1"><h5 class="text-error">Password does not match</h5></div>
+                                <div class="form-success mb-1"><h5 class="text-success">Set Password Successfully</h5></div>
+                                <div class="form-field required">
+                                    <input class="form-input" type="password" name="password" id="set_password">                            
+                                    <label for="password" class="form-label">
+                                        <span class="form-label-content">Password</span>
+                                    </label>
+                                    <label class="input-error">Please Enter password</label>
+                                </div>
+                                <div class="form-field required">
+                                    <input class="form-input" type="password" name="confirm_password" id="confirm_password">                            
+                                    <label for="confirm_password" class="form-label">
+                                        <span class="form-label-content">Confirm Password</span>
+                                    </label>
+                                    <label class="input-error">Please confirm password</label>
+                                </div>
+                                <div class="form-action mt-2">
+                                    <button class="btn btn-lg btn-fill btn-fill-orange w-100" id="btn-set-password">SET PASSWORD</button>
+                                </div>
+                                <h5 class="text-center mt-2 text-grey">Back to <a href="#" class="text-link text-link-blue font-14" target="_self">Sign in</a></h5>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 p-0 bg-lightblue d-none d-md-flex flex-wrap align-items-center pl-2 pr-2">
+                        <div class="modal-slider-container w-100">
+                            <h3 class="mb-3 text-center text-grey font-20">Password must contain the following</h3>
+                            <ul class="password-strength-check text-grey">
+                                <li class="uppercase">1 Uppercase letter</li>
+                                <li class="specialchar">1 Special Character</li>
+                                <li class="charlength">Must be longer than 6 characters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

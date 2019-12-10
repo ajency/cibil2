@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'Intro-Bold';
+	src: url('../fonts/Intro-Bold.eot');
+	src: local('☺'), url('../fonts/Intro-Bold.woff') format('woff'), url('../fonts/Intro-Bold.ttf') format('truetype'), url('../fonts/Intro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Intro-Book';
+	src: url('../fonts/Intro-Book.eot');
+	src: local('☺'), url('../fonts/Intro-Book.woff') format('woff'), url('../fonts/Intro-Book.ttf') format('truetype'), url('../fonts/Intro-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Intro-Light';
+	src: url('../fonts/Intro-Light.eot');
+	src: local('☺'), url('../fonts/Intro-Light.woff') format('woff'), url('../fonts/Intro-Light.ttf') format('truetype'), url('../fonts/Intro-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Intro-Regular';
+	src: url('../fonts/Intro-Regular.eot');
+	src: local('☺'), url('../fonts/Intro-Regular.woff') format('woff'), url('../fonts/Intro-Regular.ttf') format('truetype'), url('../fonts/Intro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro_condregular';
+    src: url('../fonts/introcond-regular-webfont.woff2') format('woff2'),
+         url('../fonts/introcond-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro_condlight';
+    src: url('../fonts/introcond-light-webfont.woff2') format('woff2'),
+         url('../fonts/introcond-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro_condsemibold';
+    src: url('../fonts/introcond-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/introcond-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro_condsemibold_alt';
+    src: url('../fonts/introcond-semiboldalt-webfont.woff2') format('woff2'),
+         url('../fonts/introcond-semiboldalt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
+$font-family-heading: 'DM Serif Display', serif, -apple-system;
+
+$font-bold: 'Intro-Bold';
+$font-book: 'Intro-Book';
+$font-light: 'Intro-Light';
+$font-regular: 'Intro-Regular';
+$font-cond-l: 'intro_condlight';
+$font-cond-r: 'intro_condregular';
+$font-cond-sb: 'intro_condsemibold';
+$font-cond-s: 'intro_condsemibold_alt';
+
+$grey: #777777;
+$grey2: #828282;
+$grey3: #5F5E5E;
+$grey4: #707070;
+$grey5: #979797;
+$grey6: #5F5E5E;
+$lightgrey: #dddddd;
+$lightgrey2: #ededed;
+$lightblue: #EFF7FE;
+$lightblue2: #CFE0E7;
+$lightblue3: #E1EBF5;
+$blue: #00A6CA;
+$danger: #d74025;
+$error: #A62D17;
+$darkorange: #ED3333;
+$darkorange2: #CD4F21;
+$orange: #F16E00;
+$darkblue: #006685;
+$green: #bad486;
+$darkgreen2: #308b39;
+$darkgreen3: #22b14c;
+$darkgreen: #145015;
+$darkgreen4: #3F8030;
+$brown: #780703;
+$brown2: #99000D;
+$tawny: #692348;
+$success: #A9D161;
+$yellow: #FCD800;
+$orange2: #FC9272;
+$orange3: #FB6A4A;
+$maroon: #880015;
+
+$b_blue: #2CC2D9;
+$b_blue2: #7ED6FA;
+$b_darkblue: #126588;
+$b_navyblue: #1C11AB;
+$b_darkblue2: #301E75;
+$b_green: #157289;
+$b_yellow: #FCB617;
+$b_grey: #DFDFDF;
+$b_grey2: #C3D4DB;
+$b_light: #C5E7EE;
+
+
+$light_grey:#fafafa;
+
+$link_blue: #1491FF;

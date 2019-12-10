@@ -1,0 +1,227 @@
+{{ define "main" }}
+
+<div>
+	<img src='{{"img/cibil-page.png" | absURL}}' class="img-fluid m-auto d-block signup-modal-btn">
+</div>
+
+<div class="modal" id="signupModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document"> 
+    <div class="modal-content">
+   
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    	<div class="text-center signup-holder">
+    		
+	        <!-- <img src='{{"img/cibil-logo.png" | absURL}}' class="img-fluid" width="100" style="filter: grayscale(1);"> -->
+
+	        <div class="row">
+	        	<div class="col-md-12">
+	        		<div>
+	        			<h3 class="font-weight-normal mb-2 mt-1">Welcome text here</h3>
+	        		</div>
+
+	        		<form>
+	        			<div class="form-group">
+	        				<input type="text" class="form-control form-control-lg" placeholder="Your full name" name="">
+	        			</div>
+
+	        			<div class="form-group">
+	        				<input type="email" class="form-control form-control-lg" placeholder="Your email address" name="">
+	        			</div> 
+
+	        			<div class="form-group">
+	        				<input type="tel" class="form-control form-control-lg" placeholder="Your mobile number" name="">
+	        			</div>
+
+	        			<div class="form-group">
+	        				<select class="form-control form-control-lg" id="entityType" name="" onchange="entity_select()">
+								<option value="0">
+									Select Entity Type
+								</option>
+								<option value="1">
+									Private Limited
+								</option>
+								<option value="2">
+									Public Limited
+								</option>
+								<option value="3">
+									Business Entities Created by Statute
+								</option>
+								<option value="4">
+									Proprietorship
+								</option>
+								<option value="5">
+									Partnership
+								</option>
+								<option value="6">
+									Trust
+								</option>
+								<option value="7">
+									Hindu Undivided Family
+								</option>
+								<option value="8">
+									Co-operative Society
+								</option>
+								<option value="9">
+									Association of Persons
+								</option>
+								<option value="10">
+									Government
+								</option>
+								<option value="11">
+									Self Help Group
+								</option>
+								<option value="12">
+									Not classified
+								</option>
+							</select>
+	        			</div>
+
+	        			{{ if $.Params.pwd }}
+	        			<div class="form-group">
+	        				<input type="password" class="form-control form-control-lg" placeholder="Create a password" name="">
+	        			</div>
+	        			{{ end }}
+
+	        			<a href="/cibil/company-details" id="formLink" class="btn btn-primary btn-lg btn-block disabled">Get Started</a>
+	        			
+	        		</form> 
+	        	</div>
+	        </div>
+
+     	</div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal ani-slideIn-slideUp animated bd-example-modal-lg signup-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+			<div class="container-fluid floating-fields">
+				<div class="row">
+					<div class="col-md-8 col-lg-8 p-0 bg-white">
+						<div class="get-report-form">
+							<h1 class="modal-title text-blue text-center text-md-left">Let’s get started</h1>
+							<div class="d-block d-md-none modal-slider-mobile">
+								<div class="modal-slider">
+									<div class="owl-carousel owl-theme">
+										<div class="slider-content">
+											<h3 class="text-grey font-20 mb-0 mb-md-1 text-center">Fast</h3>
+											<h5 class="text-grey mb-0 text-center font-light">Entire process takes less than 10 minutes</h5>
+										</div>
+										<div class="slider-content">
+											<h3 class="text-grey font-20 mb-0 mb-md-1  text-center">No Impact on Rank</h3>
+											<h5 class="text-grey mb-0 text-center font-light">Requesting for a CCR report will not affect your current CIBIL rank</h5>
+										</div>
+										<div class="slider-content">											
+											<h3 class="text-grey font-20 mb-0 mb-md-1 text-center">Safe and Secure</h3>
+											<h5 class="text-grey mb-0 text-center font-light">CIBIL is 100% safe and secure. Your data is protected</h5>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<h2 class="text-grey modal-sub-title font-20">Enter your contact details</h2>
+							<form class="signup-form" action="/cibil/signup/" method="POST">
+								<div class="form-field required">
+									<input class="form-input" type="text" name="fullname" id="fullname">                            
+									<label for="fullname" class="form-label">
+										<span class="form-label-content">Full Name</span>
+									</label>
+									<label class="input-error">Please Enter Full Name</label>
+								</div>
+								<div class="form-field required">
+									<input class="form-input" type="text" name="email_address" id="email_address" oninput="this.value = this.value.toLowerCase()">                            
+									<label for="email_address" class="form-label">
+										<span class="form-label-content">Email Address</span>
+									</label>
+									<label class="input-error">Please Enter Email Address</label>
+								</div>
+								<div class="form-field required placeholder-wrap">
+									<input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10">										
+									<label for="mobile_number" class="form-label">
+										<span class="form-label-content">Mobile Number</span>
+									</label>
+									<span class="phone-placeholder">+91 </span>
+									<label class="input-error">Mobile number cannot be blank</label>
+								</div>
+								<div class="form-field required select-wrapper valid">
+									<select class="select-default select2-normal" id="entity-type"> 
+										<option value="1">Private Limited</option>
+										<option value="2">Public Limited</option> 
+										<option value="3">Proprietorship</option>
+										<option value="4">Trust</option>
+										<option value="5">Government</option>
+										<option value="6">Non Classified</option>
+										<option value="7">Self Help Groups</option>
+									</select>                      
+									<label for="company_entity_type" class="form-label">
+										<span class="form-label-content">Company Entity Type</span>
+									</label>
+									<label class="input-error">Please Choose Company Entity Type</label>
+								</div>
+								<div class="form-action mt-3">
+									<div class="more-text-wrap mb-2">
+										<label class="text-grey font-12 font-light more-text mb-0">
+											I/We understand that by providing my mobile number. I/ we have assented to receive transactional SMS(es) and I/we may be sent transactional SMS(es) to update status of my/our order for Reports / Products and Services on CIBIL's website. I/We further understand that by providing my/our said mobile number, I/we have also assented to receive calls from CIBIL, their agents etc. regarding the CIBIL Services sought by me/us.
+										</label>
+										<label class="more-text-btn text-blue font-light mb-0 font-12"><span class="more">More+</span><span class="less">Less-</span></label>
+									</div>
+									<button class="btn btn-lg btn-fill btn-fill-orange w-100 btn-proceed-signup animate-shift-right" id="btn-signup-submit">PROCEED <i class="icon-next icon-next-white"></i></button>
+								</div>  
+								<h6 class="text-center mt-2"><a href="/cibil/credit-report/signin-email/" class="text-link text-link-blue font-14" target="_self">Already have a CIBIL account? Login!</a></h6>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 p-0 bg-lightblue d-none d-md-flex flex-wrap align-items-center pl-2 pr-2">
+						<div class="modal-slider-container w-100">
+							<h3 class="mb-3 text-center text-grey font-20">Get your Cibil Rank and Company Credit Report</h3>
+							<div class="modal-slider">
+								<div class="owl-carousel owl-theme">
+									<div class="slider-content">
+										<img class="mb-1" src="{{"img/popup/time.png" | relURL}}" alt="Fast" style="width: 90px;">
+										<h3 class="text-grey font-20 mb-1 text-center">Fast</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">Entire process takes less than 10 minutes</h5>
+									</div>
+									<div class="slider-content">
+										<img class="mb-1" src="{{"img/popup/checking.png" | relURL}}" alt="No Impact on Rank" style="width: 84px;">
+										<h3 class="text-grey font-20 mb-1 text-center">No Impact on Rank</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">Requesting for a CCR report will not affect your current CIBIL rank</h5>
+									</div>
+									<div class="slider-content">     
+										<img class="mb-1" src="{{"img/popup/lock.png" | relURL}}" alt="Safe and Secure" style="width: 66px;">                       
+										<h3 class="text-grey font-20 mb-1 text-center">Safe and Secure</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">CIBIL is 100% safe and secure. Your data is protected</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	// Link update based on entity selection
+	function entity_select() {
+
+		var val = document.getElementById("entityType").value;
+
+		if (val === "0") {
+			document.getElementById("formLink").classList.add('disabled');
+		} else if (val === "1" || val === "2") {
+			document.getElementById("formLink").classList.remove('disabled');
+			document.getElementById("formLink").href="/cibil/company-details";
+		} else {
+			document.getElementById("formLink").classList.remove('disabled');
+			document.getElementById("formLink").href="/cibil/company-details-partnership";
+		}
+	}
+</script> 
+
+{{ end }}

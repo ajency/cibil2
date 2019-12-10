@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<div class="container">
+	<div class="px-2 py-4">
+
+		<div class="row">
+			<div class="col-md-8">
+				<!-- <h4 class="mb-2">Here's a summary of your details</h4> -->
+				<!-- <h4 class="mb-2">Amount Due: INR 3,000</h4> -->
+				<h5 class="font-weight-bold mb-2">Details Summary</h5>
+
+				<p>You are logged in as <strong>Ashok</strong> and requesting a credit report for:</p>
+				<h5 class="mb-0">India Steel Public Ltd.,</h5>
+				F12/15, Raj Towers, JB Nagar,<br> 
+				Andheri East, Mumbai,<br>
+				Maharashtra, India - 400053
+
+				
+			</div>
+
+			<div class="col-md-4">
+				<h5 class="font-weight-bold mb-2">Payment Summary</h5>
+				<ul class="list-group mb-3">
+		            <li class="list-group-item d-flex justify-content-between lh-condensed">
+		              <div>
+		                <h6 class="my-0">CIBIL Report</h6>
+		                <small class="text-muted">Brief description</small>
+		              </div>
+		              <span class="text-muted">₹3000</span>
+		            </li>
+		            <li class="list-group-item d-flex justify-content-between lh-condensed">
+		              <div>
+		                <h6 class="my-0">Taxes</h6>
+		                <small class="text-muted">GST @ 12%</small>
+		              </div>
+		              <span class="text-muted">₹360</span>
+		            </li>
+		            <li class="list-group-item d-flex justify-content-between">
+		              <span>Total (INR)</span>
+		              <strong>₹3360</strong>
+		            </li>
+		       </ul>
+		       <!-- <p class="m-0">You can make instant payment via Debit card / Credit card / Netbanking</p> -->
+			</div>
+		</div>
+
+		<div class="bg-light border p-2 d-flex justify-content-between align-items-center">
+			<div class="form-group form-check small m-0">
+			    <input type="checkbox" class="form-check-input" id="acceptTerms">
+			    <label class="form-check-label" for="acceptTerms">I hereby declare that I am authorized to obtain the CIBIL RANK & company credit report for this application. I acknowledge and accept the <a href="#">Terms & Conditions</a> applicable and available on the site. </label>
+			</div>
+			<a href="{{ if not $.Params.patner }}/cibil/kyc/{{ else }}/cibil/report-partnership/{{ end }}"  class="btn btn-primary btn-lg ml-1 flex-shrink-0">Proceed to Online Payment</a>
+		</div>
+
+		<hr class="my-4">
+
+		<div class="row">
+			<div class="col-12">
+				<!-- <h6>Offline Payment</h6> -->
+				<p>Alternatively, you can make payment via Demand Draft drawn in favour of 'TransUnion CIBIL Limited'</p>
+				
+				<div class="text-left">
+					DD may be sent by post to:<br>
+					<div class="small">
+						Consumer Services, <br>
+						TransUnion CIBIL Limited,<br>
+						One Indiabulls Centre, Tower 2A, 19th Floor, <br>
+						Senapati, Bapat Marg, Lower Parel, Mumbai - 400013
+					</div>
+					
+				</div>
+
+				<div class="text-left mt-2">
+					Once payment has been received, you can proceed by entering the DD number below.
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<div class="input-group my-1">
+						  <input type="text" class="form-control" placeholder="Enter DD number">
+						  <div class="input-group-append">
+						    <button class="btn btn-outline-primary" type="button">Proceed</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- <a class="btn btn-primary btn-lg mt-1" href="/cibil/kyc/">Proceed to Physical KYC</a> -->
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+{{ end }}

@@ -1,0 +1,205 @@
+// Bootstrap
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'bootstrap-variables';
+@import 'variables';
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/utilities"; 
+
+body {
+  font-size: 16px;
+  line-height: 1.1;
+  font-family: $font-family-base;
+  @include media-breakpoint-up(md) {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+    .h-md-100 { height: 100vh; }
+}
+
+.signup-holder{
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+}
+
+.form-control-lg, .btn-lg{
+  font-size: 1.05rem;
+}
+
+.imagearea{
+  background-color: theme-color("primary");
+}
+.text-underline{
+  text-decoration: underline;
+}
+
+.progress-table {
+  display: table;
+  width: 100%;
+}
+.progress-text {
+  color: #b1bfc4;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  margin-left: 40px;
+  font-weight: 300;
+}
+.signup-progress-text,
+.progress-text-spacer {
+  display: table-cell;
+  float: none;
+  padding: 0 0 14px;
+  vertical-align: bottom;
+  font-size: 16px;
+}
+.progress-text-container {
+  width: 15%;
+}
+.signup-progress-bar {
+  background: #f5f7fa;
+  background-clip: content-box;
+  display: table-cell;
+  float: left;
+  height: 3px;
+}
+.progress-bar-segment {
+  width: 28.5%;
+}
+.progress-bar-segment.cap {
+  width: 7%;
+}
+.signup-progress-text.active {
+  color: #040d14;
+}
+.signup-progress-bar.active {
+  background: theme-color("primary");
+}
+
+.radio-button {
+  position: relative;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+.radio-button span {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #8a8a8a;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.radio-button input:focus ~ span,
+.radio-button:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #fff;
+}
+
+.radio-button input:checked ~ span {
+  background-color: black;
+  color: white;
+}
+
+.notifications {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  li {
+    margin-top: 60px;
+    // width: 50%;
+    .kyc-title {
+      margin-left: 50px;
+      margin-top: -25px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 15px;
+      // border: 1px solid #ddd;
+      // padding: 10px;
+      // background-color: white;
+    }
+    .kyc-documents, .verification{
+      margin-left: 50px;
+    }
+    i {
+      width: 30px;
+      height: 30px;
+      display: block;
+      line-height: 26px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #ddd;
+      // &:after {
+      //   content: '';
+      //   width: 40px;
+      //   height: 1px;
+      //   position: absolute;
+      //   background-color: #ddd;
+      //   margin-top: 15px;
+      //   z-index: -1;
+      // }
+    }
+  }
+  &:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    /* left is 50% of the <i>'s width */
+    left: 15px;
+    z-index: -1;
+  }
+}
+
+// Display breakpoints for DEV
+{{ if .Site.IsServer }}
+
+{{ end }}

@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<div>
+	<img src='{{"img/cibil-page.png" | absURL}}' class="img-fluid m-auto d-block signup-modal-btn">
+</div>
+
+<div class="modal fade bd-example-modal-lg signin-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+			<div class="container-fluid floating-fields">
+				<div class="row">
+					<div class="col-md-8 col-lg-8 p-0 bg-white">
+
+                        <div class="modal-content-wrap">
+                            <div class="modal-steps-pages step-signin">
+                                <div class="step-page page-gutter active" data-step="signin">
+                                    <h1 class="modal-title text-blue text-center text-md-left">Welcome to CIBIL</h1>
+                                    <div class="d-block d-md-none modal-slider-mobile">
+                                        <div class="modal-slider">
+                                            <div class="owl-carousel owl-theme">
+                                                <div class="slider-content">
+                                                    <h4 class="text-grey mb-0 text-center">Check your CIBIL Rank</h4>
+                                                </div>
+                                                <div class="slider-content">
+                                                    <h4 class="text-grey mb-0 text-center">Share reports with Others</h4>
+                                                </div>
+                                                <div class="slider-content">
+                                                    <h4 class="text-grey mb-0 text-center">Get access to your existing reports</h4>	
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-grey modal-sub-title">Hi there, please sign in to continue to your CIBIL account</h4>
+                                    <form class="signin-form" action="/cibil/credit-report/signin" method="POST">
+                                        <div class="form-error mb-2"><h5 class="text-red">The Email ID you entered is incorrect.</h5></div>
+                                        <div class="form-field required">
+                                            <input class="form-input" type="email" name="email_address" id="email_address" autocomplete="off" oninput="this.value = this.value.toLowerCase()">                            
+                                            <label for="email_address" class="form-label">
+                                                <span class="form-label-content">Email ID</span>
+                                            </label>
+                                            <label class="input-error">Please Enter Email ID</label>								
+                                        </div>
+                                        <div class="form-action mt-10">
+                                            <button class="btn btn-lg btn-fill btn-fill-orange w-100 animate-shift-right" id="btn-signin-email">NEXT <i class="icon-next icon-next-white"></i></button>
+                                        </div>  
+                                        <h5 class="text-center mt-2 text-grey">Not having a CIBIL Company Credit Report? <a href="/cibil/signup/" class="text-link text-link-blue font-14" target="_self">Click here to get one</a></h5>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+					</div>
+					<div class="col-md-4 col-lg-4 p-0 bg-lightblue d-none d-md-flex flex-wrap align-items-center pl-2 pr-2">
+						<div class="modal-slider-container w-100 pl-md-2 pr-md-2">
+							<h3 class="mb-3 text-center text-grey font-20">With a CIBIL account you can</h3>
+							<div class="modal-slider">
+								<div class="owl-carousel owl-theme">
+									<div class="slider-content">
+										<img class="mb-1" src="{{"img/company-info/rank.png" | relURL}}" alt="Fast" style="width: 56px;">
+										<h4 class="text-grey mb-1 text-center">Check your CIBIL Rank</h4>										
+									</div>
+									<div class="slider-content">
+										<img class="mb-1" src="{{"img/company-info/rank.png" | relURL}}" alt="Fast" style="width: 56px;">
+										<h4 class="text-grey mb-1 text-center">Share reports with Others</h4>										
+									</div>
+									<div class="slider-content">
+										<img class="mb-1" src="{{"img/company-info/rank.png" | relURL}}" alt="Fast" style="width: 56px;">
+										<h4 class="text-grey mb-1 text-center">Get access to your existing reports</h4>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}

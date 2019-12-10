@@ -1,0 +1,37 @@
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 0 0 17px;
+    
+    li {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        margin-right: 30px;
+
+        a {
+            color: $blue;
+            text-decoration: underline;
+            &:hover,
+            &:focus {
+                color: $blue; 
+            }
+        }
+
+        &.active {            
+            a {
+                color: $grey;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    @include media-max(md){
+        display: none;
+    }
+}

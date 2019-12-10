@@ -1,0 +1,59 @@
+<!-- Just an image -->
+
+<div class="container">
+	<nav class="navbar navbar-light mt-2 flex-nowrap">
+	  <a class="navbar-brand" href="#">
+	    <img src="{{"img/cibil-logo.png" | absURL}}" width="80" alt="" {{ if $.Params.wireframe }} style="filter: grayscale(1);" {{ end }}>
+	  </a>
+
+	  {{ if not $.Params.noprogress }}
+		  {{ if $.Params.wireframe }}
+		  <div class="progress-text text-center" id="progress">
+		    <div class="progress-table">
+		        <div class="signup-progress-text progress-text-container {{ if $.Params.currentinfo }}active{{end}}">
+		          Company Info
+		        </div>
+		        <div class="progress-text-spacer"></div>
+		        <div class="signup-progress-text progress-text-container {{ if $.Params.currentpayment }}active{{end}}">
+		          Payment
+		        </div>
+		        {{ if $.Params.kyc }}
+		        <div class="progress-text-spacer"></div>
+		        <div class="signup-progress-text progress-text-container {{ if $.Params.currentkyc }}active{{end}}">
+		          KYC
+		        </div>
+		        {{ end }}
+		        <div class="progress-text-spacer"></div>
+		        <div class="signup-progress-text progress-text-container {{ if $.Params.currentreport }}active{{end}}">
+		          Report
+		        </div>
+		    </div>
+		    <div class="mbm progress-table">
+		        <div class="signup-progress-bar progress-bar-segment cap active"></div>
+		        <div class="signup-progress-bar progress-bar-segment {{ if $.Params.infodone }}active{{end}}"></div>
+		        <div class="signup-progress-bar progress-bar-segment {{ if $.Params.paymentdone }}active{{end}}"></div>
+		        <div class="signup-progress-bar progress-bar-segment {{ if $.Params.reportdone }}active{{end}}"></div>
+		        <div class="signup-progress-bar progress-bar-segment cap {{ if $.Params.reportdone }}{{end}}"></div>
+		    </div>
+		</div>
+		
+		{{ else }}
+
+		<ul class="progressbar">
+			<li class="{{ if $.Params.currentinfo }}active{{end}}">Company Info</li>
+			<li class="{{ if $.Params.currentpayment }}active{{end}}">Payment</li>
+			<li class="{{ if $.Params.currentkyc }}active{{end}}">KYC</li>
+			<li class="{{ if $.Params.currentreport }}active{{end}}">Report</li>
+		</ul>
+
+		{{ end }}
+	{{ end }}
+
+	{{ if $.Params.noprogress }}
+		<div>
+			Welcome, Ashok <a href="#" class="small text-black-50 ml-1">Logout</a>
+		</div>
+	{{ end }}
+
+	</nav>
+</div>

@@ -1,0 +1,1206 @@
+<h1 class="section-title text-grey mb-3">Company Profile</h1>   
+
+<div class="tab-navigation">
+    <ul class="nav nav-tabs mb-0 scrollable-tabs" id="accounts_cp_tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="company-info-tab" data-toggle="tab" href="#company-info" role="tab" aria-controls="company-info" aria-selected="true">Company Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="address-info-tab" data-toggle="tab" href="#address-info" role="tab" aria-controls="address-info" aria-selected="false">Address Information</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-info-tab" data-toggle="tab" href="#contact-info" role="tab" aria-controls="contact-info" aria-selected="false">Contact Information</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="related-parties-tab" data-toggle="tab" href="#related-parties" role="tab" aria-controls="related-parties" aria-selected="false">Related Parties</a>
+        </li>
+    </ul>
+</div>
+
+<div class="tab-content mt-2" id="accounts_tabs_cp_content">
+    <div class="tab-pane fade show active" id="company-info" role="tabpanel" aria-labelledby="company-info-tab">
+        <div class="table-company-info p-0 col-lg-9">
+            <table class="table table-bordered table--colored table--small text-grey">
+                <tbody>
+                    <tr>
+                        <td class="font-light">Company Name</td>
+                        <td class="text-black">Dimension Engineers</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Class of Activity</td>
+                        <td class="text-black">Design</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Business Category</td>
+                        <td class="text-black">Medium</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Business Industry</td>
+                        <td class="text-black">Service Provider</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Sales Figure</td>
+                        <td class="text-black">₹ 10,000,000,000</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">No. of Employees</td>
+                        <td class="text-black">50</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Date of Incorporation</td>
+                        <td class="text-black">26 Jul 2007</td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-company-details mt-2 p-0 col-lg-9">
+            <table class="table table-bordered table--colored table--small text-grey">
+                <tbody>
+                    <tr>
+                        <td class="font-light">PAN Number</td>
+                        <td class="text-black">AABBC4567A</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">Registration Number</td>
+                        <td class="text-black">22AAAA0000A125</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">CIN</td>
+                        <td class="text-black">U67190TN2014PTC09697</td>
+                    </tr>
+                    <tr>
+                        <td class="font-light">TIN</td>
+                        <td class="text-black">22AAAA0000A125</td>
+                    </tr>                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="address-info" role="tabpanel" aria-labelledby="address-info-tab">
+        <div class="filter-table-wrap mt-2">
+            <div class="filters d-flex mt-1 align-items-end floating-fields">
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="fform-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Address</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-status">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="status" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="all">All</option>
+                            <option value="registered-office">Registered Office</option>
+                            <option value="branch-regional-office">Branch / Regional Office</option>
+                            <option value="others">Others</option>
+                            <option value="warehouse">Warehouse</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Location Type</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-action">
+                    <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div>
+
+            <div class="table-wrapper mt-2">
+                <div class="table-list filter-table no-click">                            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="w-25">Location Type</th>
+                                <th class="w-35">Address</th>
+                                <th class="w-20">First Reported Date</th>
+                                <th class="w-20">Last Reported Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-status="registered-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Registered Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 415520</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="branch-regional-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Branch / Regional Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="others"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Others</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 415520</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="warehouse"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Warehouse</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="branch-regional-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Branch / Regional Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 415520</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="others"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Others</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 415520</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="registered-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Registered Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="branch-regional-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Branch / Regional Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 415520</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                            <tr>
+                                <td data-status="registered-office"><div class="d-lg-none text-grey font-14 mb-05">Location Type:</div> Registered Office</td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004"><div class="d-lg-none text-grey font-14 mt-1 mb-05">Address:</div> Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">First Reported Date:</div> 24 Nov 2018</td>
+                                <td><div class="d-lg-none text-grey font-14 mt-1 mb-05">Last Reported Date:</div> 24 Nov 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                <div class="table-pagination mb-2 mb-md-0">
+                    <ul class="number-pagination">
+                        <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="ellipsis"><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="table-row-count">
+                        <span>Show</span>
+                        <select class="select-entry-count">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>                                                                                   
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="contact-info" role="tabpanel" aria-labelledby="contact-info-tab">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <div class="col-heading mb-1 text-black font-regular">Contact Numbers (13)</div>
+                    <div class="col-text p-0">
+                        <div class="ph-result">
+                            <span class="badge-grey">02026854276</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">02026854276</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">0202345889</span>
+                        </div>                                                   
+                    </div>                         
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="col-heading mb-1 text-black font-regular">FAX (5)</div>
+                    <div class="col-text pl-0">
+                        <div class="ph-result">
+                            <span class="badge-grey">0202345889</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">1234567890</span>
+                            <span class="badge-grey">02026854276</span>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="related-parties" role="tabpanel" aria-labelledby="related-parties-tab">
+        <div class="filter-table-wrap mt-2"> 
+            <div class="filters d-flex mt-1 align-items-end floating-fields">
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Name, Address, Contact</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-type">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="type" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="all">All</option>
+                            <option value="proprietor">Proprietor</option>
+                            <option value="holding-company">Holding Company</option>
+                            <option value="independent-director">Independent Director</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Type</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-bank">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="sortby" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="asc">Asc</option>
+                            <option value="desc">Desc</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Sort By Percentage</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-action">
+                    <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card mt-2 card-collapse" data-sort="20" data-type="proprietor" data-name="Gabriel Schwartz" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12 col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Gabriel Schwartz</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">20%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="34" data-type="proprietor" data-name="Elle Menezes" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Elle Menezes</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">34%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="50" data-type="independent-director" data-name="Howard Shaw" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12 col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">INDEPENDENT DIRECTOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Howard Shaw</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">50%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="75"  data-type="holding-company" data-name="Gabriel Schwartz" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12 col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-blue mb-1 font-10 font-regular">HOLDING COMPANY</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Gabriel Schwartz</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">75%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="25" data-type="proprietor" data-name="Elle Menezes" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Elle Menezes</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">25%</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="20"  data-type="proprietor" data-name="Gabriel Schwartz" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12 col-sm-12 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Gabriel Schwartz</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">20%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="34" data-type="proprietor" data-name="Elle Menezes" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Elle Menezes</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">34%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="50" data-type="independent-director" data-name="Howard Shaw" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">INDEPENDENT DIRECTOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Howard Shaw</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">50%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="75"  data-type="holding-company" data-name="Gabriel Schwartz" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-blue mb-1 font-10 font-regular">HOLDING COMPANY</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Gabriel Schwartz</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">75%</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="card mt-2 card-collapse" data-sort="25" data-type="proprietor" data-name="Elle Menezes" data-address="Plot No, Building 12, MIDC, MUMBAI, India" data-contact="123456789 1112345678">                                    
+                    <div class="card-body collapse-arrow">
+                        <div class="row">
+                            <div class="party-name col-12  col-sm-6 col-lg-3">
+                                <div class="mb-1">
+                                    <span class="type d-block text-orange mb-1 font-10 font-regular">PROPREITOR</span>
+                                    <label class="name text-black  font-regular font-14 mb-0">Elle Menezes</label>
+                                    <span class="age-gender d-block font-12 text-grey font-light">43, Female</span>
+                                    <span class="resi d-block font-12 text-grey font-light">Resident Indian Individual</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Percentage Holding</label>
+                                    <label class="text-grey font-light d-block font-14">25%</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-3 pt-md-2">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Address</label>                                                
+                                    <label class="text-grey font-light d-block font-14">Plot No, Building 12, MIDC, MUMBAI, India</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3 pt-md-2 panle-hide panel-hide-lg">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Contact</label>
+                                    <label class="text-grey font-light d-block font-14">+91 123 456789 <br> +91 111 2345678</label>
+                                </div>                                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">PAN</label>
+                                    <label class="text-grey font-light d-block font-14">AIBP01001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">DIN</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Driving Licence</label>
+                                    <label class="text-grey font-light d-block font-14">TINX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Voter ID</label>
+                                    <label class="text-grey font-light d-block font-14">CINX001001001001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Passport Number</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">UID</label>
+                                    <label class="text-grey font-light d-block font-14">STIX001</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Ration Card</label>
+                                    <label class="text-grey font-light d-block font-14">ARF845112BK</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-3 reveal-column">
+                                <div class="mb-1">
+                                    <label class="text-black d-block mb-05">Last Reported</label>
+                                    <label class="text-grey font-light d-block font-14">8 Mar 2018</label>
+                                </div>                                                
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>                
+            </div>
+            <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 elem-no-results">No Results Found.</div>
+            <div class="table-pagination mb-2 mb-md-0">
+                <ul class="number-pagination">
+                    <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                    <li class="current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="ellipsis"><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                </ul>
+                <div class="table-row-count">
+                    <span>Show</span>
+                    <select class="select-entry-count">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>entries</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

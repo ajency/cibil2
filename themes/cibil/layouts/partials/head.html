@@ -1,0 +1,36 @@
+<head>
+
+	<title>{{ $.Params.title }} - CIBIL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="{{ "img/favicon.ico" | relURL}}" rel="shortcut icon">
+	<!-- CSS-->
+	{{ if $.Params.wireframe }}
+		{{ if .Site.IsServer }}
+			{{ $style := resources.Get "scss/wireframe.scss" | resources.ExecuteAsTemplate "wireframe.scss" . | toCSS (dict "targetPath" "css/wireframe.css" "enableSourceMap" true) }}
+			<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+		{{ else }}
+			{{ $style := resources.Get "scss/wireframe.scss" | resources.ExecuteAsTemplate "wireframe.scss" . | toCSS (dict "targetPath" "css/wireframe.css" "enableSourceMap" false) }}
+			<link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+		{{ end }}
+	{{ else }}
+		<link rel="stylesheet" href="{{"css/owl.carousel.min.css" | relURL}}">
+		<link rel="stylesheet" href="{{"vendor/dropzone/dropzone.min.css" | relURL}}">
+		<link rel="stylesheet" href="{{"vendor/fontawesome/css/all.min.css" | relURL}}">
+		<link rel="stylesheet" href="{{"vendor/select2/select2.min.css" | relURL}}">
+		<link rel="stylesheet" href="{{"css/animate.css" | relURL}}">
+		<link rel="stylesheet" href="{{"css/lightpick.css" | relURL}}">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.bootstrap4.min.css">
+		{{ if in .Permalink "accounts" }}
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+			<link rel="stylesheet" href="{{"css/jquery.scrolling-tabs.min.css" | relURL}}">
+		{{ end }}
+		{{ if .Site.IsServer }}
+			{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+			<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+		{{ else }}
+			{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+			<link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+		{{ end }}
+	{{ end }}
+</head>

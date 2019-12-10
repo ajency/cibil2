@@ -1,0 +1,104 @@
+.badge {
+    padding: 1px 7px;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: $font-regular;
+    line-height: 13px;
+    letter-spacing: 0.41px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 4px 0 4px 0;
+
+    &-new {
+        background: $orange;
+        color: #fff;
+    }
+    &.order-status {
+        background: $blue;
+        color: #fff;
+        right: 0;
+        left: auto;
+    }
+}
+
+.badge {
+    &-count {
+        border-radius: 56%;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        font-family: $font-regular;
+    }
+    &-red {
+        background: $danger;        
+    }
+}
+
+.badge-fill {
+    width: 20px;
+    height: 20px;
+    border-radius: 56%;
+    display: inline-block;    
+
+    &-blue {
+        background: $blue;
+    }
+    &-b_blue2 {
+        background: $b_blue2;
+    }
+    &-lightblue {
+        background: $b_blue;
+    }
+    &-yellow {
+        background: $b_yellow;
+    }
+    &-grey {
+        background: $b_grey;
+    }
+    &-grey2 {
+        background: $b_grey2;
+    }
+    &-navybule {
+        background: $b_navyblue;
+    }
+    &-green {
+        background: $b_green;
+    }
+    &-b_darkblue {
+        background: $b_darkblue;
+    }
+    &-b_light {
+        background: $b_light;
+    }
+}
+
+.badge {
+    &-line-red {
+        width: 20px;
+        height: 2px;
+        background: #D74025;
+    }
+}
+
+.badge {
+    &-md {
+        display: inline-block;
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+        border-radius: 56%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 12px;
+    }
+}

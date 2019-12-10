@@ -1,0 +1,143 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="section-credit-report mt-4 mb-6 floating-fields" id="btn-next">
+    <div class="container">
+		<!-- <div class="row">
+			<div class="col-md-12 col-lg-10 offset-lg-1">
+				<div class="mb-4 mb-md-6 message message-warning fadeInUp animated d-none">
+					<h4 class="message-text text-uppercase">Your email is not verified </h4>
+					<p class="message-info font-12">Please verify your email to access all your purchased reports in your CIBIL account. <a href="/cibil/credit-report/report-to-be-shipped" class="text-link text-link-blue font-light">Resend verification email to arnabtarcar@tarcarind.com</a></p>
+				</div>
+			</div>
+		</div> -->
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 col-left pr-lg-5">
+                <div>
+                    <h1 class="section-title text-grey mb-1">Your Report is Ready</h1> 
+                    <h5 class="text-grey font-light mb-2">You have <span class="text-highlight text-lowercase">successfully been verified</span> to request the <span class="text-highlight">CIBIL Rank and CCR Report</span> for <span class="text-highlight">DIMENSION ENGINEERS.</span></h5>
+                    <h5 class="text-grey font-light mb-2">To ensure compliance with policies and procedures, the <span class="text-highlight text-lowercase"></span>report will be shipped to the registered company address. Report updates will be sent to your registered CIBIL account email id and phone number.</h5>                    
+				</div>
+				<div class="cibil-report-image mt-5">
+					<picture>
+						<source media="(min-width: 767px)" srcset="{{"img/cibil_rank_file.png" | relURL}}">
+						<source media="(max-width: 768px)" srcset="{{"img/cibil_rank_file.png" | relURL}}">
+						<img src="{{"img/cibil_rank_file.png" | relURL}}" alt class="img-fluid">
+					</picture>
+				</div>
+				<div class="card card-info mt-3 d-none d-md-flex">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-2 mb-3 d-none d-md-flex">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-right sticky-sidebar">
+				<div class="card shipping-details mt-3 mt-md-0">
+					<div class="card-body">
+						<h4 class="text-uppercase mb-2">Shipping Summary</h4>
+						<div class="shipping-summary">
+							<h5 class="text-grey mb-05 font-light">Report Will Be Shipped To</h5>
+							<h4>H.NO.4/259/A, Near 4 Pillar Hotel Panaji North Goa GA 403001 IN</h4>
+						</div>
+						<div class="estimated-delivery mt-2">
+							<h5 class="text-grey mb-05 font-light">Est. Delivery Date</h5>
+							<h4>Sep 22 - Sep 28</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-3">
+					<a href="/cibil/accounts/my-reports" class="btn btn-fill btn-fill-orange btn-lg w-100 text-uppercase animate-shift-right">Go To Reports <i class="icon-next icon-next-white"></i></a>
+				</div>
+
+				<div class="card card-info mt-3 d-flex d-md-none">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-3 mb-3 d-flex d-md-none">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-2 ml-md-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="modal fade" id="setpassword-modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+			<div class="container-fluid floating-fields">
+				<div class="row">
+					<div class="col-md-8 col-lg-8 p-0 bg-white">
+						<div class="get-report-form">
+							<h1 class="modal-title text-blue text-center text-md-left">Complete Your Account Registration</h1>
+							<h4 class="text-grey font-light">To make sure you have access to all your reports, you will need to set a password for your CIBIL company account.</h4>
+							<div class="d-block d-md-none modal-slider-mobile ps-wrap mt-1">
+								<h3 class="mb-1 text-grey font-20">Password must contain the following</h3>
+								<ul class="password-strength-check text-grey">
+									<li class="uppercase">1 Uppercase letter</li>
+									<li class="specialchar">1 Special Character</li>
+									<li class="charlength">Must be longer than 6 characters</li>
+								</ul>
+							</div>
+
+							<form class="setpassword-form mt-2 mt-md-6" action="/cibil/credit-report/report" method="POST">
+								<div class="form-success mb-2"><h5 class="text-success">Set Password Successfully</h5></div>
+								<div class="form-field required">
+									<input class="form-input" type="password" name="set_password" id="set_password">                            
+									<label for="set_password" class="form-label">
+										<span class="form-label-content">Set Password</span>
+									</label>
+									<label class="input-error">Please Enter Full Name</label>
+								</div>
+								<div class="form-action mt-2">
+									<button class="btn btn-lg btn-fill btn-fill-orange w-100" id="btn-set-password">SET PASSWORD</button>
+								</div>
+								<h5 class="text-center mt-2 text-grey">New to CIBIL? <a href="#" class="text-link text-link-blue font-14" target="_self">Create Account</a></h5>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 p-0 bg-lightblue d-none d-md-flex flex-wrap align-items-center pl-2 pr-2">
+						<div class="modal-slider-container w-100">
+							<h3 class="mb-3 text-center text-grey font-20">Password must contain the following</h3>
+							<ul class="password-strength-check text-grey">
+								<li class="uppercase">1 Uppercase letter</li>
+								<li class="specialchar">1 Special Character</li>
+								<li class="charlength">Must be longer than 6 characters</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-next")
+    button.addEventListener('click', function(e) {		
+        window.location.href="/cibil/credit-report/signin-email/";
+    });
+</script>
+
+{{ end }}

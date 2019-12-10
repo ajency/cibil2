@@ -1,0 +1,120 @@
+.nav-tabs {
+    border-bottom: 1px solid $lightblue2;
+    opacity: 1;
+    //display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none; /*// IE 10+*/
+    overflow: -moz-scrollbars-none;/*// Firefox*/
+    -webkit-overflow-scrolling: touch;
+    
+    &::-webkit-scrollbar {
+        display: none; /*Safari and Chrome*/
+    }
+
+    .nav {        
+        &-item {
+            margin-bottom: 0;
+            display: block;
+        }
+        &-link {
+            display: block;
+            border-radius: 0;
+            border: 0;
+            text-align: center;
+            padding: 12px 20px 10px;            
+            font-size: 14px;
+            color: $blue;
+            text-transform: uppercase;
+            font-family: $font-regular;
+            white-space: nowrap;
+            //min-width: 140px;
+
+            &.active {
+                color: $blue;
+                border-bottom: 2px solid $blue;    
+                background: $lightblue;    
+            }
+        }
+    }
+}
+
+
+.scrtabs-tab {
+    &-container {
+        width: 100%;
+        height: auto;
+        &:after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+    }
+    &s-fixed-container {
+        padding: 0 0;
+        width: 100% !important;
+    }
+    &-scroll-arrow {
+        display: block !important;
+        padding: 0 !important;
+        border: 0 !important;        
+        width: 32px !important;
+        height: 40px !important;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        background: #fff;
+
+        &.scrtabs-disable {
+            display: none !important;
+        }
+
+        &:hover,
+        &:focus {
+            background: #fff;
+        }
+
+        i {
+            line-height: 32px;
+            font-size: 24px;
+            color: $grey;
+        }
+
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+    }
+}
+
+.st-arrow {
+    &-left {        
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 2px solid $blue;
+        border-top: 0;
+        border-right: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        position: absolute;
+        top: 50%;
+        left: 50%;   
+        margin-left: 2px;     
+    }
+    &-right {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 2px solid $blue;
+        border-top: 0;
+        border-right: 0;
+        transform: translate(-50%, -50%) rotate(225deg);
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        margin-left: -2px;       
+    }
+}

@@ -1,0 +1,42 @@
+.mini {
+    &-slider {
+        border: 1px solid $lightgrey;
+        border-radius: 2px;
+        background-color: $lightgrey3;        
+        padding: 20px 20px 20px;                
+        
+        .short-desc {
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0.28px;
+            line-height: 20px;
+            text-align: center;
+            color: $grey;
+        }
+        .owl-dots {
+            margin-top: 5px;
+        }
+    }
+}
+
+.info {
+    &-box {
+        &-icon {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+.image {
+    &-slider {
+        &-cont {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

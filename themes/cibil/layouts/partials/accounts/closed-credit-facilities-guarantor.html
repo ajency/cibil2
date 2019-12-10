@@ -1,0 +1,749 @@
+<h1 class="text-grey">Closed Credit Facilities as Guarantor</h1>
+<div>
+    <p class="text-grey font-light">This lists all the closed credit facilities availed by your company as reported by various lenders. The credit facilities highlighted in Red have some adverse information while those highlighted in Green do not.</p>
+</div>
+
+<div class="tab-navigation">
+    <ul class="nav nav-tabs mb-0 scrollable-tabs" id="ccfg-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="ccfg-regular-tab" data-toggle="tab" href="#ccfg-regular" role="tab" aria-controls="report-info" aria-selected="true">Regular</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="ccfg-delinquent-tab" data-toggle="tab" href="#ccfg-delinquent" role="tab" aria-controls="invoice" aria-selected="false">Delinquent</a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content mt-2" id="ccfg-tabs-content">
+    <div class="tab-pane fade show active" id="ccfg-regular" role="tabpanel" aria-labelledby="ccfg-regular-tab">
+        <p class="mb-md-0 mt-05 mb-05 text-success font-12 font-regular text-right">Total Outstanding: ₹ 1,16,08,000  across  3 Credit Facilities</p>
+        <div class="filter-table-wrap mt-2"> 
+            <div class="filters d-flex mt-1 align-items-end floating-fields">                
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Borrower, Bank</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-bank">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="hdfc">HDFC</option>
+                            <option value="icici">ICICI</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Bank</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-status">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                            <option value></option>
+                            <option value="open">Open</option>                   
+                            <option value="loss">Loss</option>
+                            <option value="overdue">Overdue</option>
+                            <option value="doubtful">Doubtful</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Status</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-datepicker">
+                    <button class="btn-datepicker" id="datepicker3"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                </div>
+                <div class="filter-box filter-action">
+                    <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div> 
+            <div class="table-list filter-table mt-2">                            
+                <table class="table-cf-guarantor">
+                    <thead>
+                        <tr>
+                            <th class="w-30">Borrower Details</th>
+                            <th class="w-30">Bank</th>
+                            <th class="w-20 sort-column" onclick="sortTable(2,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                            <th class="w-20">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="btn-next">
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7800000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="1500000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7800000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7800000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7800000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="1500000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="open" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-done font-regular">CLOSED BY PAYMENT</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>    
+                    </tbody>
+                </table>
+                <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                <div class="table-pagination mb-2 mb-md-0">
+                    <ul class="number-pagination">
+                        <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="ellipsis"><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="table-row-count">
+                        <span>Show</span>
+                        <select class="select-entry-count">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="ccfg-delinquent" role="tabpanel" aria-labelledby="ccfg-delinquent-tab">
+        <p class="mb-md-0 mt-05 mb-05 text-error font-12 font-regular text-right">Total Outstanding: ₹ 85,01,600  across  3 Credit Facilities</p>
+        <div class="filter-table-wrap mt-2">
+            <div class="filters d-flex mt-1 align-items-end floating-fields">                
+                <div class="filter-box filter-search-box">
+                    <div class="form-field required mb-0">
+                        <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                        <label for="pincode" class="form-label pointer-events-none">
+                            <span class="form-label-content">Search by Borrower, Bank</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-bank">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                            <option></option>
+                            <option value="hdfc">HDFC</option>
+                            <option value="icici">ICICI</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Bank</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-select2-dropdown filter-status">
+                    <div class="form-field select-wrapper mb-0">
+                        <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                            <option value></option>
+                            <option value="open">Open</option>                   
+                            <option value="loss">Loss</option>
+                            <option value="overdue">Overdue</option>
+                            <option value="doubtful">Doubtful</option>
+                        </select>                    
+                        <label for="state" class="form-label">
+                            <span class="form-label-content">Status</span>
+                        </label>		
+                    </div>
+                </div>
+                <div class="filter-box filter-datepicker">
+                    <button class="btn-datepicker" id="datepicker"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                </div>
+                <div class="filter-box filter-action">
+                    <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                </div>
+                <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                    <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                    <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                </div>
+            </div> 
+            <div class="table-list filter-table mt-2">                            
+                <table class="table-cf-guarantor">
+                    <thead>
+                        <tr>
+                            <th class="w-30">Borrower Details</th>
+                            <th class="w-30">Bank</th>
+                            <th class="w-20 sort-column" onclick="sortTable(2,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                            <th class="w-20">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7800000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="1500000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="1500000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="hdfc">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">HDFC </div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="2000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 20,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="7000000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 78,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td data-company="Sample Company Pvt. Ltd." data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.">
+                                <div class="d-lg-none text-grey font-14 mb-05">Borrower Details:</div>
+                                <div class="borrower-details font-regular text-black">Sample Company Pvt. Ltd. <span class="text-grey d-block font-light font-12 mt-05">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004.</span></div>
+                            </td>
+                            <td data-bank="icici">
+                                <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Bank:</div>
+                                    <div class="bank-name font-regular text-black">ICICI</div>
+                                    <div class="text-grey font-14 d-lg-block">A/C: <span class="font-light text-black">AFK45675611</span></div>
+                                </div>
+                            </td>
+                            <td data-amount="1500000">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                    <div class="amount">₹ 15,00,000</div>
+                                    <div class="text-grey font-12 mt-05">Sanctioned: 6 Mar, 2016</div>
+                                </div>
+                            </td>
+                            <td data-status="doubtful" data-date="6/3/2018">
+                                <div class="mt-1 m-lg-0">
+                                    <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                    <div class="status status-doubtful font-regular">DOUBTFUL</div>
+                                    <div class="text-grey font-12 mt-05">Last Reported: 6 Mar, 2018</div>
+                                </div>
+                            </td>                            
+                        </tr>   
+                    </tbody>
+                </table>
+                <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                <div class="table-pagination mb-2 mb-md-0">
+                    <ul class="number-pagination">
+                        <li class="disable navigate-prev"><a href="#"><i class="fas fa-angle-left"></i> Previous</a></li>
+                        <li class="current"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="ellipsis"><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="navigate-next"><a>Next <i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                    <div class="table-row-count">
+                        <span>Show</span>
+                        <select class="select-entry-count">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

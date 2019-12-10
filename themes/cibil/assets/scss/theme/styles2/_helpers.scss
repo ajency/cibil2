@@ -1,0 +1,50 @@
+.font-size {
+    &-36 {
+        font-size: 36px;
+    }
+}
+
+.theme-2 {
+    .form {
+        &-field {
+            padding-top: 0; 
+        }
+        &-label {
+            position: static;
+        }
+    }
+    .share-link-card {
+        border-radius: 2px;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.15);
+        border: 1px solid $lightgrey;
+        padding: 30px 27px;  
+        margin-bottom: 27px;      
+    }
+    
+    .share-link-btn {
+        width: auto;
+        display: inline-block;
+        margin-top: 7px;
+    }
+    .mini-slider {
+        padding: 60px 20px 54px;
+    }
+    .owl {
+        &-dot {
+            background: $lightgrey;
+            border-color: $lightgrey;
+            &.active {
+                background: $grey;
+                border-color: $grey !important;
+            }
+        }
+    }
+    .entity-type-wrap {
+        margin-bottom: 3px;
+        select {
+            background: transparent;
+            border: 0;
+            -webkit-appearance: none;
+        }
+    }
+}

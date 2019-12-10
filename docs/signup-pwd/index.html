@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Signup - CIBIL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/cibil/img/favicon.ico" rel="shortcut icon">
+	
+	
+		
+			
+			<link rel="stylesheet" href="/cibil/css/wireframe.min.be032fb0fa464e597f575981accd103a9fbb0ed4f2f2aa279aa64bd37d77dcb2.css">
+		
+	
+</head><body>
+        <div id="content">
+
+<div>
+	<img src='https://ajency.github.io/cibil/img/cibil-page.png' class="img-fluid m-auto d-block signup-modal-btn">
+</div>
+
+<div class="modal" id="signupModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document"> 
+    <div class="modal-content">
+   
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    	<div class="text-center signup-holder">
+    		
+	        
+
+	        <div class="row">
+	        	<div class="col-md-12">
+	        		<div>
+	        			<h3 class="font-weight-normal mb-2 mt-1">Welcome text here</h3>
+	        		</div>
+
+	        		<form>
+	        			<div class="form-group">
+	        				<input type="text" class="form-control form-control-lg" placeholder="Your full name" name="">
+	        			</div>
+
+	        			<div class="form-group">
+	        				<input type="email" class="form-control form-control-lg" placeholder="Your email address" name="">
+	        			</div> 
+
+	        			<div class="form-group">
+	        				<input type="tel" class="form-control form-control-lg" placeholder="Your mobile number" name="">
+	        			</div>
+
+	        			<div class="form-group">
+	        				<select class="form-control form-control-lg" id="entityType" name="" onchange="entity_select()">
+								<option value="0">
+									Select Entity Type
+								</option>
+								<option value="1">
+									Private Limited
+								</option>
+								<option value="2">
+									Public Limited
+								</option>
+								<option value="3">
+									Business Entities Created by Statute
+								</option>
+								<option value="4">
+									Proprietorship
+								</option>
+								<option value="5">
+									Partnership
+								</option>
+								<option value="6">
+									Trust
+								</option>
+								<option value="7">
+									Hindu Undivided Family
+								</option>
+								<option value="8">
+									Co-operative Society
+								</option>
+								<option value="9">
+									Association of Persons
+								</option>
+								<option value="10">
+									Government
+								</option>
+								<option value="11">
+									Self Help Group
+								</option>
+								<option value="12">
+									Not classified
+								</option>
+							</select>
+	        			</div>
+
+	        			
+	        			<div class="form-group">
+	        				<input type="password" class="form-control form-control-lg" placeholder="Create a password" name="">
+	        			</div>
+	        			
+
+	        			<a href="/cibil/company-details" id="formLink" class="btn btn-primary btn-lg btn-block disabled">Get Started</a>
+	        			
+	        		</form> 
+	        	</div>
+	        </div>
+
+     	</div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal ani-slideIn-slideUp animated bd-example-modal-lg signup-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>
+			<div class="container-fluid floating-fields">
+				<div class="row">
+					<div class="col-md-8 col-lg-8 p-0 bg-white">
+						<div class="get-report-form">
+							<h1 class="modal-title text-blue text-center text-md-left">Let’s get started</h1>
+							<div class="d-block d-md-none modal-slider-mobile">
+								<div class="modal-slider">
+									<div class="owl-carousel owl-theme">
+										<div class="slider-content">
+											<h3 class="text-grey font-20 mb-0 mb-md-1 text-center">Fast</h3>
+											<h5 class="text-grey mb-0 text-center font-light">Entire process takes less than 10 minutes</h5>
+										</div>
+										<div class="slider-content">
+											<h3 class="text-grey font-20 mb-0 mb-md-1  text-center">No Impact on Rank</h3>
+											<h5 class="text-grey mb-0 text-center font-light">Requesting for a CCR report will not affect your current CIBIL rank</h5>
+										</div>
+										<div class="slider-content">											
+											<h3 class="text-grey font-20 mb-0 mb-md-1 text-center">Safe and Secure</h3>
+											<h5 class="text-grey mb-0 text-center font-light">CIBIL is 100% safe and secure. Your data is protected</h5>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<h2 class="text-grey modal-sub-title font-20">Enter your contact details</h2>
+							<form class="signup-form" action="/cibil/signup/" method="POST">
+								<div class="form-field required">
+									<input class="form-input" type="text" name="fullname" id="fullname">                            
+									<label for="fullname" class="form-label">
+										<span class="form-label-content">Full Name</span>
+									</label>
+									<label class="input-error">Please Enter Full Name</label>
+								</div>
+								<div class="form-field required">
+									<input class="form-input" type="text" name="email_address" id="email_address" oninput="this.value = this.value.toLowerCase()">                            
+									<label for="email_address" class="form-label">
+										<span class="form-label-content">Email Address</span>
+									</label>
+									<label class="input-error">Please Enter Email Address</label>
+								</div>
+								<div class="form-field required placeholder-wrap">
+									<input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10">										
+									<label for="mobile_number" class="form-label">
+										<span class="form-label-content">Mobile Number</span>
+									</label>
+									<span class="phone-placeholder">+91 </span>
+									<label class="input-error">Mobile number cannot be blank</label>
+								</div>
+								<div class="form-field required select-wrapper valid">
+									<select class="select-default select2-normal" id="entity-type"> 
+										<option value="1">Private Limited</option>
+										<option value="2">Public Limited</option> 
+										<option value="3">Proprietorship</option>
+										<option value="4">Trust</option>
+										<option value="5">Government</option>
+										<option value="6">Non Classified</option>
+										<option value="7">Self Help Groups</option>
+									</select>                      
+									<label for="company_entity_type" class="form-label">
+										<span class="form-label-content">Company Entity Type</span>
+									</label>
+									<label class="input-error">Please Choose Company Entity Type</label>
+								</div>
+								<div class="form-action mt-3">
+									<div class="more-text-wrap mb-2">
+										<label class="text-grey font-12 font-light more-text mb-0">
+											I/We understand that by providing my mobile number. I/ we have assented to receive transactional SMS(es) and I/we may be sent transactional SMS(es) to update status of my/our order for Reports / Products and Services on CIBIL's website. I/We further understand that by providing my/our said mobile number, I/we have also assented to receive calls from CIBIL, their agents etc. regarding the CIBIL Services sought by me/us.
+										</label>
+										<label class="more-text-btn text-blue font-light mb-0 font-12"><span class="more">More+</span><span class="less">Less-</span></label>
+									</div>
+									<button class="btn btn-lg btn-fill btn-fill-orange w-100 btn-proceed-signup animate-shift-right" id="btn-signup-submit">PROCEED <i class="icon-next icon-next-white"></i></button>
+								</div>  
+								<h6 class="text-center mt-2"><a href="/cibil/credit-report/signin-email/" class="text-link text-link-blue font-14" target="_self">Already have a CIBIL account? Login!</a></h6>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 p-0 bg-lightblue d-none d-md-flex flex-wrap align-items-center pl-2 pr-2">
+						<div class="modal-slider-container w-100">
+							<h3 class="mb-3 text-center text-grey font-20">Get your Cibil Rank and Company Credit Report</h3>
+							<div class="modal-slider">
+								<div class="owl-carousel owl-theme">
+									<div class="slider-content">
+										<img class="mb-1" src="/cibil/img/popup/time.png" alt="Fast" style="width: 90px;">
+										<h3 class="text-grey font-20 mb-1 text-center">Fast</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">Entire process takes less than 10 minutes</h5>
+									</div>
+									<div class="slider-content">
+										<img class="mb-1" src="/cibil/img/popup/checking.png" alt="No Impact on Rank" style="width: 84px;">
+										<h3 class="text-grey font-20 mb-1 text-center">No Impact on Rank</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">Requesting for a CCR report will not affect your current CIBIL rank</h5>
+									</div>
+									<div class="slider-content">     
+										<img class="mb-1" src="/cibil/img/popup/lock.png" alt="Safe and Secure" style="width: 66px;">                       
+										<h3 class="text-grey font-20 mb-1 text-center">Safe and Secure</h3>
+										<h5 class="text-grey2 mb-0 text-center font-light">CIBIL is 100% safe and secure. Your data is protected</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+	function entity_select() {
+
+		var val = document.getElementById("entityType").value;
+
+		if (val === "0") {
+			document.getElementById("formLink").classList.add('disabled');
+		} else if (val === "1" || val === "2") {
+			document.getElementById("formLink").classList.remove('disabled');
+			document.getElementById("formLink").href="/cibil/company-details";
+		} else {
+			document.getElementById("formLink").classList.remove('disabled');
+			document.getElementById("formLink").href="/cibil/company-details-partnership";
+		}
+	}
+</script> 
+
+
+        </div>
+
+<div class="modal fade" id="edit-contact-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>            
+
+            <h1 class="modal-title text-blue text-center text-md-left">Edit Contact Information</h1>
+            
+            <div class="modal-share-container mt-3 floating-fields">
+                <form class="signup-form" action="/cibil/signup/" method="POST">
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="fullname" id="fullname" value="Arnab Tarcar">                            
+                        <label for="fullname" class="form-label">
+                            <span class="form-label-content">Full Name</span>
+                        </label>
+                        <label class="input-error">Please Enter Full Name</label>
+                    </div>
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="email_address" id="email_address" value="arnabtarcar@tarcarind.com" oninput="this.value = this.value.toLowerCase()">                            
+                        <label for="email_address" class="form-label">
+                            <span class="form-label-content">Email Address</span>
+                        </label>
+                        <label class="input-error">Please Enter Email Address</label>
+                    </div>
+                    <div class="form-field required placeholder-wrap entered">
+                        <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10" value="8975641298">										
+                        <label for="mobile_number" class="form-label">
+                            <span class="form-label-content">Mobile Number</span>
+                        </label>
+                        <span class="phone-placeholder">+91 </span>
+                        <label class="input-error">Mobile number cannot be blank</label>
+                    </div>
+                    <div class="form-action mt-3 text-right">                        
+                        <button type="button" class="btn btn-fill btn-fill-lightgrey btn-lg mb-1 mb-md-0 mr-md-1 btn-update-info" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-lg btn-fill btn-xl btn-fill-orange btn-proceed-signup btn-update-info font-14" data-dismiss="modal" id="btn-signup-submit">UPDATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/5fe405e1fc.js"></script>
+<script src="/cibil/js/owl.carousel.min.js"></script>
+<script src="/cibil/vendor/dropzone/dropzone.min.js"></script>
+<script src="/cibil/vendor/select2/select2.full.js"></script>
+
+<script src="/cibil/js/jquery.throttle.min.js"></script>
+
+<script src="/cibil/js/jquery-scrolltofixed-min.js"></script>
+<script src="/cibil/js/countries.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="/cibil/js/dragscrollable.js"></script>
+<script src="/cibil/js/lightpick.js"></script>
+<script src="/cibil/js/filters.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js"></script>
+
+
+
+
+<script src="/cibil/js/app.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('.bd-example-modal-lg').modal('show');
+		$('.signup-modal-btn').click(function(){
+			$('.bd-example-modal-lg').modal('show');
+		});
+	})
+	
+</script></body>
+</html>

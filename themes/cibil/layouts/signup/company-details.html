@@ -1,0 +1,240 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<div class="container">
+	<div class="px-2 py-4">
+
+		<div class="row">
+			<div class="col-md-8">
+
+				{{ if $.Params.partial }}
+					<div class="card">
+					  <div class="card-body">
+					    <h5 class="card-title">Welcome back!</h5>
+					    <div style="font-size: 14px">
+					    	<p class="card-text">You last visited this form on 03/07/2019.<br>We still need some more details before proceeding. Below are the required fields:</p>
+						    <ul>
+						    	<li>Registered office address</li>
+						    	<li>State</li>
+						    	<li>City</li>
+						    	<li>PIN</li>
+						    	<li>Mobile Number</li>
+						    	<li>Applicant Name</li>
+						    </ul>
+					    </div>
+					    
+					  </div>
+					</div>
+				{{ else if $.Params.shared }}
+					<div class="card">
+					  <div class="card-body">
+					    <h5 class="card-title">This form was shared with you by ravi.kumar@gmail.com</h5>
+					    <div style="font-size: 14px">
+					    	<p class="card-text">Please fill in the required info below to proceed.</p>
+					    </div>
+					    
+					  </div>
+					</div>
+				{{ else }}
+					<h2 class="font-weight-normal">A high CIBIL RANK and COMPANY CREDIT REPORT is important for your business loan approval.</h2>
+				{{ end }}
+
+				<form name="myForm">
+					<div class="row mt-3">
+
+						<div class="col-md-12">
+							<div class="d-flex align-items-center mb-1 text-black-50">
+								<h6 class="mb-0 mr-1">Company Details</h6>
+								<!-- <hr class="m-0 w-100" style="flex: 1"> -->
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="form-group">
+			    				<input type="text" class="form-control form-control-lg" placeholder="*Company name" name="" {{ if $.Params.partial }}value="India Steel Manufacturers Pvt. Ltd."{{ else }}value=""{{ end }}>
+			    			</div>
+						</div>
+						<div class="col-md-12">
+							<fieldset>
+								<label>*ID type:</label>
+						    	<label class="radio-button">
+									<input class="sr-only" type="radio" id="pan" name="radiogroup" value="pan" />
+									<span>Company PAN</span>
+								</label>
+								{{ if not $.Params.partner }}
+								<label class="radio-button">
+									<input class="sr-only" type="radio" id="cin" name="radiogroup" value="cin" {{ if $.Params.partial }}checked{{ end }} />
+									<span>Corporate Identification Number (CIN)</span>
+								</label>
+
+								<label class="radio-button">
+									<input class="sr-only" type="radio" id="crn" name="radiogroup" value="crn" />
+									<span>Company Registration Number (CRN)</span>
+								</label>
+								{{ end }}
+								<label class="radio-button">
+									<input class="sr-only" type="radio" id="tin" name="radiogroup" value="tin" />
+									<span>Tax Identification Number (TIN)</span>
+								</label>
+						    </fieldset>
+						</div>
+						<!-- <div class="col-md-6">
+							<div class="form-group">
+								<select class="form-control form-control-lg">
+									<option>*Company ID type</option>
+									<option value="pan">
+										Company PAN
+									</option>
+									{{ if $.Params.kyc }}
+									<option value="cin">
+										Corporate Identification Number (CIN)
+									</option>
+									<option value="crn">
+										Company Registration Number (CRN)
+									</option>
+									{{ end }}
+									<option value="tin">
+										Tax Identification Number (TIN)
+									</option>
+								</select>
+			    			</div>
+						</div> -->
+						<div class="col-md-6">
+							<div class="form-group">
+			    				<input type="text" class="form-control form-control-lg" id="inValue" placeholder="*Company ID Value" name="" {{ if $.Params.partial }}value="ASP23750Z271"{{ end }}>
+			    			</div>
+						</div>
+						<div class="col-md-6"></div>
+						<div class="col-md-6">
+							<div class="form-group">
+			    				<input type="text" class="form-control form-control-lg" placeholder="Company GST Number" name="">
+			    			</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="d-flex align-items-center mb-1 text-black-50">
+								<h6 class="mb-0 mr-1 mt-1">Company Address</h6>
+								<!-- <hr class="m-0 w-100" style="flex: 1"> -->
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="form-group">
+			    				<input type="text" class="form-control form-control-lg" placeholder="*Registered office address" name="">
+			    			</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" class="form-control form-control-lg" placeholder="*State" name="">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<select class="form-control form-control-lg">
+									<option>*City</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="number" class="form-control form-control-lg" placeholder="*PIN" name="">
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="d-flex align-items-center mb-1 text-black-50">
+								<h6 class="mb-0 mr-1 mt-1">Company Contact Info</h6>
+								<!-- <hr class="m-0 w-100" style="flex: 1"> -->
+							</div>
+						</div>
+
+		        		<div class="col-md-6">
+		        			<div class="form-group">
+		        				<input type="email" class="form-control form-control-lg" placeholder="*Email address" name="" value="hr@indiasteel.in">
+		        			</div>
+		        		</div>
+
+		        		<div class="col-md-6">
+		        			<div class="form-group">
+		        				<input type="tel" class="form-control form-control-lg" placeholder="*Mobile number" name="" value="9012345678">
+		        			</div>
+		        		</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+		        				<input type="text" class="form-control form-control-lg" placeholder="*Applicant name" name="" value="Ravi Kumar">
+		        			</div>
+		        		</div>
+
+					</div>
+				</form>
+
+				<small class="d-block">
+					I/We understand that by providing my mobile number. I/ we have assented to receive transactional SMS(es) and I/we may be sent transactional SMS(es) to update status of my/our order for Reports / Products and Services on CIBIL's website. I/We further understand that by providing my/our said mobile number, I/we have also assented to receive calls from CIBIL, their agents etc. regarding the CIBIL Services sought by me/us.
+				</small>
+
+				<div class="form-group form-check mt-3">
+				    <input type="checkbox" class="form-check-input" id="acceptTerms">
+				    <label class="form-check-label" for="acceptTerms">I hereby declare that I am authorized to obtain the CIBIL RANK & company credit report for this application. I acknowledge and accept the <a href="#">Terms & Conditions</a> applicable and available on the site. </label>
+				</div>
+
+				<a href="{{ if not $.Params.patner }}/cibil/kyc/{{ else }}/cibil/report-partnership/{{ end }}"  class="btn btn-primary btn-lg">Proceed</a>
+			   
+			</div>
+
+			<div class="col-md-4">
+				<h4 class="text-center">Ask someone else to fill this for you</h4>
+				<a href="#" class="btn btn-outline-primary btn-lg btn-block">Share form link</a>
+				<div class="text-center">
+					<!-- <small>What is this?</small> -->
+				</div>
+
+				<div class="card my-3">
+				  <div class="card-body">
+				    <h5 class="card-title">Form Info</h5>
+				    <p class="card-text">Some helpful info about the form can come here</p>
+				  </div>
+				</div>
+
+				<div class="card my-3">
+				  <div class="card-body">
+				    <h5 class="">User Details:</h5>
+				    Ravi Kumar<br>
+				    9012345678<br>
+				    ravi.kumar@gmail.com
+				    <h5 class="mt-2">Entity Type:</h5>
+				    {{ if not $.Params.partner }}
+				    Public Limited
+				    {{ else }}
+				    Partnership
+				    {{ end }}
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+	    
+	</div>
+</div>
+
+<script type="text/javascript">
+	var rad = document.myForm.radiogroup;
+    var prev = null;
+    for(var i = 0; i < rad.length; i++) {
+        rad[i].onclick = function () {
+            if (document.getElementById('pan').checked) {
+            	document.getElementById("inValue").placeholder="*PAN card number";
+            } else if(document.getElementById('tin').checked) {
+            	document.getElementById("inValue").placeholder="*Tax Identification Number";
+            } else if(document.getElementById('crn').checked) {
+            	document.getElementById("inValue").placeholder="*Company Registration Number";
+            } else if(document.getElementById('cin').checked) {
+            	document.getElementById("inValue").placeholder="*Corporate Identification Number";
+            }
+        };
+    }
+	
+</script>
+
+{{ end }}

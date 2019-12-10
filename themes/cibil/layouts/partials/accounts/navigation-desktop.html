@@ -1,0 +1,22 @@
+<div class="d-none d-md-block">                                 
+    <h4 class="side-menu-title">Report Outline</h4>
+    <ul class="side-navigation">
+        <li class="{{ if $.Params.overview }}active{{end}}"><a href="/cibil/accounts/overview">Overview</a></li>
+        <li class="{{ if $.Params.rankdetails }}active{{end}}"><a href="/cibil/accounts/rank-details">Rank Details</a></li>
+        <li class="{{ if $.Params.certificate }}active{{end}}"><a href="/cibil/accounts/certificate">Certificate</a></li>
+        <li class="{{ if $.Params.companyprofile }}active{{end}}"><a href="/cibil/accounts/company-profile">Company Profile</a></li>
+        <li class="{{ if $.Params.reportsummary }}active{{end}}"><a href="/cibil/accounts/report-summary">Report Summary</a></li>
+        <li class="{{ if $.Params.enquiries }}active{{end}}"><a href="/cibil/accounts/enquiries">Enquiries</a></li>
+        <li class="{{ if $.Params.ocf }}active{{end}}"><a href="/cibil/accounts/credit-facilities">Open Credit Facilities</a></li>
+        <li class="{{ if $.Params.ccf }}active{{end}}"><a href="/cibil/accounts/closed-credit-facilities">Closed Credit Facilities</a></li>
+        <li class="{{ if $.Params.ocfguarantor }}active{{end}}"><a href="/cibil/accounts/open-credit-facilities-guarantor">Open Credit Facilities as Guarantor</a></li>
+        <li class="{{ if $.Params.ccfguarantor }}active{{end}}"><a href="/cibil/accounts/closed-credit-facilities-guarantor">Closed Credit Facilities as Guarantor</a></li>       
+        <li class="{{ if $.Params.creditsummary }}active{{end}}"><a href="/cibil/accounts/credit-rating-summary">Credit Summary</a></li>
+        <li class="{{ if $.Params.adverseinformation }}active{{end}}"><a href="/cibil/accounts/adverse-information">Adverse Information</a></li>
+        
+        <!-- <li class="{{ if $.Params.exposuresummary }}active{{end}}"><a href="#">Exposure Summary</a></li> -->
+        
+        
+        <!-- <li class="{{ if $.Params.orderdetails }}active{{end}}"><a href="#">Order details</a></li> -->
+    </ul>
+</div>

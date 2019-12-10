@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Signup - CIBIL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/cibil/img/favicon.ico" rel="shortcut icon">
+	
+	
+		<link rel="stylesheet" href="/cibil/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/dropzone/dropzone.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="/cibil/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/cibil/css/animate.css">
+		<link rel="stylesheet" href="/cibil/css/lightpick.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.bootstrap4.min.css">
+		
+		
+			
+			<link rel="stylesheet" href="/cibil/css/style.min.4d7581b803375a4a9866d20cb57e0636615fb3bbe0c3ccd0f5fde70a1facfe97.css">
+		
+	
+</head><body>
+        <div id="content"><div class="header ">
+	<div class="top-header">
+		<div class="container">
+			<nav class="navbar navbar-light flex-nowrap">
+				<a class="navbar-brand d-flex" href="#">
+					<div class="d-md-block">
+						<img src="https://ajency.github.io/cibil/img/cibil-logo.png" width="80" alt="">
+					</div>
+					<div class="logo-sub-text d-md-none">
+						<span class="text-black">CIBIL Rank & <span class="d-block">Company Credit Report</span></span>
+					</div>
+					<div class="partnership-width d-none d-md-block">
+						<img src="https://ajency.github.io/cibil/img/in_partnership.png" width="140" alt="">
+					</div>
+				</a>
+
+				<div class="header-center-col d-none d-md-block">
+					<span class="text-black bg-yellow">CIBIL Rank & Company Credit Report</span>
+				</div>
+
+				
+					<div class="header-contact-info d-none d-md-flex">
+						<div><img src="https://ajency.github.io/cibil/img/kyc/icon/call-us.png" width="30"></div>
+						<div class="font-12 text-center pl-1">(Mon - Fri): 10:00 am to 06:00 pm <br><a href="tel:+917276874408" target="_self" class="bg-yellow d-inline-block text-decoration-none text-black font-16">+91-727-687-4408</a></div>
+					</div>
+				
+			</nav>
+		</div>
+		
+	</div>
+
+	
+
+	
+
+</div>
+<div class="landing-section-banner bg-bw-gradient pt-5 pt-md-7 pb-3">
+    <div class="custom-container container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="banner-title">
+                    <h1 class="font-45 text-darkblue text-uppercase mb-2">Because you need better finance for your business to grow</h1>
+                    <h3 class="font-20 text-grey mt-2">The CIBIL RANK and Company Credit Report is an indication of your loan eligibility.</h3>
+                </div>
+                <div class="banner-carousel mt-3">
+                    <div class="owl-carousel owl-theme">
+                        <div class="carousel-slide">
+                            <div class="point-number">1</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="point-number">2</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="point-number">3</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="buiness-person mt-2 mb-2 mb-md-0 text-center text-md-left">
+                    <img src="https://ajency.github.io/cibil/img/landing_page/business_person.png" class="img-fluid">
+                </div> 
+            </div>
+            <div class="col-md-5">
+                <div class="banner-section-wrapper">                    
+                    <div class="banner-form">    
+                        <h2 class="text-grey">Enter your contact details</h2>                                     
+                        <form class="signup-form floating-fields" action="/cibil/credit-report/signup/" method="POST">
+                            <div class="form-field required">
+                                <input class="form-input" type="text" name="fullname" id="fullname">                            
+                                <label for="fullname" class="form-label">
+                                    <span class="form-label-content">Full Name</span>
+                                </label>
+                                <label class="input-error">Please Enter Full Name</label>
+                            </div>
+                            <div class="form-field required">
+                                <input class="form-input" type="text" name="email_address" id="email_address" oninput="this.value = this.value.toLowerCase()">                            
+                                <label for="email_address" class="form-label">
+                                    <span class="form-label-content">Email Address</span>
+                                </label>
+                                <label class="input-error">Please Enter Email Address</label>
+                            </div>
+                            <div class="form-field required placeholder-wrap">
+                                <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10">                            
+                                <label for="mobile_number" class="form-label">
+                                    <span class="form-label-content">Mobile Number</span>
+                                </label>
+                                <span class="phone-placeholder">+91 </span>
+                                <label class="input-error">Please Enter Mobile Number</label>
+                            </div>
+                            <div class="form-field required select-wrapper fvalid">
+                                <select class="select-default select2-normal" id="entity-type"> 
+                                    
+                                    <option value="0">Private Limited</option>
+                                    <option value="2">Public Limited</option> 
+                                    <option value="1">Proprietorship</option>
+                                    <option value="3">Trust</option>
+                                    <option value="5">Government</option>
+                                    <option value="6">Non Classified</option>
+                                    <option value="7">Self Help Groups</option>
+                                </select>                      
+                                <label for="company_entity_type" class="form-label">
+                                    <span class="form-label-content">Company Entity Type</span>
+                                </label>
+                                <label class="input-error">Please Choose Company Entity Type</label>
+                            </div>
+                            <div class="form-action mt-3">
+                                <div class="more-text-wrap mb-2">
+                                    <label class="text-grey font-12 font-light mb-0">
+                                        I/We understand that by providing my mobile number. I/ we have assented to receive transactional SMS(es) and I/we may be sent transactional SMS(es) to update status of my/our order for Reports / Products and Services on CIBIL's website. I/We further understand that by providing my/our said mobile number, I/we have also assented to receive calls from CIBIL, their agents etc. regarding the CIBIL Services sought by me/us.
+                                    </label>
+                                </div>
+                                <button class="btn btn-lg btn-fill btn-fill-orange w-100 btn-proceed-signup text-uppercase" id="btn-signup-submit">Get your report now</button>
+                                <h5 class="mt-2 text-center"><a href="/cibil/credit-report/signin-email/" target="_self" class="text-link text-link-blue">Already have CIBIL account? Login!</a></h5>
+                                <h5 class="mt-2 text-grey">CIBIL RANK is only available for companies with current credit exposure between Rs. 10 lakhs to Rs. 50 crores.</h5>
+                            </div> 
+                        </form>
+                    </div>                    
+                </div>
+                <div class="bg-shadow"><img src="https://ajency.github.io/cibil/img/landing_page/bg_depth.png"></div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<div class="services-offered bg-white">
+    <div class="custom-container container">
+        <div class="row rw-p">
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                        <div class="icon-wrap">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/unlimited_access.png">
+                        </div>
+                        <div class="media-body">     
+                        <h3 class="font-20 text-grey text-uppercase title">Unlimited access</h3>
+                        <p class="text-grey font-regular">Check your Company Credit Report & CIBIL Rank as often as you need</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="https://ajency.github.io/cibil/img/landing_page/previous_enquries.png">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">PREVIOUS INQUIRIES</h3>
+                        <p class="text-grey font-regular">Get details of all inquiries requested by lenders against your business in last 24 months</p>                              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="https://ajency.github.io/cibil/img/landing_page/credit_history.png">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">CREDIT HISTORY</h3>
+                        <p class="text-grey font-regular">View details of each credit facility availed by your business and repayment history over the last 24 months</p>                              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="https://ajency.github.io/cibil/img/landing_page/dispute.png">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">Dispute Resolution</h3>
+                        <p class="text-grey font-regular">Simple online Dispute facility to help you rectify errors in your CCR report</p>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-credit-profile bg-lightblue hero-section">
+    <div class="custom-container container">
+        <div class="row align-items-end">
+            <div class="col-md-6 pr-md-3">
+                <div class="image-slider mb-4 mb-md-0">
+                    <div class="owl-carousel owl-theme">
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_1.png">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_2.png">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_3.png">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_4.png">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_5.png">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="https://ajency.github.io/cibil/img/landing_page/carousel/carousel_6.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-md-3">
+                <div class="hero-section-content">
+                    <h2 class="section-title">Easy to consume & understand</h2>
+                    <h4 class="section-desc">Simple yet detailed presentation of your company's information and all the credit facilities availed.</h4>
+                    <div class="hero-action">
+                        <a href="javascript.void(0)" target="_self" class="btn btn-fill btn-fill-orange btn-lg text-uppercase btn-get-report">Get your report now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-depend-on-us bg-white pt-5 pt-md-7 pb-5">
+    <div class="custom-container container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-grey text-uppercase font-bold">You can depend on us</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/bank.png">
+                            <div class="media-body">
+                                <h4 class=" text-grey">RBI Approved Credit Bureau</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/credit_meter.png">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">10+ Years of  Credit Bureau Operations </h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/guarantee.png">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">100% Assured Service </h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/tie_ups.png">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">Tie-ups with almost 85%-90% of banks in India</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/ISO.png">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">India's most trusted and preferred source for Company Credit Information</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="https://ajency.github.io/cibil/img/landing_page/QD.png">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">Quick dispute resolution</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="disclaimers-section">
+                    <h5 class="text-grey mb-0">Disclaimers</h5>
+                    <p class="text-grey font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        </div>
+	<footer>
+		<div class="footer-wrapper pt-2 pb-2 bg-lightblue">
+			<div class="container">
+				<div class="row">
+					<div class="col-10 offset-1">
+						<div class="text-center mb-1 d-block d-md-none">
+							<img src="/cibil/img/cibil-logo.png" width="100">							
+						</div>
+						<div class="text-center mb-2 d-block d-md-none">
+							<img src="https://ajency.github.io/cibil/img/partnership-center.png" width="140" alt="">						
+						</div>
+						<p class="mb-0 font-grey font-light font-12 text-center">&copy; Copyright 2019 TransUnion CIBIL Limited (Formerly: Credit Information Bureau (India) Limited). All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+
+
+<div class="modal fade" id="edit-contact-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-no-layout">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-icon"></span></button>            
+
+            <h1 class="modal-title text-blue text-center text-md-left">Edit Contact Information</h1>
+            
+            <div class="modal-share-container mt-3 floating-fields">
+                <form class="signup-form" action="/cibil/signup/" method="POST">
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="fullname" id="fullname" value="Arnab Tarcar">                            
+                        <label for="fullname" class="form-label">
+                            <span class="form-label-content">Full Name</span>
+                        </label>
+                        <label class="input-error">Please Enter Full Name</label>
+                    </div>
+                    <div class="form-field required">
+                        <input class="form-input" type="text" name="email_address" id="email_address" value="arnabtarcar@tarcarind.com" oninput="this.value = this.value.toLowerCase()">                            
+                        <label for="email_address" class="form-label">
+                            <span class="form-label-content">Email Address</span>
+                        </label>
+                        <label class="input-error">Please Enter Email Address</label>
+                    </div>
+                    <div class="form-field required placeholder-wrap entered">
+                        <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10" value="8975641298">										
+                        <label for="mobile_number" class="form-label">
+                            <span class="form-label-content">Mobile Number</span>
+                        </label>
+                        <span class="phone-placeholder">+91 </span>
+                        <label class="input-error">Mobile number cannot be blank</label>
+                    </div>
+                    <div class="form-action mt-3 text-right">                        
+                        <button type="button" class="btn btn-fill btn-fill-lightgrey btn-lg mb-1 mb-md-0 mr-md-1 btn-update-info" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-lg btn-fill btn-xl btn-fill-orange btn-proceed-signup btn-update-info font-14" data-dismiss="modal" id="btn-signup-submit">UPDATE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	<div id="toast-container" class="toast-bottom-right" aria-live="polite" role="alert">
+		<div class="toast toast-success toast-wrap slideInRight animated toast-autosave">
+			<button type="button" class="toast-close-button" role="button" data-dismiss="toast" aria-label="Close">×</button>
+			<div class="toast-title">Auto Saved</div>
+			
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/5fe405e1fc.js"></script>
+<script src="/cibil/js/owl.carousel.min.js"></script>
+<script src="/cibil/vendor/dropzone/dropzone.min.js"></script>
+<script src="/cibil/vendor/select2/select2.full.js"></script>
+
+<script src="/cibil/js/jquery.throttle.min.js"></script>
+
+<script src="/cibil/js/jquery-scrolltofixed-min.js"></script>
+<script src="/cibil/js/countries.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="/cibil/js/dragscrollable.js"></script>
+<script src="/cibil/js/lightpick.js"></script>
+<script src="/cibil/js/filters.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js"></script>
+
+
+
+
+<script src="/cibil/js/app.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('.bd-example-modal-lg').modal('show');
+		$('.signup-modal-btn').click(function(){
+			$('.bd-example-modal-lg').modal('show');
+		});
+	})
+	
+</script></body>
+</html>

@@ -1,0 +1,289 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+
+<div class="section-credit-report mt-4 mb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-10 offset-lg-1 message-container">
+                <div class="mb-3 message message-primary fadeInUp animated">
+                    <p class="message-info font-14">Hi there! <span class="text-black font-regular">Arnab</span> has requested you to procure the CIBIL Rank & Company Credit Report for <span class="text-highlight font-regular">DIMENSION ENGINEERS</span> on his behalf</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-7 offset-lg-1 error-container">
+                <div class="mb-4 mb-md-6 message message-error fadeInUp animated d-none">
+                    <h4 class="message-text">Your Payment Failed</h4>
+                    <p class="message-info font-12">Unfortunately the transaction could not be processed. Please retry payment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 col-left pr-lg-5">
+                <h1 class="section-title text-grey mb-1">Complete your purchase</h1>
+                <!-- <h5 class="text-grey font-light mb-2">Hi there! <span class="text-black font-regular">Arnab</span> has requested you to procure the CIBIL Rank & Company Credit Report for <span class="text-highlight font-regular">TARCAR REAL ESTATE PRIVATE LIMITED</span> on his behalf</h5> -->
+                <p class="mb-0">The information for your business <span class="text-highlight">DIMENSION ENGINEERS</span> has been processed. Please make the payment to generate your CIBIL Rank and Company Credit Report</p>
+                <!-- <p class="mb-0">We support both online and offline (Demand Draft) payment. We recommed online payment for faster dispatch of your report. You can choose your mode of payment below.</p> -->             
+
+                <form class="mt-3 mb-4 form-credit-report" method="post">
+                    <!-- Company Details -->
+                    <div class="form-section">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="form-section-title text-blue text-underline text-underline-blue mt-1">Business Details</h5>
+                            <a href="/cibil/credit-report/share/company-info-proprietorship/" class="font-14 text-orange"><i class="far fa-edit fa-lg"></i></a>
+                        </div>
+
+                        <table class="table table-bordered table--colored table--small text-grey">
+                            <tr>
+                                <td class="font-light">Business Name</td>
+                                <td class="text-black">Dimension Engineers</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Business PAN</td>
+                                <td class="text-black">ALUPM1234T</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Business GST No.</td>
+                                <td class="text-black">07AAACB5343E1Z3</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Applicant Name</td>
+                                <td class="text-black">Arnab Tarcar</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Mobile Number</td>
+                                <td class="text-black">+91 9812345678</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Registered Address</td>
+                                <td class="text-black pb-2">H.No. 4/259/A, Near 4 Pillars Hotel, Panaji, North Goa, Goa GA, 403001, India</td>
+                            </tr>
+                            <tfoot class="info-footer">
+                                <tr>
+                                    <td colspan="2" class="font-light">
+                                        *Report will be shipped to the above registered address
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <!-- <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Company Name</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">Lokus Design Private Limited</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Applicant Name</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">Lokesh Mathani</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Email ID</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">hr@lokusdesigns.com</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Contact Number</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">+91 9843076295</h4>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-4">
+                                        <label class="m-0">Registered Address</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">H. No. 4/538/A, Near Four Pillars Hotel, Panaji, North Goa GA, 403003, India</h4>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <p class="small mb-0">*Report will be shipped to the above registered address</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- End of Company Details -->
+
+                    <!-- Account Details -->
+                    <div class="form-section mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="form-section-title text-blue text-underline text-underline-blue mt-1">Account Details</h5>
+                        </div>
+                        <p class="mb-1">Report will be purchased under this name. Email ID and SMS provided below will be used for communication</p>
+                        
+                        <table class="table table-bordered table--colored table--small text-grey">
+                            <tr>
+                                <td class="font-light">Full Name</td>
+                                <td class="text-black">Arnab Tarcar</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Email ID</td>
+                                <td class="text-black">a.Arnab@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="font-light">Mobile Number</td>
+                                <td class="text-black">+91 9812345678</td>
+                            </tr>
+                            <!-- <tr>
+                                <td class="font-light">Password</td>
+                                <td class="text-black">
+                                    <a href="#" target="_self" class="text-link text-link-blue font-14 setpass" data-toggle="modal" data-target="#payment-setpassword">Set Now</a> -->
+
+                                    <!-- <div class="enter-pwd d-none">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-fill form-field mb-0 pt-0">
+                                                <input class="form-input" type="password" name="companyname" id="companyname">
+                                            </div>
+                                            <button type="button" class="btn btn-xs btn-fill-orange text-uppercase">Save</button>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- <div class="hidden-pwd d-none">
+                                        ********
+                                    </div> -->
+                                    
+                                <!-- </td>
+                            </tr> -->
+                        </table>
+                        
+                        <!-- <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Full Name</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">Lokesh Mathani</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Email ID</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">hr@lokusdesigns.com</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-4">
+                                        <label class="m-0">Mobile Number</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <h4 class="m-0">+91 9843076295</h4>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-4">
+                                        <label class="m-0">Password</label> <i class="fas fa-info-circle fa-sm" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Set password to access your account. With the account, you will be able to track your report status and view all your purchased reports."></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <a href="#" class="font-14 text-link">Set Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- End of Account Details -->
+
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h6>Note</h6>
+                            <p class="mb-0">The CIBIL Rank is only provided to businesses that have credit exposure between Rs.10 lakhs to Rs.50 crores. However, you can still request for your Company Credit Report.</p>                            
+                        </div>
+                    </div>
+
+
+                </form>                
+            </div>        
+            <div class="col-md-4 col-lg-3 col-right sticky-sidebar mb-mb-4">
+
+                <div class="card mt-4 mt-md-0">
+                    <div class="card-body">
+                        <h5 class="text-uppercase mb-2">Price Details</h5>
+                        <div class="d-flex justify-content-between">
+                            <p>CCR Report</p>
+                            <p>₹2503.40</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p>Delivery Charges</p>
+                            <p>₹38.98</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="">
+                                Taxes 
+                                <a href="#" class="view-tax text-blue">More +</a>
+                                <a href="#" class="hide-tax text-blue d-none">Less -</a>
+                            </p>
+                            <p class="">₹457.62</p>
+                        </div>
+                        <div class="tax-details d-none">
+                            <div class="d-flex justify-content-between">
+                                <p class="">CGST</p>
+                                <p class="">₹250.62</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="">SGST</p>
+                                <p class="">207.00</p>
+                            </div>  
+                        </div>
+                        
+                        <hr class="mb-2 mt-0">
+                        <div class="d-flex justify-content-between">
+                            <h4>Total</h4>
+                            <h4>₹3000</h4>
+                        </div>
+                        <hr class="mb-2 mt-1">
+
+                        <p class="mt-2 mb-0">By proceeding to pay, I agree, accept and acknowledge the <a href="#" class="text-link">Terms & Conditions</a></p>
+                        <p class="mt-1 mb-0"><span class="text-uppercase">Note:</span> You will be redirected to the payment website</p>
+                        <div class="mobile-sticky-btns">
+                            <a href="/cibil/credit-report/kyc-verify-identity/" class="btn btn-fill btn-fill-orange text-uppercase mt-1 btn-block online-btn"><i class="fas fa-lock"></i> Proceed to Pay</a>
+                            <a href="#" class="btn btn-fill btn-fill-orange text-uppercase mt-1 btn-block offline-btn d-none">Pay via Demand Draft</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="select-custom entity-type-select dropdown-menu-anim">
+    <ul>
+        <li class="active"><a href="#">Private Limited</a></li>
+        <li><a href="#">Public Limited</a></li>
+        <li><a href="#">Business Entities created by statute</a></li>
+        <li><a href="/cibil/credit-report/company-info-proprietorship/">Proprietorship</a></li>
+        <li><a href="#">Partnership</a></li>
+        <li><a href="#">Trust</a></li>
+        <li><a href="#">Hindu Undivided Family </a></li>
+        <li><a href="#">Co-operative society</a></li>
+        <li><a href="#">Association of person</a></li>
+        <li><a href="#">Government</a></li>
+        <li><a href="#">Self Help Group</a></li>
+        <li><a href="#">Non Classified</a></li>
+    </ul>
+</div>
+
+{{- partial "signup-modal.html" . -}}
+
+{{- partial "request-share-modal.html" . -}}
+
+
+{{ end }}

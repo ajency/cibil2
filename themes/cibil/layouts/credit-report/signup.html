@@ -1,0 +1,253 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="landing-section-banner bg-bw-gradient pt-5 pt-md-7 pb-3">
+    <div class="custom-container container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="banner-title">
+                    <h1 class="font-45 text-darkblue text-uppercase mb-2">Because you need better finance for your business to grow</h1>
+                    <h3 class="font-20 text-grey mt-2">The CIBIL RANK and Company Credit Report is an indication of your loan eligibility.</h3>
+                </div>
+                <div class="banner-carousel mt-3">
+                    <div class="owl-carousel owl-theme">
+                        <div class="carousel-slide">
+                            <div class="point-number">1</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="point-number">2</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="point-number">3</div>
+                            <div class="carousel-text">CIBIL Rank and Company Credit Report is an indication of your loan eligibility</div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="buiness-person mt-2 mb-2 mb-md-0 text-center text-md-left">
+                    <img src="{{"img/landing_page/business_person.png" | absURL}}" class="img-fluid">
+                </div> 
+            </div>
+            <div class="col-md-5">
+                <div class="banner-section-wrapper">                    
+                    <div class="banner-form">    
+                        <h2 class="text-grey">Enter your contact details</h2>                                     
+                        <form class="signup-form floating-fields" action="/cibil/credit-report/signup/" method="POST">
+                            <div class="form-field required">
+                                <input class="form-input" type="text" name="fullname" id="fullname">                            
+                                <label for="fullname" class="form-label">
+                                    <span class="form-label-content">Full Name</span>
+                                </label>
+                                <label class="input-error">Please Enter Full Name</label>
+                            </div>
+                            <div class="form-field required">
+                                <input class="form-input" type="text" name="email_address" id="email_address" oninput="this.value = this.value.toLowerCase()">                            
+                                <label for="email_address" class="form-label">
+                                    <span class="form-label-content">Email Address</span>
+                                </label>
+                                <label class="input-error">Please Enter Email Address</label>
+                            </div>
+                            <div class="form-field required placeholder-wrap">
+                                <input class="form-input phone-number" type="text" name="mobile_number" id="mobile_number" maxlength="10">                            
+                                <label for="mobile_number" class="form-label">
+                                    <span class="form-label-content">Mobile Number</span>
+                                </label>
+                                <span class="phone-placeholder">+91 </span>
+                                <label class="input-error">Please Enter Mobile Number</label>
+                            </div>
+                            <div class="form-field required select-wrapper fvalid">
+                                <select class="select-default select2-normal" id="entity-type"> 
+                                    <!-- <option value="">Select</option> -->
+                                    <option value="0">Private Limited</option>
+                                    <option value="2">Public Limited</option> 
+                                    <option value="1">Proprietorship</option>
+                                    <option value="3">Trust</option>
+                                    <option value="5">Government</option>
+                                    <option value="6">Non Classified</option>
+                                    <option value="7">Self Help Groups</option>
+                                </select>                      
+                                <label for="company_entity_type" class="form-label">
+                                    <span class="form-label-content">Company Entity Type</span>
+                                </label>
+                                <label class="input-error">Please Choose Company Entity Type</label>
+                            </div>
+                            <div class="form-action mt-3">
+                                <div class="more-text-wrap mb-2">
+                                    <label class="text-grey font-12 font-light mb-0">
+                                        I/We understand that by providing my mobile number. I/ we have assented to receive transactional SMS(es) and I/we may be sent transactional SMS(es) to update status of my/our order for Reports / Products and Services on CIBIL's website. I/We further understand that by providing my/our said mobile number, I/we have also assented to receive calls from CIBIL, their agents etc. regarding the CIBIL Services sought by me/us.
+                                    </label>
+                                </div>
+                                <button class="btn btn-lg btn-fill btn-fill-orange w-100 btn-proceed-signup text-uppercase" id="btn-signup-submit">Get your report now</button>
+                                <h5 class="mt-2 text-center"><a href="/cibil/credit-report/signin-email/" target="_self" class="text-link text-link-blue">Already have CIBIL account? Login!</a></h5>
+                                <h5 class="mt-2 text-grey">CIBIL RANK is only available for companies with current credit exposure between Rs. 10 lakhs to Rs. 50 crores.</h5>
+                            </div> 
+                        </form>
+                    </div>                    
+                </div>
+                <div class="bg-shadow"><img src="{{"img/landing_page/bg_depth.png" | absURL}}"></div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<div class="services-offered bg-white">
+    <div class="custom-container container">
+        <div class="row rw-p">
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                        <div class="icon-wrap">
+                            <img src="{{"img/landing_page/unlimited_access.png" | absURL}}">
+                        </div>
+                        <div class="media-body">     
+                        <h3 class="font-20 text-grey text-uppercase title">Unlimited access</h3>
+                        <p class="text-grey font-regular">Check your Company Credit Report & CIBIL Rank as often as you need</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="{{"img/landing_page/previous_enquries.png" | absURL}}">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">PREVIOUS INQUIRIES</h3>
+                        <p class="text-grey font-regular">Get details of all inquiries requested by lenders against your business in last 24 months</p>                              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="{{"img/landing_page/credit_history.png" | absURL}}">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">CREDIT HISTORY</h3>
+                        <p class="text-grey font-regular">View details of each credit facility availed by your business and repayment history over the last 24 months</p>                              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-flex col_">
+                <div class="media service-box mt-2">
+                    <div class="icon-wrap">
+                        <img src="{{"img/landing_page/dispute.png" | absURL}}">
+                    </div>
+                    <div class="media-body">                            
+                        <h3 class="font-20 text-grey text-uppercase title">Dispute Resolution</h3>
+                        <p class="text-grey font-regular">Simple online Dispute facility to help you rectify errors in your CCR report</p>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-credit-profile bg-lightblue hero-section">
+    <div class="custom-container container">
+        <div class="row align-items-end">
+            <div class="col-md-6 pr-md-3">
+                <div class="image-slider mb-4 mb-md-0">
+                    <div class="owl-carousel owl-theme">
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_1.png" | absURL}}">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_2.png" | absURL}}">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_3.png" | absURL}}">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_4.png" | absURL}}">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_5.png" | absURL}}">
+                        </div>
+                        <div class="image-slider-cont">
+                            <img src="{{"img/landing_page/carousel/carousel_6.png" | absURL}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-md-3">
+                <div class="hero-section-content">
+                    <h2 class="section-title">Easy to consume & understand</h2>
+                    <h4 class="section-desc">Simple yet detailed presentation of your company's information and all the credit facilities availed.</h4>
+                    <div class="hero-action">
+                        <a href="javascript.void(0)" target="_self" class="btn btn-fill btn-fill-orange btn-lg text-uppercase btn-get-report">Get your report now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-depend-on-us bg-white pt-5 pt-md-7 pb-5">
+    <div class="custom-container container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-grey text-uppercase font-bold">You can depend on us</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/bank.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class=" text-grey">RBI Approved Credit Bureau</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/credit_meter.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">10+ Years of  Credit Bureau Operations </h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/guarantee.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">100% Assured Service </h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/tie_ups.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">Tie-ups with almost 85%-90% of banks in India</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/ISO.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">India's most trusted and preferred source for Company Credit Information</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media mt-2 mt-md-5">
+                            <img class="mr-3" src="{{ "img/landing_page/QD.png" | absURL}}">
+                            <div class="media-body">
+                                <h4 class="mt-0 text-grey">Quick dispute resolution</h4>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="disclaimers-section">
+                    <h5 class="text-grey mb-0">Disclaimers</h5>
+                    <p class="text-grey font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{ end }}

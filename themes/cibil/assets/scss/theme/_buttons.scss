@@ -1,0 +1,287 @@
+.disabled {
+    background: #EDEDED !important;
+    color: #fff !important;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 1 !important;
+}
+.btn {
+    color: $orange;
+    background: transparent;
+    padding: 12px 15px;
+    line-height: 18px;
+    border-radius: 2px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+
+    &:hover,
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &-lg {
+        padding: 13px 20px 11px;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        line-height: 18px;
+    }
+    &-xs {
+        padding: 6px 15px;
+        font-size: 10px;
+        letter-spacing: 0.21px;
+        line-height: 13px;        
+    }
+    &-xl {
+        padding: 13px 25px 11px;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        line-height: 18px;
+    }
+
+    &-outline {
+        border: 2px solid $grey;
+
+        &-grey {
+            border-color: $grey;
+            color: $grey;
+
+            &:hover {
+                color: $grey;
+            }
+        }
+        &-orange {
+            border-color: $orange;
+            color: $orange;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: #fff;
+                background: $orange;                
+            } 
+        }
+        &-blue {
+            border-color: $blue;
+            color: $blue;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #fff;
+                background: $blue;
+            } 
+        }
+        &-lightgrey {
+            border-color: $lightgrey2;
+            color: $grey;
+            
+            &:hover {
+                color: $grey;
+            } 
+        }
+    }
+
+    &-fill {
+        background: #fff;
+        color: #000;        
+        &-orange {
+            background: $orange;
+            color: #fff;
+
+            &:focus,
+            &:hover {
+                color: #fff;  
+                opacity: 0.9;              
+            } 
+        }    
+        &-blue {
+            background: $blue;
+            color: #fff;
+
+            &:focus,
+            &:hover {
+                background: $blue;
+                color: #fff;
+                opacity: 0.9;
+            }
+        }    
+        &-lightgrey {
+            background: $lightgrey;
+            color: #fff;
+
+            &:focus,
+            &:hover {
+                background: $lightgrey;
+                color: #fff;
+                opacity: 0.9;
+            }
+        }    
+    }
+    &:disabled {
+        background: #EDEDED !important;
+        color: #fff !important;
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 1;
+    }
+    &-icon {
+        position: relative;
+        padding-left: 55px;
+        .icon {
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &_icon {
+        background: transparent;
+        padding: 0;
+        border: 0;
+        -webkit-appearance: none;
+    }
+
+    &-floating {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+        z-index: 10;
+    }
+    &-round {
+        border-radius: 56%;
+        padding: 8px;
+    }
+    &-text {
+        &-orange {
+            color: $orange;
+            &:hover,
+            &:focus {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.btn {
+    &-verify {
+        min-width: 160px;
+    }
+    &-share {
+        min-width: 160px;
+        padding: 9px 15px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.53px;
+        background: #fff;
+    }
+    &-update-info {
+        min-width: 160px;
+        @include media-max(md){
+            width: 100%;
+        }
+    }
+    &-proceed-signup {
+        i {
+            top: -2px;
+        }
+        @include media-min(md){
+            font-size: 18px;
+        }                
+    }
+    &-submit,
+    &.btn-ekyc {
+        min-width: 210px;
+        @include media-max(md){
+            width: 100%;
+            min-width: inherit;
+        }
+    }
+    &-get-report {
+        padding: 10px 34px;
+        font-size: 16px;
+        line-height: 20px;
+        @include media-max(md){
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &-myorders {
+        padding: 0;
+        background: transparent;
+        border: 0;
+        width: 100%;
+        text-align: left;
+    }
+    &-toggle-darrow {
+        padding-right: 25px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border: 2px solid $orange;
+            display: block;
+            border-right: 0;
+            border-top: 0;
+            transform: translateY(-50%) rotate(-45deg);
+            margin-top: -4px;            
+            position: absolute;
+            right: 0;
+            top: 50%;         
+            transition: all 0.4s ease;   
+        }
+        &[aria-expanded=true]{
+            &:after {
+                transform: translateY(-50%) rotate(135deg);
+                margin-top: 3px;
+            }
+        }
+    }
+    &-small {
+        padding: 9px 28px;
+        border-radius: 2px;
+        line-height: 13px;
+    }
+    &-reset-filters {
+        padding: 7px;
+        padding-right: 0;
+        margin-left: 0;
+    }
+}
+
+.border {
+    &-width {
+        &-2 {
+            border-width: 2px;
+        }
+    }
+}
+
+.download-btn {
+    font-size: 0 !important;
+    i {
+        font-size: 14px !important;
+    }
+    @include media-min(md){
+        background: $orange;
+        font-size: 12px !important;
+        letter-spacing: 0.26px;
+        line-height: 14px;
+        padding: 6px 15px;
+        color: #fff !important;
+        opacity: 1;
+        transition: all 0.4s ease;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+}

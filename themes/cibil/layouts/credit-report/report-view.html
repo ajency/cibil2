@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="container p-0 mb-6 temp-img-container" id="btn-report">
+    <img src="{{"img/report/report-view.png" | relURL}}" class="img-fluid mx-auto d-block">
+</div>
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-report")
+	button.addEventListener('click', function(e) {		
+		window.location.href="/cibil/credit-report/report-to-be-shipped";
+	});
+</script>
+
+
+
+{{ end }}

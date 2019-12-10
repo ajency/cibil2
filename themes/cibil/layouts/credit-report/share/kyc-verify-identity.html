@@ -1,0 +1,243 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="section-kyc mt-4 mb-6">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-10 offset-lg-1 message-container">
+				<div class="mb-3 message message-primary fadeInUp animated">
+					<p class="message-info font-14">Hi there! <span class="text-black font-regular">Arnab</span> has requested you to procure the CIBIL Rank & Company Credit Report for <span class="text-highlight font-regular">TARCAR REAL ESTATE PRIVATE LIMITED</span> on his behalf</p>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 pr-lg-5">
+                <div>
+                    <h1 class="section-title text-grey mb-1">We need to verify your identity</h1>
+                    <h5 class="text-grey font-light mb-2">We just need some additional information from you to complete the authentication process. Below are the questions based on your Company’s Credit Profile. Please read the questions carefully and select the correct answer to proceed.</h5>                   
+				</div> 
+
+				<form action="POST" class="mt-4 mt-md-6">
+					<div class="verify-identity-questions">
+						<h3 class="font-20 question"><span class="text-blue question-bullet">Q1.</span> Select the lender who has sanctioned the lowest loan amount to you? </h3>
+						<ul class="question-answer-list">
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="radio1" name="radio_step1" class="custom-control-input">
+									<label class="custom-control-label" for="radio1">HDFC Bank Ltd</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="radio2" name="radio_step1" class="custom-control-input">
+									<label class="custom-control-label" for="radio2">Panjab National Bank</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="radio3" name="radio_step1" class="custom-control-input">
+									<label class="custom-control-label" for="radio3">PNB Housing Finance</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="radio4" name="radio_step1" class="custom-control-input">
+									<label class="custom-control-label" for="radio4">Saraswat Co-Operative Bank Ltd</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="radio5" name="radio_step1" class="custom-control-input">
+									<label class="custom-control-label" for="radio5">None of the Above</label>
+								</div>
+							</li>
+						</ul>
+						
+						<hr class="mt-3 mb-3">	
+
+						<h3 class="font-20 question"><span class="text-blue question-bullet">Q2.</span> Please select the correct EMI amount, that you are paying to the lender The South Bank Limited? </h3>
+						<ul class="question-answer-list">
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="emi_1" name="radio_step2" class="custom-control-input">
+									<label class="custom-control-label" for="emi_1">₹ 1,65,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="emi_2" name="radio_step2" class="custom-control-input">
+									<label class="custom-control-label" for="emi_2">₹ 1,50,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="emi_3" name="radio_step2" class="custom-control-input">
+									<label class="custom-control-label" for="emi_3">₹ 70,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="emi_4" name="radio_step2" class="custom-control-input">
+									<label class="custom-control-label" for="emi_4">₹ 65,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="emi_5" name="radio_step2" class="custom-control-input">
+									<label class="custom-control-label" for="emi_5">I don’t have an account with The South Bank Limited</label>
+								</div>
+							</li>
+						</ul>
+
+						<hr class="mt-3 mb-3">
+
+						<h3 class="font-20 question"><span class="text-blue question-bullet">Q3.</span> Please select the loan type you have applied during the last 12 months</h3>
+						<ul class="question-answer-list">
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_type_1" name="radio_step3" class="custom-control-input">
+									<label class="custom-control-label" for="loan_type_1">Cash Credit</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_type_2" name="radio_step3" class="custom-control-input">
+									<label class="custom-control-label" for="loan_type_2">Overdraft</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_type_3" name="radio_step3" class="custom-control-input">
+									<label class="custom-control-label" for="loan_type_3">Packing Credit</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_type_4" name="radio_step3" class="custom-control-input">
+									<label class="custom-control-label" for="loan_type_4">Unsecured business Loan</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_type_5" name="radio_step3" class="custom-control-input">
+									<label class="custom-control-label" for="loan_type_5">None of the Above</label>
+								</div>
+							</li>
+						</ul>
+
+						<hr class="mt-3 mb-3">
+
+						<h3 class="font-20 question"><span class="text-blue question-bullet">Q4.</span> Select the lowest loan amount sanctioned by Bank of Rajasthan Ltd. to you?</h3>
+						<ul class="question-answer-list">
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_2_1" name="radio_step4" class="custom-control-input">
+									<label class="custom-control-label" for="loan_2_1">₹ 37,20,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_2_2" name="radio_step4" class="custom-control-input">
+									<label class="custom-control-label" for="loan_2_2">₹ 31,00,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_2_3" name="radio_step4" class="custom-control-input">
+									<label class="custom-control-label" for="loan_2_3">₹ 27,90,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_2_4" name="radio_step4" class="custom-control-input">
+									<label class="custom-control-label" for="loan_2_4">₹ 16,50,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_2_5" name="radio_step4" class="custom-control-input">
+									<label class="custom-control-label" for="loan_2_5">I don’t have an account with Bank of Rajasthan Ltd.</label>
+								</div>
+							</li>
+						</ul>
+
+						<hr class="mt-3 mb-3">
+
+						<h3 class="font-20 question"><span class="text-blue question-bullet">Q5.</span> Select the Highest loan amount sanctioned by The Hongkong And Shanghai Banking corporation limited to you?</h3>
+						<ul class="question-answer-list">
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_3_1" name="radio_step5" class="custom-control-input">
+									<label class="custom-control-label" for="loan_3_1">₹ 60,00,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_3_2" name="radio_step5" class="custom-control-input">
+									<label class="custom-control-label" for="loan_3_2">₹ 54,00,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_3_3" name="radio_step5" class="custom-control-input">
+									<label class="custom-control-label" for="loan_3_3">₹ 40,00,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_3_4" name="radio_step5" class="custom-control-input">
+									<label class="custom-control-label" for="loan_3_4">₹ 36,00,000</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-radio cibil-radio cibil-radio-tick">
+									<input type="radio" id="loan_3_5" name="radio_step5" class="custom-control-input">
+									<label class="custom-control-label" for="loan_3_5">I don’t have an account with The Hongkong And Shanghai Banking corporation limited</label>
+								</div>
+							</li>
+						</ul>	
+					</div>		
+					<div class="form-action mt-4 text-md-right">
+						<a href="/cibil/credit-report/share/kyc/" target="_self" class="btn btn-fill btn-fill-orange btn-ekyc disabled">SUBMIT FOR EKYC</a>
+					</div>
+				</form>
+
+
+            </div>
+            <div class="col-md-4 col-lg-3 sticky-sidebar">
+				<div> 
+					<div class="card bg-lightgrey3 mt-3 d-md-none">
+						<div class="card-body">
+							<div class="text-center">
+								<h4 class="info-box-sub-title text-grey text-center mb-1">You can also verify your identity by uploading ID proofs (Slower)</h4>
+								<a class="text-orange btn btn-outline btn-outline-orange btn-xs font-12 btn-share text-uppercase" href="/cibil/credit-report/kyc/" target="_self">Upload Id Proofs</a>
+							</div>
+						</div>			
+					</div>
+					<div class="upload-instruction mini-slider mt-3 mt-md-0">					
+						<div class="info-box text-center pl-1 pr-1">
+							<div class="info-box-icon mb-1"><img src="{{"img/kyc/icon/question.png" | absURL}}"></div>		
+							<span class="seprator-xs seprator-xs-yellow"></span>				
+							<h4 class="info-box-sub-title text-grey text-center">Why your verification is needed?</h4>
+							<h5 class="info-box-title text-grey font-light text-center mb-0">This is done to ensure that we provide the report to it’s rightful owner.</h5>
+						</div>
+					</div>		
+					<div class="card bg-lightgrey3 mt-3 d-none d-md-flex">
+						<div class="card-body">
+							<div class="text-center">
+								<h4 class="info-box-sub-title text-grey text-center mb-1">You can also verify your identity by uploading ID proofs (Slower)</h4>
+								<a class="text-orange btn btn-outline btn-outline-orange btn-xs font-12 btn-share text-uppercase" href="/cibil/credit-report/kyc/" target="_self">Upload Id Proofs</a>
+							</div>
+						</div>			
+					</div>			
+				</div>
+            </div>
+        </div>        
+          
+    </div>
+</div>
+
+{{- partial "request-share-modal.html" . -}}
+
+{{ end }}

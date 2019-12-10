@@ -1,0 +1,392 @@
+<div>
+    <h1 class="text-grey">Adverse information</h1>
+    <div class="mb-5">
+        <p class="text-grey font-light">Here is a list of all negative information reported on the credit history and credit related issues of the company. These have a significant negative impact on your rank and credit reliability.</p>
+    </div>
+
+    <div class="tab-navigation">
+        <ul class="nav nav-tabs mb-0 scrollable-tabs" id="avd_info_tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="summary-tab" data-toggle="tab" href="#adv_summary" role="tab" aria-controls="report-info" aria-selected="true">Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="delinquencies-tab" data-toggle="tab" href="#adv_delinquencies" role="tab" aria-controls="invoice" aria-selected="false">Delinquencies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="suit-filed-tab" data-toggle="tab" href="#adv_suit_filed" role="tab" aria-controls="invoice" aria-selected="false">Suit Filed</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content mt-2" id="adv_tabs_content">
+        <div class="tab-pane fade show active" id="adv_summary" role="tabpanel" aria-labelledby="summary-tab">
+            <div class="col-12 mt-1">
+                <div class="row m-md-0">
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Settled</div>
+                            <div class="col-6 col-text">₹ 15,00,800 <span class="font-12 text-grey font-light d-block">(1 credit facility)</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Invoked / devolved</div>
+                            <div class="col-6 col-text">₹ 35,00,800 <span class="font-12 text-grey font-light d-block">(1 credit facility)</span></div>
+                        </div>                         
+                    </div>                         
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Dishonoured cheque</div>
+                            <div class="col-6 col-text">₹ 18,00,800 <span class="font-12 text-grey font-light d-block">(2 credit facility)</span></div>
+                        </div>                         
+                    </div>                         
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Overdue</div>
+                            <div class="col-6 col-text">₹ 24,00,000 <span class="font-12 text-grey font-light d-block">(2 credit facility)</span></div>
+                        </div>                         
+                    </div>                         
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Written Off</div>
+                            <div class="col-6 col-text">₹ 60,03,200 <span class="font-12 text-grey font-light d-block">(4 credit facility)</span></div>
+                        </div>                         
+                    </div>            
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Wilful Default</div>
+                            <div class="col-6 col-text">₹ 60,03,200 <span class="font-12 text-grey font-light d-block">(3 credit facility)</span></div>
+                        </div>                         
+                    </div>    
+                    <div class="col-lg-6">
+                        <div class="row rw">
+                            <div class="col-6 col-heading">Suit Filed</div>
+                            <div class="col-6 col-text">₹ 64,01,600 <span class="font-12 text-grey font-light d-block">(1 credit facility)</span></div>
+                        </div>                         
+                    </div>  
+                </div>                      
+            </div>
+        </div>
+        <div class="tab-pane fade" id="adv_delinquencies" role="tabpanel" aria-labelledby="delinquencies-tab">
+            <p class="mb-md-0 mt-05 mb-05 text-error font-12 font-regular text-right">Total Outstanding ₹ 88,00,800  across 14 Credit Facilities</p>
+            <div class="filter-table-wrap mt-2"> 
+                <div class="filters d-flex mt-1 align-items-end floating-fields">                
+                    <div class="filter-box filter-search-box">
+                        <div class="form-field required mb-0">
+                            <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                            <label for="pincode" class="form-label pointer-events-none">
+                                <span class="form-label-content">Search by Bank</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-box filter-select2-dropdown filter-bank">
+                        <div class="form-field select-wrapper mb-0">
+                            <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                                <option></option>
+                                <option value="hdfc">HDFC</option>
+                                <option value="icici">ICICI</option>
+                                <option value="citi">Citi Bank</option>
+                                <option value="pnb">PNB</option>
+                                <option value="dena">Dena Bank</option>
+                            </select>                    
+                            <label for="state" class="form-label">
+                                <span class="form-label-content">Bank</span>
+                            </label>		
+                        </div>
+                    </div>
+                    <div class="filter-box filter-select2-dropdown filter-status">
+                        <div class="form-field select-wrapper mb-0">
+                            <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                                <option value></option>
+                                <option value="wilful-default">Wilful Default</option>                   
+                                <option value="settled">Settled</option>
+                                <option value="invoked">Invoked</option>
+                                <option value="dishonoured-Cheque">Dishonoured Cheque</option>
+                            </select>                    
+                            <label for="state" class="form-label">
+                                <span class="form-label-content">Status</span>
+                            </label>		
+                        </div>
+                    </div>
+                    <div class="filter-box filter-datepicker">
+                        <button class="btn-datepicker" id="datepicker"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                    </div>
+                    <div class="filter-box filter-action">
+                        <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                    </div>
+                    <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                        <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                        <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                    </div>
+                </div> 
+                <div class="table-list mt-2 mb-6 filter-table">                            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="w-40">Bank</th>
+                                <th class="w-30 sort-column" onclick="sortTable(1,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                                <th class="w-30">Type</th>                    
+                            </tr>
+                        </thead>
+                        <tbody id="ai-btn">
+                            <tr>
+                                <td data-bank="hdfc">
+                                    <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-status="wilful-default" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-willful-default font-regular">WILLFUL DEFAULT</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td data-bank="citi">
+                                    <div class="bank-name font-regular text-black">Citi Bank <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-status="settled" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-settled font-regular">SETTLED</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-bank="pnb">
+                                    <div class="bank-name font-regular text-black">PNB <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-status="invoked" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-invoked font-regular">INVOKED</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-bank="dena">
+                                    <div class="bank-name font-regular text-black">DENA Bank <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-status="dishonoured-cheque" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-dishonoured-cheque font-regular">DISHONOURED CHEQUE</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-bank="citi">
+                                    <div class="bank-name font-regular text-black">Citi Bank <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-status="dishonoured-cheque" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-dishonoured-cheque font-regular">DISHONOURED CHEQUE</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="adv_suit_filed" role="tabpanel" aria-labelledby="suit-filed-tab">
+            <p class="mb-md-0 mt-05 mb-05 text-error font-12 font-regular text-right">Total Outstanding ₹ 95,00,800  across 1 Credit Facility</p>
+            <div class="filter-table-wrap mt-2">
+                <div class="filters d-flex mt-1 align-items-end floating-fields">                
+                    <div class="filter-box filter-search-box">
+                        <div class="form-field required mb-0">
+                            <input class="form-input input-search input-search-icon" type="text" name="search">                            
+                            <label for="pincode" class="form-label pointer-events-none">
+                                <span class="form-label-content">Search by Bank, Address</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-box filter-select2-dropdown filter-bank">
+                        <div class="form-field select-wrapper mb-0">
+                            <select class="select-default select2-normal2" name="bank" data-placeholder="true">                                        
+                                <option></option>
+                                <option value="hdfc">HDFC</option>
+                                <option value="icici">ICICI</option>
+                                <option value="citi">Citi Bank</option>
+                                <option value="pnb">PNB</option>
+                                <option value="dena">Dena Bank</option>
+                            </select>                    
+                            <label for="state" class="form-label">
+                                <span class="form-label-content">Bank</span>
+                            </label>		
+                        </div>
+                    </div>
+                    <div class="filter-box filter-select2-dropdown filter-status">
+                        <div class="form-field select-wrapper mb-0">
+                            <select class="select-default select2-normal2" name="status" data-placeholder="true">
+                                <option value></option>
+                                <option value="wilful-default">Wilful Default</option>                   
+                                <option value="settled">Settled</option>
+                                <option value="invoked">Invoked</option>
+                                <option value="dishonoured-Cheque">Dishonoured Cheque</option>
+                            </select>                    
+                            <label for="state" class="form-label">
+                                <span class="form-label-content">Status</span>
+                            </label>		
+                        </div>
+                    </div>
+                    <div class="filter-box filter-datepicker">
+                        <button class="btn-datepicker" id="datepicker3"><img src="{{"img/calendar.png" | relURL}}" width="18" height="18"></button>
+                    </div>
+                    <div class="filter-box filter-action">
+                        <button type="button" class="btn-reset-filters btn"><img src="{{ "img/reset-icon.png" | relURL }}"></button>
+                    </div>
+                    <div class="mobile-filter-wrap d-flex justify-content-between w-100 d-md-none">
+                        <div class="result-count font-regular font-14 text-grey"><span class="count">20</span> Results</div>
+                        <div class="filter-count font-regular font-14"><a href="#" class="mobile-filter-btn text-decoration-none text-grey">Filters <span class="text-blue">(<span class="count">3</span>)</span> <i class="fas fa-angle-right valign-middle"></i></a></div>
+                    </div>
+                </div> 
+                <div class="table-list mt-2 mb-6 filter-table">                            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="w-25">Bank</th>
+                                <th class="w-20 sort-column" onclick="sortTable(1,this)">Loan Details <i class="text-orange fas fa-sort"></i></th>
+                                <th class="w-30">Address</th>
+                                <th class="w-25">Status</th>                    
+                            </tr>
+                        </thead>
+                        <tbody id="ai-btn2">
+                            <tr>
+                                <td data-bank="hdfc">
+                                    <div class="bank-name font-regular text-black">HDFC <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Address:</div>
+                                        <div class="text-grey">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</div>
+                                    </div>                                    
+                                </td>
+                                <td data-status="trial-in-progress" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-trial-in-progres font-regular">TRIAL IN PROGRESS</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-bank="citi">
+                                    <div class="bank-name font-regular text-black">Citi Bank <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Address:</div>
+                                        <div class="text-grey">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</div>
+                                    </div>                                    
+                                </td>
+                                <td data-status="trial-in-progress" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-trial-in-progres font-regular">TRIAL IN PROGRESS</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-bank="dena">
+                                    <div class="bank-name font-regular text-black">Dena Bank <span class="text-grey d-lg-block">Pvt.</span></div>
+                                </td>
+                                <td data-amount="1500000">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Loan Details:</div>
+                                        <div class="amount">₹ 15,00,000</div>
+                                        <div class="font-12 mt-05 text-grey">A/C <span class="font-regular text-black">AFK45675611</span></div>
+                                    </div>
+                                </td>
+                                <td data-address="Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Address:</div>
+                                        <div class="text-grey">Abhishek, 17-A, Gandharva, Near Hotel, Erandwane, Pune, Maharashtra 411004</div>
+                                    </div>                                    
+                                </td>
+                                <td data-status="trial-in-progress" data-date="4/6/2016">
+                                    <div class="mt-1 m-lg-0 mb-1 mb-lg-0">
+                                        <div class="d-lg-none text-grey font-14 mb-05">Status:</div>
+                                        <div class="status mb-05 status-trial-in-progres font-regular">TRIAL IN PROGRESS</div>
+                                        <div class="report-date font-12">Last Reported 4 July, 2016</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pt-2 pb-2 text-center font-14 text-grey d-none mb-5 table-no-results">No Results Found.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    const adv_info_button = document.getElementById("ai-btn")
+    adv_info_button.addEventListener('click', function(e) {		
+        window.location.href="/cibil/accounts/credit-facilities-details";
+    });
+    const adv_info_button2 = document.getElementById("ai-btn2")
+    adv_info_button2.addEventListener('click', function(e) {		
+        window.location.href="/cibil/accounts/credit-facilities-details";
+    });
+</script>

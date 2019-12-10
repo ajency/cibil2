@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="section-credit-report mt-4 mb-6 floating-fields">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 offset-lg-1 col-left pr-lg-5">
+                <div>
+                    <h1 class="section-title text-grey mb-1">Your Report is Ready</h1> 
+                    <h5 class="text-grey font-light mb-2">You have <span class="text-highlight text-lowercase">successfully been verified</span> to request the CIBIL Rank and CCR Report for TARCAR REAL ESTATE PRIVATE LIMITED.</h5>
+                    <h5 class="text-grey font-light mb-2">To ensure compliance with policies and procedures, the <span class="text-highlight text-lowercase">report will be shipped to the registered company address.</span> Report updates will be sent to your registered CIBIL account email id and phone number.</h5>                    
+				</div>
+				<div class="cibil-report-image mt-5">
+					<picture>
+						<source media="(min-width: 767px)" srcset="{{"img/cibil_rank_file.png" | relURL}}">
+						<source media="(max-width: 768px)" srcset="{{"img/cibil_rank_file.png" | relURL}}">
+						<img src="{{"img/cibil_rank_file.png" | relURL}}" alt class="img-fluid">
+					</picture>
+				</div>
+				<div class="card card-info mt-3 d-none d-md-flex">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-2 mb-3 d-none d-md-flex">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-right sticky-sidebar">
+				<div class="card shipping-details mt-3 mt-md-0">
+					<div class="card-body">
+						<h4 class="text-uppercase mb-2">Shipping Summary</h4>
+						<div class="shipping-summary">
+							<h5 class="text-grey mb-05 font-light">Report Will Be Shipped To</h5>
+							<h4>H.NO.4/259/A, Near 4 Pillar Hotel Panaji North Goa GA 403001 IN</h4>
+						</div>
+						<div class="estimated-delivery mt-2">
+							<h5 class="text-grey mb-05 font-light">Est. Delivery Date</h5>
+							<h4>Sep 22 - Sep 28</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="card card-info mt-3">
+					<div class="card-body">
+						<h4 class="text-uppercase mb-2">View Your Report</h4>
+						<p>Please Sign In to view your reports</p>						
+						<a href="/cibil/credit-report/signin-email/" class="btn btn-fill btn-fill-orange btn-lg w-100">SIGN IN</a>
+					</div>
+				</div>
+
+				<div class="card card-info mt-3 d-flex d-md-none">
+					<div class="card-body">
+						<h4 class="text-grey mb-16">Why can't I get my report via email or see my report online?</h4>
+						<p class="text-grey">To follow complaince, we always send the CCR Report to the registered company address.</p>
+						<p class="text-grey">To view the report online, you need have the Unique Report OTP which will be printed on the CCR report sent to you. You will need to enter this OTP to add the report to your account from where you will be able to view it. This is done to confirm that you have received the report</p>
+						<p class="text-grey">You can check what the report will look like when you receive it via this sample report. To download, <a href="{{ "img/sample-ccr-report.png" | relURL }}" target="_blank" class="text-link text-link-blue">click here</a>.</p>
+					</div>
+				</div>
+				<div class="media media-info mt-3 mb-3 d-flex d-md-none">
+					<img src="{{ "img/kyc/icon/call-us.png" | relURL }}" style="max-width: 42px; height: auto;">
+					<div class="media-body ml-2 ml-md-3">
+						<p class="mb-0">Call us in case you have any queries or issues at</p>
+						<h4 class="text-grey font-light"><span class="text-highlight font-regular">+91 - 2266384600.</span> (Mon - Fri): 10:00 am to 06:00 pm</h4>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    // const button = document.getElementById("btn-next")
+    // button.addEventListener('click', function(e) {		
+    //     window.location.href="/cibil/credit-report/signin-email/";
+    // });
+</script>
+
+{{ end }}

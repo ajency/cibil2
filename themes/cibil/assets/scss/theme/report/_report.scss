@@ -1,0 +1,248 @@
+.cibil-report-otp {
+    //background-color: rgba(0,0,0,0.62);
+   // padding: 156px 10px;
+    position: relative;
+//   min-height: 748px; 
+}
+
+.cibil-report-image {
+    background: $lightgrey2;
+    padding: 28px 0 0;
+    text-align: center;
+}
+
+.report {
+    @include media-min(xxl){
+        &-col-left {
+            flex: 0 0 58.33333333%;
+            max-width: 58.33333333%;
+        }
+        &-col-right {
+            flex: 0 0 41.66666667%;
+            max-width: 41.66666667%;
+        }
+    }
+}
+
+.btn {
+    &-view-report {
+        font-size: 0;
+        border: 2px solid $orange;
+        padding: 9px;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -1px;
+            right: -1px;
+            top: -1px;
+            bottom: -1px;
+            background: $orange;
+            transform: translateX(-100%);
+            transition: all 0.4s ease;
+        }
+
+        i {
+            top: 4px;
+            left: -3px;
+        }        
+
+        @include media-max(md){
+            border-radius: 2px;
+            width: 100%;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            i {
+                display: none;
+            }
+
+            &:before {
+                display: none;
+            }
+            &:hover,
+            &:focus {
+                background: $orange;
+                color: #fff;
+            }
+        }
+        @include media-min(md){
+            width: 46px;
+            height: 46px;
+        }
+    }
+    &-add-company {
+        padding-left: 25px;
+        padding-right: 25px;
+        i {
+            margin-right: 5px;
+
+            &:after,
+            &:before {
+                transition: all 0.4s ease;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            i {
+                &:after,
+                &:before {
+                    transition: all 0.4s ease;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.cd-right-seprator {
+    @include media-min(md){
+        border-right: 1px solid $lightblue2;
+    }
+}
+
+.report-card {
+    cursor: pointer;    
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        .btn-view-report {
+            &:before {
+                transform: translateX(0);
+            }
+            i {
+                transition: all 0.4s ease;
+                &:after {
+                    background: #fff;
+                }
+                &:before {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+    @include media-max(md){
+        .report-id {
+            span {
+                font-size: 14px;
+            }
+        }
+        .company-details {
+            padding-right: 15px;
+        }
+    }
+}
+
+.older-reports-dropdown {
+    box-shadow: -1px 10px 13px 0 rgba(0,0,0,0.22);
+    max-width: 600px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    z-index: 2;
+    display: none;
+
+    &.opened {
+        display: block;
+    }
+
+    .dropdown-header {
+        padding: 20px 52px 20px 40px;
+        background: #fff;      
+        position: relative;
+
+        .close-dropdown {
+            font-size: 0;
+            padding: 0;
+            line-height: normal;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 32px;
+        }  
+        @include media-max(md){
+            padding-left: 15px;
+            padding-right: 40px;
+            .close-dropdown {
+                right: 15px;
+                top: 30px;
+            }
+        }
+    }
+    .old-reports-table {
+        width: 100%;
+        td {
+            text-align: center;
+            color: $grey;
+            padding: 15px 25px;
+            font-family: $font-regular;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.6px;
+            @include media-max(md){
+                font-size: 14px;
+                padding: 10px 8px;
+            }
+        }
+        thead {
+            background: $grey;                        
+            td {
+                padding: 8px 10px;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $font-regular;
+                letter-spacing: 0.6px;
+                line-height: 19px;
+                @include media-max(md){
+                    font-size: 14px;
+                    padding: 10px 8px;
+                }
+            }
+        }
+        tbody {
+            background: #fff;
+            tr {
+                border-top: 1px solid $lightblue2;
+                border-bottom: 1px solid $lightblue2;
+
+                &:hover {
+                    background: $lightblue;                    
+                }                
+            }
+        }
+    }
+    .view-reports {
+        padding: 6px 5px;
+        max-width: 100px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    @include media-max(md){
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        height: 100vh;
+        max-width: 100%;  
+        .table-wrapper-scroll-y {
+            height: calc(100vh - 79px);
+        }      
+        .view-reports {
+            line-height: normal;
+        }
+    }
+}
+
+.table-wrapper-scroll-y {   
+    max-height: 500px;
+    overflow: auto;    
+}

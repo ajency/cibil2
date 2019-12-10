@@ -1,0 +1,310 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<div class="container">
+	<div class="px-2 py-4">
+
+		<div class="row">
+			<div class="col-md-9">
+				<h4 class="mb-2">We need some additional information from you to complete the authentication process</h4>
+				<h6 class="mb-4">Please answer the below questions based on your company's credit profile to complete eKYC process.</h6>
+
+
+				<div class="row">
+					<div class="col-md-10">
+						<fieldset>
+							<label>Please select the lender who has sanctioned the lowest loan amount to you</label><br>
+					    	<label class="radio-button">
+								<input class="sr-only" type="radio" id="pan" name="radiogroup5" value="pan" />
+								<span>HDFC Bank Ltd.</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="cin" name="radiogroup5" value="cin" />
+								<span>PNB Housing Finance</span>
+							</label>
+
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="crn" name="radiogroup5" value="crn" />
+								<span>Punjab National Bank</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="tin" name="radiogroup5" value="tin" />
+								<span>Saraswat Cooperative Bank</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="sidb" name="radiogroup5" value="sidb" />
+								<span>None of the above</span>
+							</label>
+					    </fieldset>
+					</div>
+					<div class="col-md-10 mt-2">
+						<fieldset>
+							<label>Please select the correct EMI amount you are paying to the lender Small Industries Development Bank</label><br>
+					    	<label class="radio-button">
+								<input class="sr-only" type="radio" id="pan" name="radiogroup" value="pan" />
+								<span>Rs. 135000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="cin" name="radiogroup" value="cin" />
+								<span>Rs. 150000</span>
+							</label>
+
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="crn" name="radiogroup" value="crn" />
+								<span>Rs. 165000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="tin" name="radiogroup" value="tin" />
+								<span>Rs. 90000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="sidb" name="radiogroup" value="sidb" />
+								<span>I dont have an account with SIDB</span>
+							</label>
+					    </fieldset>
+					</div>
+					<div class="col-md-10 mt-2">
+						<fieldset>
+							<label>Select the lowest loan amount sanctioned by Reliance Home Finance to you.</label><br>
+					    	<label class="radio-button">
+								<input class="sr-only" type="radio" id="pan" name="radiogroup1" value="pan" />
+								<span>Rs. 135000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="cin" name="radiogroup1" value="cin" />
+								<span>Rs. 150000</span>
+							</label>
+
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="crn" name="radiogroup1" value="crn" />
+								<span>Rs. 165000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="tin" name="radiogroup1" value="tin" />
+								<span>Rs. 90000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="sidb" name="radiogroup1" value="sidb" />
+								<span>I dont have an account with RHF</span>
+							</label>
+					    </fieldset>
+					</div>
+					<div class="col-md-10 mt-2">
+						<fieldset>
+							<label>Select the loan type you have applied for in the last 12 months.</label><br>
+					    	<label class="radio-button">
+								<input class="sr-only" type="radio" id="pan" name="radiogroup2" value="pan" />
+								<span>Cash Credit</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="cin" name="radiogroup2" value="cin" />
+								<span>Overdraft</span>
+							</label>
+
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="crn" name="radiogroup2" value="crn" />
+								<span>Packing Credit</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="tin" name="radiogroup2" value="tin" />
+								<span>Unsecured business loan</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="sidb" name="radiogroup2" value="sidb" />
+								<span>None of the above</span>
+							</label>
+					    </fieldset>
+					</div>
+					<div class="col-md-10 mt-2">
+						<fieldset>
+							<label>Select the highest loan amount sanctioned by The HongKong and Shanghai Banking Corporation to you.</label><br>
+					    	<label class="radio-button">
+								<input class="sr-only" type="radio" id="pan" name="radiogroup3" value="pan" />
+								<span>Rs. 3600000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="cin" name="radiogroup3" value="cin" />
+								<span>Rs. 1500000</span>
+							</label>
+
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="crn" name="radiogroup3" value="crn" />
+								<span>Rs. 6500000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="tin" name="radiogroup3" value="tin" />
+								<span>Rs. 90000</span>
+							</label>
+							<label class="radio-button">
+								<input class="sr-only" type="radio" id="sidb" name="radiogroup3" value="sidb" />
+								<span>I dont have an account with HSBC</span>
+							</label>
+					    </fieldset>
+					</div>
+					<div class="col-md-6"></div>
+					<div class="col-md-6">
+					</div>
+				</div>
+
+				<a href="/cibil/report/"  class="btn btn-primary btn-lg mt-4">Proceed</a>
+				<!-- <ul class="notifications">
+				    <li>
+				    	{{ if or ($.Params.uploaded) ($.Params.verified) }}
+				      		<i class="fa fa-check"></i>
+				      	{{ else }}
+				      		<i class="fa fa-file"></i>
+				      	{{ end }}
+				      <div class="kyc-title">Documents</div>
+				      <div class="kyc-documents card">
+				      	{{ if or ($.Params.uploaded) ($.Params.verified) }}
+				      		<div class="card-body uploaded">
+				      			Your documents were successfully uploaded
+				      		</div>
+				      	{{ else }}
+				      		<div class="card-body">
+					      		Below are some accepted documents as Address Proof. Please select any 1.
+
+					      		<form name="myForm">
+					      			<fieldset class="mt-2">
+					      		    	<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="bank" name="radiogroup" value="bank" checked="" />
+					      					<span>Bank Statement</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="electric" name="radiogroup" value="electric" />
+					      					<span>Electricity Bill</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="telephone" name="radiogroup" value="telephone" />
+					      					<span>Telephone Bill</span>
+					      				</label>
+					      				<label class="radio-button">
+					      					<input class="sr-only" type="radio" id="certificate" name="radiogroup" value="certificate" />
+					      					<span>Certificate of Incorporation</span>
+					      				</label>
+					      		    </fieldset>
+					      		</form>				      		
+
+					      	    <div class="my-3 infobox" id="bankbox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Bank Statement</h5>
+					      		    <p class="card-text">Only first page of bank statement where company address is mentioned is required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample bank statement</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="electricbox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Electricity Bill</h5>
+					      		    <p class="card-text">Latest 3 electricity bills where company address is mentioned are required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample electricity bill</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="telephonebox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Telephone Bill</h5>
+					      		    <p class="card-text">Latest 3 telephone bills where company address is mentioned are required.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample telephone bill</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      	    <div class=" my-3 infobox d-none" id="certificatebox">
+					      		  <div class="">
+					      		    <h5 class="card-title">Certificate of Incorporation</h5>
+					      		    <p class="card-text">Upload your company's Certificate of Incorporation.</p>
+					      		    <small>
+					      		    	<a href="#" class="text-dec">View sample Certificate of Incorporation</a>
+					      		    </small>
+					      		    <hr class="my-2">
+					      		    <div class="custom-file text-left">
+					      		      <input type="file" class="custom-file-input" id="customFile">
+					      		      <label class="custom-file-label" for="customFile">Choose file</label>
+					      		    </div>
+					      		    <div class="text-right px-1 pt-1">
+					      		    	<small><a href="#">+ Add</a></small>
+					      		    </div>
+					      		  </div>
+					      		</div>
+
+					      		<a href="/cibil/kyc-uploaded/" class="btn btn-primary btn-lg" id="submitKYC">Submit</a>
+					      	</div>
+				      	{{ end }}
+				      </div>
+				    </li>
+				    <li>
+			    		{{ if $.Params.verified }}
+			    	  		<i class="fa fa-check"></i>
+			    	  	{{ else if $.Params.failed }}
+			    	  		<i class="fa fa-times"></i>
+			    	  	{{ else }}
+			    	  		<i class="fa fa-search"></i>
+			    	  	{{ end }}
+				      <div class="kyc-title">Verification</div>
+				      {{ if $.Params.uploaded }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification in process.</p>
+					      		Once your documents have been manually verified, your report will be generated.
+					      	</div>
+					      </div>
+				      {{ else if $.Params.verified }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification Successful!</p>
+					      		<a href="/cibil/report/" class="btn btn-primary">Get Report</a>
+					      	</div>
+					      </div>
+				      {{ else if $.Params.failed }}
+					      <div class="verification card">
+					      	<div class="card-body">
+					      		<p>Verification Failed!</p>
+					      		There were some discrepencies with your details. Please re-upload your documents.
+					      	</div>
+					      </div>
+				      {{ end }}
+				    </li>
+				</ul> -->
+
+			</div>
+			<div class="col-md-3">
+				<h4 class="text-center">Ask someone else to fill this for you</h4>
+				<a href="#" class="btn btn-outline-primary btn-lg btn-block">Share form link</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{ end }}

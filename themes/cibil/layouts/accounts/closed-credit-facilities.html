@@ -1,0 +1,362 @@
+{{ define "main" }}
+
+{{- partial "header_2.html" . -}}
+
+<div class="container cs-container mt-md-6 mb-md-4">
+    <div class="row">
+        <div class="col-md-4 col-lg-3">
+            <div class="d-none d-md-block">                                 
+                {{- partial "accounts/navigation-desktop.html" . -}}
+            </div>
+        </div>
+        <div class="col-md-8 col-lg-9">
+            <div class="drilldown-outer-wrapper">
+            <div class="drilldown-wrapper">                      
+                <div class="drilldown-menu">               
+                    {{- partial "accounts/navigation-mobile.html" . -}}
+                </div>
+                <div class="drilldown-content enquiries d-md-none">
+                    <div class="drilldown-header d-md-none">
+                        <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="mb-4">
+                            <h1 class="section-title text-grey">Enquiries</h1>
+                            <p class="text-grey font-light">An enquiry is added to the Company Credit Report every time a lender accesses your company's report. Below list is a record of all instances when your company's report was accessed in the past 24 months.</p>
+                        </div>
+                    
+                        <div class="table-list">
+                            <table class="w-100 table-14 tb-view-results table-lg-striped-even count-20">
+                                <thead>
+                                    <tr>
+                                        <th>Institution Name</th>
+                                        <th>Date</th>
+                                        <th>Credit Type</th>
+                                        <th>Enquiry Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                    <tr>
+                                        <td><div class="bank-name font-regular text-black">Citi Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 3 Apr 2019</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanilla foreign currency option (including INR cross currency)</td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 2,00,000</td>
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">ICICI</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>
+                                    <tr>                   
+                                        <td><div class="bank-name font-regular text-black">HDFC Bank</div></td>                              
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Date:</span> 17 Apr 2019</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Credit Type:</span> Plain vanila int rate swap(all including INR as coupon)</td>
+                                        <td class="text-black"><span class="d-md-none mt-05 mt-md-0 d-inline-block text-grey">Enquiry Amount:</span> ₹ 12,00,000</td>                         
+                                    </tr>                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="p-1 bg-lightblue text-center"><a href="#" class="tb-view-more-btn text-link text-link-blue font-14"><span>VIEW MORE <i class="fas fa-angle-down ml-1 font-20 valign-middle"></i></span><span class="less d-none">LESS <i class="fas fa-angle-up ml-1 font-20 valign-middle"></i></span></a></td>
+                                    </tr>
+                                </tfoot>
+                            </table>                        
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="drilldown-content cover-letter d-md-none">
+                    <div class="drilldown-header d-md-none">
+                        <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-md-8 col-lg-10 offset-lg-1">
+                            <h1 class="section-title text-grey mb-3">Cover Letter</h1>
+                        </div>
+                    </div>
+
+                    <div class="row m-0 mb-3">
+                        <div class="col-md-8 col-lg-7 offset-lg-1 pr-lg-5">                
+                            <h5 class="form-section-title text-blue text-underline text-underline-blue mt-0 mb-0 mb-md-3">Company Info</h5>
+                            <table class="table table-bordered table--colored table--small text-grey mt-2 mt-md-0 mb-4">
+                                <tr>
+                                    <td class="font-light">Company Name</td>
+                                    <td class="text-black">Dimension Engineers</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Company PAN</td>
+                                    <td class="text-black">ALUPM1234T</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Address</td>
+                                    <td class="text-black">10th Floor, ABC Tower, Veer Savarkar Road, Mumbai, 400001</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Order Date</td>
+                                    <td class="text-black">06 Aug 2019</td>
+                                </tr>
+                            </table>
+            
+                            <hr class="hr-seprator d-none d-md-block mt-3 mb-3">
+            
+                            <h5 class="form-section-title text-blue text-underline text-underline-blue mt-0 mb-0 mb-md-3">Report Info</h5>
+                            <table class="table table-bordered table--colored table--small text-grey mt-2 mt-md-0">
+                                <tr>
+                                    <td class="font-light">Report Order Number</td>
+                                    <td class="text-black">W-39912831</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Report ID</td>
+                                    <td class="text-black">N100P670031</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Report Date</td>
+                                    <td class="text-black">08 Aug 2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-light">Serial Number</td>
+                                    <td class="text-black">999000999000</td>
+                                </tr>
+                            </table>
+            
+                            <div class="d-none d-md-block mt-3">
+                                <p class="font-14 text-left">For assistance with understanding your CIBIL report visit <a class="text-link d-block text-link-blue font-14 mt-05" href="//cibil.com/cibil-rank" target="_blank" >www.cibil.com/cibil-rank</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">                        
+                                    <h5 class="text-uppercase mb-2">Invoice Details</h5>
+                                    <p class="text-grey mb-0">Invoice Number</p>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <p class="text-black font-regular mb-0">DTCC/19-20-00000000560</p>
+                                        <a href="#" target="_self" class="font-14 text-orange"><i class="fas fa-download"></i></a>
+                                    </div>
+            
+                                    <p class="mb-05 text-grey">Price Breakup</p>
+                                    <hr class="mb-2 mt-0">
+            
+                                    <div class="d-flex justify-content-between">
+                                        <p>Commerical Credit Report</p>
+                                        <p>₹2503.40</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Delivery Charges</p>
+                                        <p>₹38.98</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">
+                                            Taxes 
+                                            <a href="#" class="view-tax text-blue">More +</a>
+                                            <a href="#" class="hide-tax text-blue d-none">Less -</a>
+                                        </p>
+                                        <p class="">₹457.62</p>
+                                    </div>
+                                    <div class="tax-details d-none">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="">CGST</p>
+                                            <p class="">₹250.62</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="">SGST</p>
+                                            <p class="">207.00</p>
+                                        </div>  
+                                    </div>
+                                    
+                                    <hr class="mb-2 mt-0">
+                                    <div class="d-flex justify-content-between">
+                                        <h4>Total</h4>
+                                        <h4>₹3000</h4>
+                                    </div>
+                                    <hr class="mb-2 mt-1">
+            
+                                    <p class=" mb-0">*Includes CIBIL Rank at no additional cost.</p>
+                                </div>
+                            </div>
+            
+                            <div class="d-md-none mt-2">
+                                <p class="font-14 text-center">For assistance with understanding your CIBIL report visit <br><a class="text-link text-link-blue font-14" href="//cibil.com/cibil-rank" target="_blank" >www.cibil.com/cibil-rank</a></p>
+                            </div>
+                        </div>      
+                    </div>                    
+
+                </div>
+                <div class="drilldown-content closed-credit-facilities">
+                    <div class="drilldown-header d-md-none">
+                        <a href="" class="text-decoration-none text-white drilldown-back"><i class="icon-prev"></i> BACK</a>
+                    </div>
+                    <div class="drilldown-content-wrap">
+                        {{- partial "accounts/closed-credit-facilities.html" . -}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    const button = document.getElementById("btn-next")
+    button.addEventListener('click', function(e) {		
+        window.location.href="/cibil/accounts/credit-facilities-details";
+    });
+</script>
+
+{{ end }}
