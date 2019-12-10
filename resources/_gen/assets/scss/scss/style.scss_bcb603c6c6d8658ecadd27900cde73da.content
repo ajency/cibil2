@@ -7599,10 +7599,10 @@ body {
   position: relative;
   padding-left: 10px; }
   .partnership-width img {
-    max-width: 120px;
+    max-width: 140px;
     height: auto;
     display: block;
-    margin-top: 4px; }
+    margin-top: 2px; }
   @media (min-width: 768px) {
     .partnership-width {
       margin-left: 15px;

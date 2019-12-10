@@ -52,10 +52,10 @@ body {
     position: relative;
     padding-left: 10px;
     img {
-        max-width: 120px;
+        max-width: 140px;
         height: auto;
         display: block;
-        margin-top: 4px;
+        margin-top: 2px;
     }
     @include media-min(md){
         margin-left: 15px;
